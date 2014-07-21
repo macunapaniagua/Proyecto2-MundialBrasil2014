@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<Estadios>
+    <Estadio>
+        <Nombre>Estadio Maracana</Nombre>
+        <Ciudad>Rio de Janeiro</Ciudad>
+        <Capacidad>78000</Capacidad>        
+    </Estadio>
+    
+    <Estadio>
+        <Nombre>Estadio Nacional</Nombre>
+        <Ciudad>Brasilia</Ciudad>
+        <Capacidad>70000</Capacidad>        
+    </Estadio>
+    
+    <Estadio>
+        <Nombre>Arena Corinthians</Nombre>
+        <Ciudad>Sao Paulo</Ciudad>
+        <Capacidad>68000</Capacidad>        
+    </Estadio>
+    
+    <Estadio>
+        <Nombre>Estadio Castelao</Nombre>
+        <Ciudad>Fortaleza</Ciudad>
+        <Capacidad>67000</Capacidad>        
+    </Estadio>
+    
+    <Estadio>
+        <Nombre>Estadio Mineirao</Nombre>
+        <Ciudad>Belo Horizonte</Ciudad>
+        <Capacidad>64000</Capacidad>        
+    </Estadio>
+    
+    <Estadio>
+        <Nombre>Estadio Beira-Rio</Nombre>
+        <Ciudad>Porto Alegre</Ciudad>
+        <Capacidad>52000</Capacidad>        
+    </Estadio>
+    
+    <Estadio>
+        <Nombre>Arena Fonte Nova</Nombre>
+        <Ciudad>Salvador</Ciudad>
+        <Capacidad>50000</Capacidad>        
+    </Estadio>
+    
+    <Estadio>
+        <Nombre>Arena Pernambuco</Nombre>
+        <Ciudad>Recife</Ciudad>
+        <Capacidad>46000</Capacidad>        
+    </Estadio>
+    
+    <Estadio>
+        <Nombre>Arena Amazonia</Nombre>
+        <Ciudad>Manaus</Ciudad>
+        <Capacidad>44000</Capacidad>        
+    </Estadio>
+    
+    <Estadio>
+        <Nombre>Estadio das Dunas</Nombre>
+        <Ciudad>Natal</Ciudad>
+        <Capacidad>43000</Capacidad>        
+    </Estadio>
+    
+    <Estadio>
+        <Nombre>Arena Pantanal</Nombre>
+        <Ciudad>Cuiaba</Ciudad>
+        <Capacidad>43000</Capacidad>        
+    </Estadio>
+    
+    <Estadio>
+        <Nombre>Arena da Baixada</Nombre>
+        <Ciudad>Curitiva</Ciudad>
+        <Capacidad>41000</Capacidad>        
+    </Estadio>    
+</Estadios>

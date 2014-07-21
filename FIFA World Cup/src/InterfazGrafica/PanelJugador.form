@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JPanelFormInfo">
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="Lbl_Foto" min="-2" pref="89" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="Lbl_Numero" max="32767" attributes="0"/>
+                  <Component id="Lbl_Puesto" alignment="0" max="32767" attributes="0"/>
+                  <Component id="Lbl_Nombre" alignment="0" pref="148" max="32767" attributes="0"/>
+                  <Component id="Lbl_Edad" alignment="0" max="32767" attributes="0"/>
+                  <Component id="Lbl_Estatura" max="32767" attributes="0"/>
+              </Group>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="Lbl_Foto" min="-2" pref="119" max="-2" attributes="0"/>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
+                      <Component id="Lbl_Nombre" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="Lbl_Puesto" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="Lbl_Numero" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="Lbl_Edad" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="Lbl_Estatura" min="-2" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JLabel" name="Lbl_Foto">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/Fondos/Fuleco.jpg"/>
+        </Property>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="Lbl_Nombre">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Nombre: Vicente Del Bosque"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="Lbl_Puesto">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Entrenador"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="Lbl_Numero">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Numero: 23"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="Lbl_Edad">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Edad: 67 a&#xf1;os"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="Lbl_Estatura">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Estatura: 180 cm"/>
+      </Properties>
+    </Component>
+  </SubComponents>
+</Form>
