@@ -15,10 +15,9 @@ public class NodoJugador {
 
     private String nombre;
     private String posicion;
-    private JLabel foto;
     private int edad;
     private int estatura;
-    private int cantidadGolesAnotados = 0;
+    private int cantidadGolesAnotados;
     private int numeroCamiseta;
     
     private NodoJugador siguiente;
@@ -27,13 +26,12 @@ public class NodoJugador {
 
     }
 
-    public NodoJugador(String pNombre, String pPosicion, JLabel pFoto, int pEdad, int pEstatura, int pNumero) {
+    public NodoJugador(String pNombre, String pPosicion, int pEdad, int pEstatura, int pNumero, int pGoles) {
         nombre = pNombre;
         posicion = pPosicion;
-        foto = pFoto;
         edad = pEdad;
         estatura = pEstatura;
-        cantidadGolesAnotados = 0;
+        cantidadGolesAnotados = pGoles;
         numeroCamiseta = pNumero;
         
         siguiente = null;
@@ -51,20 +49,6 @@ public class NodoJugador {
      */
     public void setNombre(String nombre) {
         this.nombre = nombre;
-    }
-
-    /**
-     * @return the foto
-     */
-    public JLabel getFoto() {
-        return foto;
-    }
-
-    /**
-     * @param foto the foto to set
-     */
-    public void setFoto(JLabel foto) {
-        this.foto = foto;
     }
 
     /**

@@ -15,7 +15,6 @@ import javax.swing.JLabel;
 public class NodoEquipo {
     
     private String nombreEquipo;
-    private JLabel fotoEntrenador;
     private String nombreEntrenador;
     private ListaJugadores jugadores;
     private int partidosJugados;
@@ -24,6 +23,7 @@ public class NodoEquipo {
     private int partidosPerdidos;
     private int golesAFavor;
     private int golesEnContra;
+    private int golDiferencia;
     private int puntos;
     
     private NodoEquipo siguiente;
@@ -35,12 +35,11 @@ public class NodoEquipo {
         siguiente = null;
     }
 
-    public NodoEquipo(String pNombreEquipo, JLabel pFotoEntrenador, String pNombreEntrenador, ListaJugadores pJugadores,
+    public NodoEquipo(String pNombreEquipo, String pNombreEntrenador, ListaJugadores pJugadores,
             int pPartidosJugados, int pPartidosGanados, int pPartidosEmpatados, int pPartidosPerdidos, int pGolesAFavor,
-            int pGolesEnContra, int pPuntos) 
+            int pGolesEnContra, int pGolDiferencia, int pPuntos) 
     {
         nombreEquipo = pNombreEquipo;
-        fotoEntrenador = pFotoEntrenador;
         nombreEntrenador = pNombreEntrenador;
         jugadores = pJugadores;
         partidosJugados = pPartidosJugados;
@@ -49,6 +48,7 @@ public class NodoEquipo {
         partidosPerdidos = pPartidosPerdidos;
         golesAFavor = pGolesAFavor;
         golesEnContra = pGolesEnContra;
+        golDiferencia = pGolDiferencia;
         puntos = pPuntos;
         
         siguiente = null;
@@ -66,20 +66,6 @@ public class NodoEquipo {
      */
     public void setNombreEquipo(String nombreEquipo) {
         this.nombreEquipo = nombreEquipo;
-    }
-
-    /**
-     * @return the fotoEntrenador
-     */
-    public JLabel getFotoEntrenador() {
-        return fotoEntrenador;
-    }
-
-    /**
-     * @param fotoEntrenador the fotoEntrenador to set
-     */
-    public void setFotoEntrenador(JLabel fotoEntrenador) {
-        this.fotoEntrenador = fotoEntrenador;
     }
 
     /**
@@ -220,6 +206,20 @@ public class NodoEquipo {
      */
     public void setSiguiente(NodoEquipo siguiente) {
         this.siguiente = siguiente;
+    }
+
+    /**
+     * @return the golDiferencia
+     */
+    public int getGolDiferencia() {
+        return golDiferencia;
+    }
+
+    /**
+     * @param golDiferencia the golDiferencia to set
+     */
+    public void setGolDiferencia(int golDiferencia) {
+        this.golDiferencia = golDiferencia;
     }
     
 }

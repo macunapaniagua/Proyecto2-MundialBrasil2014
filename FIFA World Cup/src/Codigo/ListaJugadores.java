@@ -143,8 +143,8 @@ public class ListaJugadores {
         // Se crea un nuevo nodo con la informacion del primer elmento de la lista 
         // (no se retorna la raiz xq se estaria pasando toda la lista de jugadores)
         NodoJugador jugadorJoven = new NodoJugador(raizJugadores.getNombre(),
-                raizJugadores.getPosicion(), raizJugadores.getFoto(), raizJugadores.getEdad(),
-                raizJugadores.getEstatura(), raizJugadores.getNumeroCamiseta());
+                raizJugadores.getPosicion(), raizJugadores.getEdad(), raizJugadores.getEstatura(), 
+                raizJugadores.getNumeroCamiseta(), raizJugadores.getCantidadGolesAnotados());
         return jugadorJoven;
     }
 

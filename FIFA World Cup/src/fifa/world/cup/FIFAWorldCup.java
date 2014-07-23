@@ -132,12 +132,18 @@ public class FIFAWorldCup {
 //////////        } while (true);
         
         
-        //********************* Ventana de Estadios ****************************
-        
+        XMLReader lector = new XMLReader();
         // Lista de estadios
         ListaEstadios estadiosMundial;
+        // Lista de equipos
+        ListaEquipos listaEquiposMundial;
+        
+        
+        
+        //********************* Ventana de Estadios ****************************
+        
+        
         // Se carga la informacion de los estadios en el XMLReader y se asigna a la lista
-        XMLReader lector = new XMLReader();
         estadiosMundial = lector.cargarListaDeEstadios();
                             
         // Se le cambia la ubicacion al Estadio Castelao
@@ -158,6 +164,29 @@ public class FIFAWorldCup {
         
         v.setLocationRelativeTo(null);
         v.setVisible(true);
+        
+        //*********************** Ventana de selecciones ***********************
+        
+        listaEquiposMundial = lector.cargarListaEquipos();
+        
+        VentanaEquipos ve = new VentanaEquipos();
+        
+        listaEquiposMundial.inicializarNodoActual();
+        
+        while(listaEquiposMundial.getNodoActual() != null){
+            
+            System.out.println(listaEquiposMundial.getNodoActual().getNombreEquipo().toUpperCase());
+            
+            PanelSeleccion panel = new PanelSeleccion();
+            panel.setEquipo(listaEquiposMundial.getNodoActual().getNombreEquipo());
+            ve.setSeleccion(panel);
+            listaEquiposMundial.moverNodoActual();
+        }
+        
+        ve.setLocationRelativeTo(null);
+        ve.setVisible(true);
+        
+        
 
 ////        System.out.println("Jugador mas joven " + jugadores.getJugadorMasJoven().getNombre());        
 ////        jugadores.imprimirListaJugadores();

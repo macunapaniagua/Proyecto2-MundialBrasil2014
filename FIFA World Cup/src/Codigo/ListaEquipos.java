@@ -12,12 +12,38 @@ package Codigo;
 public class ListaEquipos {
 
     private NodoEquipo raizEquipos;
+    private NodoEquipo nodoAuxiliar;
 
     /**
      * Metodo constructor de la lista de equipos
      */
     public ListaEquipos() {
         raizEquipos = null;
+        nodoAuxiliar = null;
+    }
+
+    /**
+     * Metodo utilizado para retornar el elemento en el que se posiciona actualmente
+     * el nodo Auxiliar
+     * @return el nodo auxiliar, que es el que recorre la lista
+     */
+    public NodoEquipo getNodoActual() {
+        return nodoAuxiliar;
+    }
+
+    /**
+     * Metodo para inicializar el nodo que recorre la lista, es decir, colocarlo
+     * en la raiz de la lista
+     */
+    public void inicializarNodoActual() {
+        nodoAuxiliar = raizEquipos;
+    }
+    
+    /**
+     * Metodo utilizado para mover el nodo que recorre la lista completa
+     */
+    public void moverNodoActual(){
+        nodoAuxiliar = nodoAuxiliar.getSiguiente();
     }
 
     /**
