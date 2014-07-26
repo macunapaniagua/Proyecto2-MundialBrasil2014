@@ -14,22 +14,44 @@ import java.text.SimpleDateFormat;
  */
 public class ListaCalendario {
     
-    private NodoCalendario raizCalendario;
-    
+    private NodoEncuentro raizCalendario;
+    private NodoEncuentro nodoAuxiliar;    
     
     /**
      * Metodo constructor que inicializa la lista de Partidos en vacio
      */
     public ListaCalendario(){
         raizCalendario = null;
+        nodoAuxiliar = null;
+    }
+    
+    /**
+     * @return the nodoAuxiliar
+     */
+    public NodoEncuentro getNodoActual() {
+        return nodoAuxiliar;
+    }
+    
+    /**
+     * Metodo para mover el nodoAuxiliar
+     */
+    public void moverNodoActual(){
+        nodoAuxiliar = nodoAuxiliar.getSiguiente();
+    }
+    
+    /**
+     * Metodo para cambiar el valor del nodo auxiliar al inicio de la lista
+     */
+    public void inicializarNodoActal() {
+        nodoAuxiliar = raizCalendario;
     }
     
     /**
      * Metodo para insertar un nuevo Partido en el calendario, ordenando este nodo
      * de forma ascendente, tomando como referencia, la fecha y hora del encuentro.
-     * @param pNuevoNodo nuevo partido (NodoCalendario)
+     * @param pNuevoNodo nuevo partido (NodoEncuentro)
      */
-    public void insertarOrdenadoPorFecha(NodoCalendario pNuevoNodo){
+    public void insertarOrdenadoPorFecha(NodoEncuentro pNuevoNodo){
         
         // No hay elementos en la lista. Se inserta y la raiz apunta al nuevo nodo
         if(raizCalendario == null){
@@ -43,7 +65,7 @@ public class ListaCalendario {
         }
         // Se busca la posicion donde ira el nodo.
         else{
-            NodoCalendario nodoActual = raizCalendario;
+            NodoEncuentro nodoActual = raizCalendario;
             
             while(nodoActual.getSiguiente() != null &&
                     pNuevoNodo.getFechaYHoraDelPartido().after(nodoActual.getSiguiente().getFechaYHoraDelPartido()))
@@ -61,7 +83,7 @@ public class ListaCalendario {
      * la lista con los encuentros, la cual esta ordenada de forma ascendente
      */
     public void imprimirCalendario(){
-        NodoCalendario nodoActual = raizCalendario;
+        NodoEncuentro nodoActual = raizCalendario;
         
         SimpleDateFormat nuevoFormato = new SimpleDateFormat("d MMM yyyy h:mm a");
         while(nodoActual != null){

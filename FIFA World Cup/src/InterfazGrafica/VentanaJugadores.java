@@ -6,6 +6,8 @@
 
 package InterfazGrafica;
 
+import javax.swing.ImageIcon;
+
 /**
  *
  * @author Mario A
@@ -17,12 +19,19 @@ public class VentanaJugadores extends javax.swing.JFrame {
      */
     public VentanaJugadores() {
         initComponents();
-        
-        for (int i = 0; i < 24; i++) {
-            PanelJugador x = new PanelJugador();
-            jPanel1.add(x);
-        }
-        
+    }
+    
+    public void AgregarJugador(PanelJugador pJugadorNuevo){
+        jPanel1.add(pJugadorNuevo);
+        jPanel1.repaint();
+        jPanel1.revalidate();
+    }
+    
+    public void agregarBanderaYLogo(String pSeleccion){
+        Lbl_TituloJugadores.setText("Selección Nacional de " + pSeleccion);
+        Lbl_NombreEquipo.setText(pSeleccion);
+        Lbl_Bandera.setIcon(new ImageIcon(getClass().getResource("/ImagenesBanderas/" + pSeleccion + ".png")));
+        Lbl_LogoFederacion.setIcon(new ImageIcon(getClass().getResource("/ImagenesFederacion/" + pSeleccion + ".png")));
         jPanel1.repaint();
         jPanel1.revalidate();
     }

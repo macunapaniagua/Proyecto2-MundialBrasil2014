@@ -3204,7 +3204,7 @@ and open the template in the editor.
         <Puntos>1</Puntos>        
         <Jugadores>
             <Jugador>
-                <Nombre>James Appiah</Nombre>
+                <Nombre>Steven Adams</Nombre>
                 <NumeroCamiseta> 1 </NumeroCamiseta>
                 <Posicion> Guardameta </Posicion>
                 <Edad> 25 </Edad>
@@ -3419,7 +3419,7 @@ and open the template in the editor.
                 <Goles>0</Goles>                
             </Jugador>
             <Jugador>
-                <Nombre>Georgios Tzavelas</Nombre>
+                <Nombre>Georgios Tzavellas</Nombre>
                 <NumeroCamiseta> 3 </NumeroCamiseta>
                 <Posicion> Defensa </Posicion>
                 <Edad> 26 </Edad>
@@ -3674,7 +3674,7 @@ and open the template in the editor.
                 <Goles>0</Goles>                
             </Jugador>
             <Jugador>
-                <Nombre>Mario MartinezARTINEZ</Nombre>
+                <Nombre>Mario Martinez</Nombre>
                 <NumeroCamiseta> 10 </NumeroCamiseta>
                 <Posicion> Mediocampista </Posicion>
                 <Edad> 24 </Edad>
@@ -4122,7 +4122,7 @@ and open the template in the editor.
             <Jugador>
                 <Nombre>Daniele De Rossi</Nombre>
                 <NumeroCamiseta> 16 </NumeroCamiseta>
-                <Posicion> mediocampista </Posicion>
+                <Posicion> Mediocampista </Posicion>
                 <Edad> 30 </Edad>
                 <Estatura> 182 </Estatura>
                 <Goles>0</Goles>                
@@ -4623,7 +4623,7 @@ and open the template in the editor.
             <Jugador>
                 <Nombre>Rafael Marquez</Nombre>
                 <NumeroCamiseta> 4 </NumeroCamiseta>
-                <Posicion> 4 </Posicion>
+                <Posicion> Defensa </Posicion>
                 <Edad> 35 </Edad>
                 <Estatura> 184 </Estatura>
                 <Goles>1</Goles>                
@@ -4757,7 +4757,7 @@ and open the template in the editor.
                 <Goles>0</Goles>                
             </Jugador>
             <Jugador>
-                <Nombre>Carlos Pe�a</Nombre>
+                <Nombre>Carlos Peña</Nombre>
                 <NumeroCamiseta> 21 </NumeroCamiseta>
                 <Posicion> Mediocampista </Posicion>
                 <Edad> 24 </Edad>
@@ -5101,7 +5101,7 @@ and open the template in the editor.
             <Jugador>
                 <Nombre>Godfrey Oboabona</Nombre>
                 <NumeroCamiseta> 14 </NumeroCamiseta>
-                <Posicion> defnsa </Posicion>
+                <Posicion> Defensa</Posicion>
                 <Edad> 23 </Edad>
                 <Estatura> 183 </Estatura>
                 <Goles>0</Goles>                
@@ -5157,7 +5157,7 @@ and open the template in the editor.
             <Jugador>
                 <Nombre>Chigozie Agbim</Nombre>
                 <NumeroCamiseta> 21 </NumeroCamiseta>
-                <Posicion> Guaradameta </Posicion>
+                <Posicion> Guardameta </Posicion>
                 <Edad> 29 </Edad>
                 <Estatura> 187 </Estatura>
                 <Goles>0</Goles>                
@@ -5300,7 +5300,7 @@ and open the template in the editor.
             <Jugador>
                 <Nombre>Luis Neto</Nombre>
                 <NumeroCamiseta> 14 </NumeroCamiseta>
-                <Posicion> Delantero </Posicion>
+                <Posicion> Defensa </Posicion>
                 <Edad> 21 </Edad>
                 <Estatura> 173 </Estatura>
                 <Goles>0</Goles>                
@@ -5714,7 +5714,7 @@ and open the template in the editor.
             <Jugador>
                 <Nombre>Gelson Fernandes</Nombre>
                 <NumeroCamiseta> 16 </NumeroCamiseta>
-                <Posicion> Defensa </Posicion>
+                <Posicion> Mediocampista </Posicion>
                 <Edad> 27 </Edad>
                 <Estatura> 179 </Estatura>
                 <Goles>0</Goles>                
@@ -5752,7 +5752,7 @@ and open the template in the editor.
                 <Goles>0</Goles>                
             </Jugador>
             <Jugador>
-                <Nombre>Roman Buerki</Nombre>
+                <Nombre>Roman Burki</Nombre>
                 <NumeroCamiseta> 21 </NumeroCamiseta>
                 <Posicion> Guardameta </Posicion>
                 <Edad> 23 </Edad>
@@ -5760,7 +5760,7 @@ and open the template in the editor.
                 <Goles>0</Goles>                
             </Jugador>
             <Jugador>
-                <Nombre>Fabian Schaer</Nombre>
+                <Nombre>Fabian Schar</Nombre>
                 <NumeroCamiseta> 22 </NumeroCamiseta>
                 <Posicion> Defensa </Posicion>
                 <Edad> 22 </Edad>
@@ -5879,7 +5879,7 @@ and open the template in the editor.
                 <Goles>0</Goles>                
             </Jugador>
             <Jugador>
-                <Nombre>Rodrigo Mu�oz</Nombre>
+                <Nombre>Rodrigo Muñoz</Nombre>
                 <NumeroCamiseta> 12 </NumeroCamiseta>
                 <Posicion> Guardameta </Posicion>
                 <Edad> 32 </Edad>
@@ -6016,7 +6016,7 @@ and open the template in the editor.
             <Jugador>
                 <Nombre>Michael Bradley</Nombre>
                 <NumeroCamiseta> 4 </NumeroCamiseta>
-                <Posicion> Delantero </Posicion>
+                <Posicion> Mediocampista </Posicion>
                 <Edad> 26 </Edad>
                 <Estatura> 185 </Estatura>
                 <Goles>0</Goles>                
@@ -6104,7 +6104,7 @@ and open the template in the editor.
             <Jugador>
                 <Nombre>Kyle Beckerman</Nombre>
                 <NumeroCamiseta> 15 </NumeroCamiseta>
-                <Posicion> Defensa </Posicion>
+                <Posicion> Mediocampista </Posicion>
                 <Edad> 32 </Edad>
                 <Estatura> 181 </Estatura>
                 <Goles>0</Goles>                
@@ -6144,7 +6144,7 @@ and open the template in the editor.
             <Jugador>
                 <Nombre>Geoff Cameron</Nombre>
                 <NumeroCamiseta> 20 </NumeroCamiseta>
-                <Posicion> Mediocampista </Posicion>
+                <Posicion> Defensa </Posicion>
                 <Edad> 29 </Edad>
                 <Estatura> 190 </Estatura>
                 <Goles>0</Goles>                

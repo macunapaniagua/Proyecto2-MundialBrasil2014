@@ -1,0 +1,1608 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<Grupos>    
+    <Grupo letra="A">        
+        <Equipos>
+            <Equipo>Brasil</Equipo>
+            <Equipo>Croacia</Equipo>
+            <Equipo>Mexico</Equipo>
+            <Equipo>Camerun</Equipo>                          
+        </Equipos>
+        
+        <Encuentros>            
+            <Partido>
+                <Fecha>17/6/14</Fecha>
+                <Hora>1:00 PM</Hora>
+                <Humedad>66%</Humedad>
+                <VelocidadViento>27 m/s</VelocidadViento>
+                <Temperatura>28 ºC</Temperatura>
+                <CondicionClimatica>Nuboso</CondicionClimatica>
+                <Sede>Estadio Castelao</Sede>
+                <EquipoCasa>Brasil</EquipoCasa>
+                <EquipoVisita>Mexico</EquipoVisita>                
+                <GolesCasa goles="0"/>
+                <GolesVisita goles="0"/>               
+            </Partido>            
+            
+            <Partido>
+                <Fecha>23/6/14</Fecha>
+                <Hora>2:00 PM</Hora>
+                <Humedad>82%</Humedad>
+                <VelocidadViento>16 m/s</VelocidadViento>
+                <Temperatura>26 ºC</Temperatura>
+                <CondicionClimatica>Nuboso</CondicionClimatica>
+                <Sede>Arena Pernambuco</Sede>
+                <EquipoCasa>Croacia</EquipoCasa>
+                <EquipoVisita>Mexico</EquipoVisita>
+                
+                <GolesCasa goles="1">
+                    <Anotadores>
+                        <Anotador>
+                            <Nombre>Ivan Perisic</Nombre>
+                            <Minuto>87</Minuto>
+                        </Anotador>
+                    </Anotadores>
+                </GolesCasa>
+                
+                <GolesVisita goles="3">
+                    <Anotadores>
+                        <Anotador>
+                            <Nombre>Rafael Marquez</Nombre>
+                            <Minuto>72</Minuto>
+                        </Anotador>
+                        <Anotador>
+                            <Nombre>Andres Guardado</Nombre>
+                            <Minuto>75</Minuto>
+                        </Anotador>
+                        <Anotador>
+                            <Nombre>Javier Hernandez</Nombre>
+                            <Minuto>82</Minuto>
+                        </Anotador>
+                    </Anotadores>
+                </GolesVisita>                
+            </Partido>
+            
+            <Partido>
+                <Fecha>12/6/14</Fecha>
+                <Hora>2:00 PM</Hora>
+                <Humedad>63%</Humedad>
+                <VelocidadViento>8 m/s</VelocidadViento>
+                <Temperatura>24 ºC</Temperatura>
+                <CondicionClimatica>Soleado</CondicionClimatica>
+                <Sede>Arena Corinthians</Sede>
+                <EquipoCasa>Brasil</EquipoCasa>
+                <EquipoVisita>Croacia</EquipoVisita>
+                
+                <GolesCasa goles="3">
+                    <Anotadores>
+                        <Anotador>
+                            <Nombre>Neymar Jr</Nombre>
+                            <Minuto>29</Minuto>
+                        </Anotador>
+                        <Anotador>
+                            <Nombre>Neymar Jr</Nombre>
+                            <Minuto>71</Minuto>
+                        </Anotador>
+                        <Anotador>
+                            <Nombre>Oscar</Nombre>
+                            <Minuto>90+1</Minuto>
+                        </Anotador>
+                    </Anotadores>
+                </GolesCasa>
+                
+                <GolesVisita goles="1">
+                    <Anotadores>
+                        <Anotador>
+                            <Nombre>Marcelo (OG)</Nombre>
+                            <Minuto>11</Minuto>
+                        </Anotador>
+                    </Anotadores>
+                </GolesVisita>                
+            </Partido>
+            
+            <Partido>
+                <Fecha>13/6/14</Fecha>
+                <Hora>10:00 AM</Hora>
+                <Humedad>65%</Humedad>
+                <VelocidadViento>22 m/s</VelocidadViento>
+                <Temperatura>27 ºC</Temperatura>
+                <CondicionClimatica>Lluvioso</CondicionClimatica>
+                <Sede>Estadio das Dunas</Sede>
+                <EquipoCasa>Mexico</EquipoCasa>
+                <EquipoVisita>Camerun</EquipoVisita>
+                
+                <GolesCasa goles="1">
+                    <Anotadores>
+                        <Anotador>
+                            <Nombre>Oribe Peralta</Nombre>
+                            <Minuto>61</Minuto>
+                        </Anotador>
+                    </Anotadores>
+                </GolesCasa>
+                                
+                <GolesVisita goles="0"/>              
+            </Partido>
+            
+            <Partido>
+                <Fecha>18/6/14</Fecha>
+                <Hora>4:00 PM</Hora>
+                <Humedad>86%</Humedad>
+                <VelocidadViento>6 m/s</VelocidadViento>
+                <Temperatura>27ºC</Temperatura>
+                <CondicionClimatica>Lluvioso</CondicionClimatica>
+                <Sede>Arena Amazonia</Sede>
+                <EquipoCasa>Camerun</EquipoCasa>
+                <EquipoVisita>Croacia</EquipoVisita>
+                
+                <GolesCasa goles="0"/>
+                
+                <GolesVisita goles="4">
+                    <Anotadores>
+                        <Anotador>
+                            <Nombre>Ivica Olic</Nombre>
+                            <Minuto>11</Minuto>
+                        </Anotador>
+                        <Anotador>
+                            <Nombre>Ivan Perisic</Nombre>
+                            <Minuto>48</Minuto>
+                        </Anotador>
+                        <Anotador>
+                            <Nombre>Mario Mandzukic</Nombre>
+                            <Minuto>61</Minuto>
+                        </Anotador>
+                        <Anotador>
+                            <Nombre>Mario Mandzukic</Nombre>
+                            <Minuto>73</Minuto>
+                        </Anotador>
+                    </Anotadores>
+                </GolesVisita>                
+            </Partido>
+            
+            <Partido>
+                <Fecha>23/6/14</Fecha>
+                <Hora>2:00 PM</Hora>
+                <Humedad>57%</Humedad>
+                <VelocidadViento>26 m/s</VelocidadViento>
+                <Temperatura>24ºC</Temperatura>
+                <CondicionClimatica>Parcialmente Nuboso</CondicionClimatica>
+                <Sede>Estadio Nacional</Sede>
+                <EquipoCasa>Camerun</EquipoCasa>
+                <EquipoVisita>Brasil</EquipoVisita>
+                
+                <GolesCasa goles="1">
+                    <Anotadores>
+                        <Anotador>
+                            <Nombre>Joel Matip</Nombre>
+                            <Minuto>26</Minuto>
+                        </Anotador>
+                    </Anotadores>
+                </GolesCasa>
+                
+                <GolesVisita goles="4">
+                    <Anotadores>
+                        <Anotador>
+                            <Nombre>Neymar Jr</Nombre>
+                            <Minuto>17</Minuto>
+                        </Anotador>
+                        <Anotador>
+                            <Nombre>Neymar Jr</Nombre>
+                            <Minuto>35</Minuto>
+                        </Anotador>
+                        <Anotador>
+                            <Nombre>Fred</Nombre>
+                            <Minuto>49</Minuto>
+                        </Anotador>
+                        <Anotador>
+                            <Nombre>Fernandinho</Nombre>
+                            <Minuto>84</Minuto>
+                        </Anotador>
+                    </Anotadores>
+                </GolesVisita>                
+            </Partido>                                       
+        </Encuentros>        
+    </Grupo> 
+       
+    <Grupo letra="B">        
+        <Equipos>
+            <Equipo>España</Equipo>
+            <Equipo>Holanda</Equipo>
+            <Equipo>Chile</Equipo>
+            <Equipo>Australia</Equipo>                          
+        </Equipos>        
+        
+        <Encuentros>            
+            <Partido>
+                <Fecha>23/6/14</Fecha>
+                <Hora>10:00 AM</Hora>
+                <Humedad>73%</Humedad>
+                <VelocidadViento>8 m/s</VelocidadViento>
+                <Temperatura>18ºC</Temperatura>
+                <CondicionClimatica>Soleado</CondicionClimatica>
+                <Sede>Arena da Baixada</Sede>
+                <EquipoCasa>Australia</EquipoCasa>
+                <EquipoVisita>España</EquipoVisita>                
+                <GolesCasa goles="0"/>                
+                <GolesVisita goles="3">
+                    <Anotadores>
+                        <Anotador>
+                            <Nombre>David Villa</Nombre>
+                            <Minuto>36</Minuto>
+                        </Anotador>
+                        <Anotador>
+                            <Nombre>Fernando Torres</Nombre>
+                            <Minuto>69</Minuto>
+                        </Anotador>
+                        <Anotador>
+                            <Nombre>Juan Mata</Nombre>
+                            <Minuto>82</Minuto>
+                        </Anotador>
+                    </Anotadores>
+                </GolesVisita>                
+            </Partido>            
+            
+            <Partido>
+                <Fecha>18/6/14</Fecha>
+                <Hora>1:00 PM</Hora>
+                <Humedad>74%</Humedad>
+                <VelocidadViento>14 m/s</VelocidadViento>
+                <Temperatura>26ºC</Temperatura>
+                <CondicionClimatica>Nuboso</CondicionClimatica>
+                <Sede>Estadio Maracana</Sede>
+                <EquipoCasa>España</EquipoCasa>
+                <EquipoVisita>Chile</EquipoVisita>                
+                <GolesCasa goles="0"/>                
+                <GolesVisita goles="2">
+                    <Anotadores>
+                        <Anotador>
+                            <Nombre>Eduardo Vargas</Nombre>
+                            <Minuto>20</Minuto>
+                        </Anotador>
+                        <Anotador>
+                            <Nombre>Charles Aranguiz</Nombre>
+                            <Minuto>43</Minuto>
+                        </Anotador>
+                    </Anotadores>
+                </GolesVisita>                
+            </Partido>            
+            
+            <Partido>
+                <Fecha>13/6/14</Fecha>
+                <Hora>4:00 PM</Hora>
+                <Humedad>55%</Humedad>
+                <VelocidadViento>14 m/s</VelocidadViento>
+                <Temperatura>29ºC</Temperatura>
+                <CondicionClimatica>Soleado</CondicionClimatica>
+                <Sede>Arena Pantanal</Sede>
+                <EquipoCasa>Chile</EquipoCasa>
+                <EquipoVisita>Australia</EquipoVisita>                
+                <GolesCasa goles="3">
+                    <Anotadores>
+                        <Anotador>
+                            <Nombre>Alexis Sanchez</Nombre>
+                            <Minuto>12</Minuto>
+                        </Anotador>
+                        <Anotador>
+                            <Nombre>Jorge Valdivia</Nombre>
+                            <Minuto>14</Minuto>
+                        </Anotador>
+                        <Anotador>
+                            <Nombre>Jean Beausejour</Nombre>
+                            <Minuto>90+2</Minuto>
+                        </Anotador>
+                    </Anotadores>
+                </GolesCasa>                
+                <GolesVisita goles="1">
+                    <Anotadores>
+                        <Anotador>
+                            <Nombre>Tim Cahill</Nombre>
+                            <Minuto>35</Minuto>
+                        </Anotador>
+                    </Anotadores>
+                </GolesVisita>                
+            </Partido>            
+            
+            <Partido>
+                <Fecha>23/6/14</Fecha>
+                <Hora>10:00 AM</Hora>
+                <Humedad>53%</Humedad>
+                <VelocidadViento>6 m/s</VelocidadViento>
+                <Temperatura>20ºC</Temperatura>
+                <CondicionClimatica>Parcialmente Nuboso</CondicionClimatica>
+                <Sede>Arena Corinthians</Sede>
+                <EquipoCasa>Holanda</EquipoCasa>
+                <EquipoVisita>Chile</EquipoVisita>                
+                <GolesCasa goles="2">
+                    <Anotadores>
+                        <Anotador>
+                            <Nombre>Leroy Fer</Nombre>
+                            <Minuto>77</Minuto>
+                        </Anotador>
+                        <Anotador>
+                            <Nombre>Memphis Depay</Nombre>
+                            <Minuto>90+2</Minuto>
+                        </Anotador>
+                    </Anotadores>
+                </GolesCasa>                
+                <GolesVisita goles="0"/>
+            </Partido>
+            
+            <Partido>
+                <Fecha>13/6/14</Fecha>
+                <Hora>1:00 PM</Hora>
+                <Humedad>87%</Humedad>
+                <VelocidadViento>12 m/s</VelocidadViento>
+                <Temperatura>27ºC</Temperatura>
+                <CondicionClimatica>Parcialmente Nuboso</CondicionClimatica>
+                <Sede>Arena Fonte Nova</Sede>
+                <EquipoCasa>España</EquipoCasa>
+                <EquipoVisita>Holanda</EquipoVisita>
+                
+                <GolesCasa goles="1">
+                    <Anotadores>
+                        <Anotador>
+                            <Nombre>Xabi Alonso</Nombre>
+                            <Minuto>27</Minuto>
+                        </Anotador>
+                    </Anotadores>
+                </GolesCasa>
+                
+                <GolesVisita goles="5">
+                    <Anotadores>
+                        <Anotador>
+                            <Nombre>Robin Van Persie</Nombre>
+                            <Minuto>44</Minuto>
+                        </Anotador>
+                        <Anotador>
+                            <Nombre>Arjen Robben</Nombre>
+                            <Minuto>53</Minuto>
+                        </Anotador>
+                        <Anotador>
+                            <Nombre>Stefan De Vrij</Nombre>
+                            <Minuto>65</Minuto>
+                        </Anotador>
+                        <Anotador>
+                            <Nombre>Robin Van Persie</Nombre>
+                            <Minuto>72</Minuto>
+                        </Anotador>
+                        <Anotador>
+                            <Nombre>Arjen Robben</Nombre>
+                            <Minuto>80</Minuto>
+                        </Anotador>
+                    </Anotadores>
+                </GolesVisita>                
+            </Partido>
+            
+            <Partido>
+                <Fecha>18/6/14</Fecha>
+                <Hora>10:00 AM</Hora>
+                <Humedad>65%</Humedad>
+                <VelocidadViento>15 m/s</VelocidadViento>
+                <Temperatura>14ºC</Temperatura>
+                <CondicionClimatica>Parcialmente Nuboso</CondicionClimatica>
+                <Sede>Estadio Beira-Rio</Sede>
+                <EquipoCasa>Australia</EquipoCasa>
+                <EquipoVisita>Holanda</EquipoVisita>
+                
+                <GolesCasa goles="2">
+                    <Anotadores>
+                        <Anotador>
+                            <Nombre>Tim Cahill</Nombre>
+                            <Minuto>21</Minuto>
+                        </Anotador>
+                        <Anotador>
+                            <Nombre>Mile Jedinak</Nombre>
+                            <Minuto>54</Minuto>
+                        </Anotador>
+                    </Anotadores>
+                </GolesCasa>
+                
+                <GolesVisita goles="3">
+                    <Anotadores>
+                        <Anotador>
+                            <Nombre>Arjen Robben</Nombre>
+                            <Minuto>20</Minuto>
+                        </Anotador>
+                        <Anotador>
+                            <Nombre>Robin Van Persie</Nombre>
+                            <Minuto>58</Minuto>
+                        </Anotador>
+                        <Anotador>
+                            <Nombre>Memphis Depay</Nombre>
+                            <Minuto>68</Minuto>
+                        </Anotador>
+                    </Anotadores>
+                </GolesVisita>                
+            </Partido>                                                                                                                                                                        
+        </Encuentros>        
+    </Grupo>
+    
+    <Grupo letra="C">
+        
+        <Equipos>
+            <Equipo>Colombia</Equipo>
+            <Equipo>Grecia</Equipo>
+            <Equipo>Costa de Marfil</Equipo>
+            <Equipo>Japon</Equipo>                          
+        </Equipos>
+        
+        <Encuentros>            
+            <Partido>
+                <Fecha>14/6/14</Fecha>
+                <Hora>7:00 PM</Hora>
+                <Humedad>77%</Humedad>
+                <VelocidadViento>10 m/s</VelocidadViento>
+                <Temperatura>26ºC</Temperatura>
+                <CondicionClimatica>Lluvioso</CondicionClimatica>
+                <Sede>Arena Pernambuco</Sede>
+                <EquipoCasa>Costa de Marfil</EquipoCasa>
+                <EquipoVisita>Japon</EquipoVisita>
+                
+                <GolesCasa goles="2">
+                    <Anotadores>
+                        <Anotador>
+                            <Nombre>Wilfried Bony</Nombre>
+                            <Minuto>64</Minuto>
+                        </Anotador>
+                        <Anotador>
+                            <Nombre>Gervinho</Nombre>
+                            <Minuto>66</Minuto>
+                        </Anotador>
+                    </Anotadores>
+                </GolesCasa>
+                
+                <GolesVisita goles="1">
+                    <Anotadores>
+                        <Anotador>
+                            <Nombre>Keisuke Honda</Nombre>
+                            <Minuto>16</Minuto>
+                        </Anotador>
+                    </Anotadores>
+                </GolesVisita>                
+            </Partido>
+            
+            <Partido>
+                <Fecha>24/6/14</Fecha>
+                <Hora>2:00 PM</Hora>
+                <Humedad>58%</Humedad>
+                <VelocidadViento>27 m/s</VelocidadViento>
+                <Temperatura>29ºC</Temperatura>
+                <CondicionClimatica>Soleado</CondicionClimatica>
+                <Sede>Estadio Castelao</Sede>
+                <EquipoCasa>Grecia</EquipoCasa>
+                <EquipoVisita>Costa de Marfil</EquipoVisita>
+                
+                <GolesCasa goles="2">
+                    <Anotadores>
+                        <Anotador>
+                            <Nombre>Andreas Samaris</Nombre>
+                            <Minuto>42</Minuto>
+                        </Anotador>
+                        <Anotador>
+                            <Nombre>Georgios Samaras</Nombre>
+                            <Minuto>90+3</Minuto>
+                        </Anotador>
+                    </Anotadores>
+                </GolesCasa>
+                
+                <GolesVisita goles="1">
+                    <Anotadores>
+                        <Anotador>
+                            <Nombre>Wilfried Bony</Nombre>
+                            <Minuto>74</Minuto>
+                        </Anotador>
+                    </Anotadores>
+                </GolesVisita>                
+            </Partido>
+            
+            <Partido>
+                <Fecha>19/6/14</Fecha>
+                <Hora>4:00 PM</Hora>
+                <Humedad>65%</Humedad>
+                <VelocidadViento>5 m/s</VelocidadViento>
+                <Temperatura>29ºC</Temperatura>
+                <CondicionClimatica>Parcialmente Nuboso</CondicionClimatica>
+                <Sede>Estadio das Dunas</Sede>
+                <EquipoCasa>Japon</EquipoCasa>
+                <EquipoVisita>Grecia</EquipoVisita>
+                
+                <GolesCasa goles="0"/>                
+                <GolesVisita goles="0"/>           
+            </Partido>
+            
+            <Partido>
+                <Fecha>14/6/14</Fecha>
+                <Hora>10:00 AM</Hora>
+                <Humedad>51%</Humedad>
+                <VelocidadViento>11 m/s</VelocidadViento>
+                <Temperatura>24ºC</Temperatura>
+                <CondicionClimatica>Parcialmente Nuboso</CondicionClimatica>
+                <Sede>Estadio Mineirao</Sede>
+                <EquipoCasa>Colombia</EquipoCasa>
+                <EquipoVisita>Grecia</EquipoVisita>
+                
+                <GolesCasa goles="3">
+                    <Anotadores>
+                        <Anotador>
+                            <Nombre>Pablo Armero</Nombre>
+                            <Minuto>5</Minuto>
+                        </Anotador>
+                        <Anotador>
+                            <Nombre>Teofilo Gutierrez</Nombre>
+                            <Minuto>58</Minuto>
+                        </Anotador>
+                        <Anotador>
+                            <Nombre>James Rodriguez</Nombre>
+                            <Minuto>90+3</Minuto>
+                        </Anotador>
+                    </Anotadores>
+                </GolesCasa>
+                
+                <GolesVisita goles="0"/>               
+            </Partido>
+            
+            <Partido>
+                <Fecha>19/6/14</Fecha>
+                <Hora>10:00 AM</Hora>
+                <Humedad>48%</Humedad>
+                <VelocidadViento>23 m/s</VelocidadViento>
+                <Temperatura>26ºC</Temperatura>
+                <CondicionClimatica>Parcialmente Nuboso</CondicionClimatica>
+                <Sede>Estadio Nacional</Sede>
+                <EquipoCasa>Colombia</EquipoCasa>
+                <EquipoVisita>Costa de Marfil</EquipoVisita>
+                
+                <GolesCasa goles="2">
+                    <Anotadores>
+                        <Anotador>
+                            <Nombre>James Rodriguez</Nombre>
+                            <Minuto>64</Minuto>
+                        </Anotador>
+                        <Anotador>
+                            <Nombre>Juan Quintero</Nombre>
+                            <Minuto>70</Minuto>
+                        </Anotador>
+                    </Anotadores>
+                </GolesCasa>
+                
+                <GolesVisita goles="1">
+                    <Anotadores>
+                        <Anotador>
+                            <Nombre>Gervinho</Nombre>
+                            <Minuto>73</Minuto>
+                        </Anotador>
+                    </Anotadores>
+                </GolesVisita>                
+            </Partido>
+            
+            <Partido>
+                <Fecha>24/6/14</Fecha>
+                <Hora>2:00 PM</Hora>
+                <Humedad>30%</Humedad>
+                <VelocidadViento>10 m/s</VelocidadViento>
+                <Temperatura>31ºC</Temperatura>
+                <CondicionClimatica>Soleado</CondicionClimatica>
+                <Sede>Arena Pantanal</Sede>
+                <EquipoCasa>Japon</EquipoCasa>
+                <EquipoVisita>Colombia</EquipoVisita>
+                
+                <GolesCasa goles="1">
+                    <Anotadores>
+                        <Anotador>
+                            <Nombre>Shinji Okazaki</Nombre>
+                            <Minuto>45+1</Minuto>
+                        </Anotador>
+                    </Anotadores>
+                </GolesCasa>
+                
+                <GolesVisita goles="4">
+                    <Anotadores>
+                        <Anotador>
+                            <Nombre>Juan Cuadrado</Nombre>
+                            <Minuto>17</Minuto>
+                        </Anotador>
+                        <Anotador>
+                            <Nombre>Jackson Martinez</Nombre>
+                            <Minuto>55</Minuto>
+                        </Anotador>
+                        <Anotador>
+                            <Nombre>Jackson Martinez</Nombre>
+                            <Minuto>82</Minuto>
+                        </Anotador>
+                        <Anotador>
+                            <Nombre>James Rodriguez</Nombre>
+                            <Minuto>90</Minuto>
+                        </Anotador>
+                    </Anotadores>
+                </GolesVisita>                
+            </Partido>                                                                                                                                                                              
+        </Encuentros>        
+    </Grupo>
+    
+    <Grupo letra="D">
+        
+        <Equipos>
+            <Equipo>Uruguay</Equipo>
+            <Equipo>Costa Rica</Equipo>
+            <Equipo>Inglaterra</Equipo>
+            <Equipo>Italia</Equipo>                          
+        </Equipos>
+        
+        <Encuentros>
+            <Partido>
+                <Fecha>14/6/14</Fecha>
+                <Hora>4:00 PM</Hora>
+                <Humedad>61%</Humedad>
+                <VelocidadViento>10 m/s</VelocidadViento>
+                <Temperatura>31ºC</Temperatura>
+                <CondicionClimatica>Parcialmente Nuboso</CondicionClimatica>
+                <Sede>Arena Amazonia</Sede>
+                <EquipoCasa>Inglaterra</EquipoCasa>
+                <EquipoVisita>Italia</EquipoVisita>
+                
+                <GolesCasa goles="1">
+                    <Anotadores>
+                        <Anotador>
+                            <Nombre>Daniel Sturridge</Nombre>
+                            <Minuto>37</Minuto>
+                        </Anotador>
+                    </Anotadores>
+                </GolesCasa>
+                
+                <GolesVisita goles="2">
+                    <Anotadores>
+                        <Anotador>
+                            <Nombre>Claudio Marchisio</Nombre>
+                            <Minuto>35</Minuto>
+                        </Anotador>
+                        <Anotador>
+                            <Nombre>Mario Balotelli</Nombre>
+                            <Minuto>50</Minuto>
+                        </Anotador>
+                    </Anotadores>
+                </GolesVisita>                
+            </Partido>
+            
+            <Partido>
+                <Fecha>24/6/14</Fecha>
+                <Hora>10:00 AM</Hora>
+                <Humedad>45%</Humedad>
+                <VelocidadViento>14 m/s</VelocidadViento>
+                <Temperatura>33ºC</Temperatura>
+                <CondicionClimatica>Parcialmente Nuboso</CondicionClimatica>
+                <Sede>Estadio das Dunas</Sede>
+                <EquipoCasa>Italia</EquipoCasa>
+                <EquipoVisita>Uruguay</EquipoVisita>
+                
+                <GolesCasa goles="0"/>
+                
+                <GolesVisita goles="1">
+                    <Anotadores>
+                        <Anotador>
+                            <Nombre>Diego Godin</Nombre>
+                            <Minuto>81</Minuto>
+                        </Anotador>
+                    </Anotadores>
+                </GolesVisita>                
+            </Partido>
+            
+            <Partido>
+                <Fecha>19/6/14</Fecha>
+                <Hora>1:00 PM</Hora>
+                <Humedad>77%</Humedad>
+                <VelocidadViento>18 m/s</VelocidadViento>
+                <Temperatura>12ºC</Temperatura>
+                <CondicionClimatica>Nuboso</CondicionClimatica>
+                <Sede>Arena Corinthians</Sede>
+                <EquipoCasa>Uruguay</EquipoCasa>
+                <EquipoVisita>Inglaterra</EquipoVisita>
+                
+                <GolesCasa goles="2">
+                    <Anotadores>
+                        <Anotador>
+                            <Nombre>Luis Suarez</Nombre>
+                            <Minuto>39</Minuto>
+                        </Anotador>
+                        <Anotador>
+                            <Nombre>Luis Suarez</Nombre>
+                            <Minuto>85</Minuto>
+                        </Anotador>
+                    </Anotadores>
+                </GolesCasa>
+                
+                <GolesVisita goles="0">
+                    <Anotadores>
+                        <Anotador>
+                            <Nombre>Wayne Rooney</Nombre>
+                            <Minuto>75</Minuto>
+                        </Anotador>
+                    </Anotadores>
+                </GolesVisita>                
+            </Partido>
+            
+            <Partido>
+                <Fecha>14/6/14</Fecha>
+                <Hora>1:00 PM</Hora>
+                <Humedad>58%</Humedad>
+                <VelocidadViento>19 m/s</VelocidadViento>
+                <Temperatura>30ºC</Temperatura>
+                <CondicionClimatica>Parcialmente Nuboso</CondicionClimatica>
+                <Sede>Estadio Castelao</Sede>
+                <EquipoCasa>Uruguay</EquipoCasa>
+                <EquipoVisita>Costa Rica</EquipoVisita>
+                
+                <GolesCasa goles="1">
+                    <Anotadores>
+                        <Anotador>
+                            <Nombre>Edinson Cavani</Nombre>
+                            <Minuto>24</Minuto>
+                        </Anotador>
+                    </Anotadores>
+                </GolesCasa>
+                
+                <GolesVisita goles="3">
+                    <Anotadores>
+                        <Anotador>
+                            <Nombre>Joel Campbell</Nombre>
+                            <Minuto>54</Minuto>
+                        </Anotador>
+                        <Anotador>
+                            <Nombre>Oscar Duarte</Nombre>
+                            <Minuto>57</Minuto>
+                        </Anotador>
+                        <Anotador>
+                            <Nombre>Marco Ureña</Nombre>
+                            <Minuto>84</Minuto>
+                        </Anotador>
+                    </Anotadores>
+                </GolesVisita>                
+            </Partido>
+            
+            <Partido>
+                <Fecha>20/6/14</Fecha>
+                <Hora>10:00 AM</Hora>
+                <Humedad>70%</Humedad>
+                <VelocidadViento>15 m/s</VelocidadViento>
+                <Temperatura>29ºC</Temperatura>
+                <CondicionClimatica>Parcialmente Nuboso</CondicionClimatica>
+                <Sede>Arena Pernambuco</Sede>
+                <EquipoCasa>Italia</EquipoCasa>
+                <EquipoVisita>Costa Rica</EquipoVisita>
+                
+                <GolesCasa goles="0"/>
+                
+                <GolesVisita goles="1">
+                    <Anotadores>
+                        <Anotador>
+                            <Nombre>Bryan Ruiz</Nombre>
+                            <Minuto>44</Minuto>
+                        </Anotador>
+                    </Anotadores>
+                </GolesVisita>                
+            </Partido>
+            
+            <Partido>
+                <Fecha>24/6/14</Fecha>
+                <Hora>10:00 AM</Hora>
+                <Humedad>44%</Humedad>
+                <VelocidadViento>3 m/s</VelocidadViento>
+                <Temperatura>24ºC</Temperatura>
+                <CondicionClimatica>Soleado</CondicionClimatica>
+                <Sede>Estadio Mineirao</Sede>
+                <EquipoCasa>Costa Rica</EquipoCasa>
+                <EquipoVisita>Inglaterra</EquipoVisita>
+                
+                <GolesCasa goles="0"/>                
+                <GolesVisita goles="0"/>         
+            </Partido>
+        </Encuentros>        
+    </Grupo>
+    
+    <Grupo letra="E">
+        
+        <Equipos>
+            <Equipo>Suiza</Equipo>
+            <Equipo>Ecuador</Equipo>
+            <Equipo>Francia</Equipo>
+            <Equipo>Honduras</Equipo>                          
+        </Equipos>
+        
+        <Encuentros>
+            <Partido>
+                <Fecha>20/6/14</Fecha>
+                <Hora>4:00 PM</Hora>
+                <Humedad>77%</Humedad>
+                <VelocidadViento>12 m/s</VelocidadViento>
+                <Temperatura>26ºC</Temperatura>
+                <CondicionClimatica>Parcialmente Nuboso</CondicionClimatica>
+                <Sede>Arena da Baixada</Sede>
+                <EquipoCasa>Honduras</EquipoCasa>
+                <EquipoVisita>Ecuador</EquipoVisita>
+                
+                <GolesCasa goles="1">
+                    <Anotadores>
+                        <Anotador>
+                            <Nombre>Carlo Costly</Nombre>
+                            <Minuto>31</Minuto>
+                        </Anotador>
+                    </Anotadores>
+                </GolesCasa>
+                
+                <GolesVisita goles="2">
+                    <Anotadores>
+                        <Anotador>
+                            <Nombre>Enner Valencia</Nombre>
+                            <Minuto>34</Minuto>
+                        </Anotador>
+                        <Anotador>
+                            <Nombre>Enner Valencia</Nombre>
+                            <Minuto>65</Minuto>
+                        </Anotador>
+                    </Anotadores>
+                </GolesVisita>                
+            </Partido>
+            
+            <Partido>
+                <Fecha>15/6/14</Fecha>
+                <Hora>10:00 AM</Hora>
+                <Humedad>61%</Humedad>
+                <VelocidadViento>21 m/s</VelocidadViento>
+                <Temperatura>24ºC</Temperatura>
+                <CondicionClimatica>Parcialmente Nuboso</CondicionClimatica>
+                <Sede>Estadio Nacional</Sede>
+                <EquipoCasa>Suiza</EquipoCasa>
+                <EquipoVisita>Ecuador</EquipoVisita>
+                
+                <GolesCasa goles="2">
+                    <Anotadores>
+                        <Anotador>
+                            <Nombre>Admir Mehmedi</Nombre>
+                            <Minuto>48</Minuto>
+                        </Anotador>
+                        <Anotador>
+                            <Nombre>Haris Seferovic</Nombre>
+                            <Minuto>90+3</Minuto>
+                        </Anotador>
+                    </Anotadores>
+                </GolesCasa>
+                
+                <GolesVisita goles="1">
+                    <Anotadores>
+                        <Anotador>
+                            <Nombre>Enner Valencia</Nombre>
+                            <Minuto>22</Minuto>
+                        </Anotador>
+                    </Anotadores>
+                </GolesVisita>                
+            </Partido>
+            
+            <Partido>
+                <Fecha>25/6/14</Fecha>
+                <Hora>2:00 PM</Hora>
+                <Humedad>88%</Humedad>
+                <VelocidadViento>8 m/s</VelocidadViento>
+                <Temperatura>26ºC</Temperatura>
+                <CondicionClimatica>Nuboso</CondicionClimatica>
+                <Sede>Arena Amazonia</Sede>
+                <EquipoCasa>Honduras</EquipoCasa>
+                <EquipoVisita>Suiza</EquipoVisita>
+                
+                <GolesCasa goles="0"/>                
+                <GolesVisita goles="3">
+                    <Anotadores>
+                        <Anotador>
+                            <Nombre>Xherdan Shaqiri</Nombre>
+                            <Minuto>6</Minuto>
+                        </Anotador>
+                        <Anotador>
+                            <Nombre>Xherdan Shaqiri</Nombre>
+                            <Minuto>31</Minuto>
+                        </Anotador>
+                        <Anotador>
+                            <Nombre>Xherdan Shaqiri</Nombre>
+                            <Minuto>71</Minuto>
+                        </Anotador>
+                    </Anotadores>
+                </GolesVisita>                
+            </Partido>
+            
+            <Partido>
+                <Fecha>20/6/14</Fecha>
+                <Hora>1:00 PM</Hora>
+                <Humedad>69%</Humedad>
+                <VelocidadViento>12 m/s</VelocidadViento>
+                <Temperatura>26ºC</Temperatura>
+                <CondicionClimatica>Parcialmente Nuboso</CondicionClimatica>
+                <Sede>Arena Fonte Nova</Sede>
+                <EquipoCasa>Suiza</EquipoCasa>
+                <EquipoVisita>Francia</EquipoVisita>
+                
+                <GolesCasa goles="2">
+                    <Anotadores>
+                        <Anotador>
+                            <Nombre>Blerim Dzemaili</Nombre>
+                            <Minuto>81</Minuto>
+                        </Anotador>
+                        <Anotador>
+                            <Nombre>Granit Xhaka</Nombre>
+                            <Minuto>87</Minuto>
+                        </Anotador>
+                    </Anotadores>
+                </GolesCasa>
+                
+                <GolesVisita goles="5">
+                    <Anotadores>
+                        <Anotador>
+                            <Nombre>Olivier Giroud</Nombre>
+                            <Minuto>17</Minuto>
+                        </Anotador>
+                        <Anotador>
+                            <Nombre>Blaise Matuidi</Nombre>
+                            <Minuto>18</Minuto>
+                        </Anotador>
+                        <Anotador>
+                            <Nombre>Mathieu Valbuena</Nombre>
+                            <Minuto>40</Minuto>
+                        </Anotador>
+                        <Anotador>
+                            <Nombre>Karim Benzema</Nombre>
+                            <Minuto>67</Minuto>
+                        </Anotador>
+                        <Anotador>
+                            <Nombre>Moussa Sissoko</Nombre>
+                            <Minuto>73</Minuto>
+                        </Anotador>
+                    </Anotadores>
+                </GolesVisita>                
+            </Partido>
+            
+            <Partido>
+                <Fecha>25/6/14</Fecha>
+                <Hora>2:00 PM</Hora>
+                <Humedad>48%</Humedad>
+                <VelocidadViento>15 m/s</VelocidadViento>
+                <Temperatura>28ºC</Temperatura>
+                <CondicionClimatica>Soleado</CondicionClimatica>
+                <Sede>Estadio Maracana</Sede>
+                <EquipoCasa>Ecuador</EquipoCasa>
+                <EquipoVisita>Francia</EquipoVisita>
+                
+                <GolesCasa goles="0"/>
+                <GolesVisita goles="0"/>               
+            </Partido>
+            
+            <Partido>
+                <Fecha>15/6/14</Fecha>
+                <Hora>1:00 PM</Hora>
+                <Humedad>78%</Humedad>
+                <VelocidadViento>19 m/s</VelocidadViento>
+                <Temperatura>18ºC</Temperatura>
+                <CondicionClimatica>Nuboso</CondicionClimatica>
+                <Sede>Estadio Beira-Rio</Sede>
+                <EquipoCasa>Francia</EquipoCasa>
+                <EquipoVisita>Honduras</EquipoVisita>
+                
+                <GolesCasa goles="3">
+                    <Anotadores>
+                        <Anotador>
+                            <Nombre>Karim Benzema</Nombre>
+                            <Minuto>45</Minuto>
+                        </Anotador>
+                        <Anotador>
+                            <Nombre>Noel Valladares (OG)</Nombre>
+                            <Minuto>48</Minuto>
+                        </Anotador>
+                        <Anotador>
+                            <Nombre>Karim Benzema</Nombre>
+                            <Minuto>72</Minuto>
+                        </Anotador>
+                    </Anotadores>
+                </GolesCasa>
+                
+                <GolesVisita goles="0"/>               
+            </Partido>
+        </Encuentros>        
+    </Grupo>
+    
+    <Grupo letra="F">
+        
+        <Equipos>
+            <Equipo>Argentina</Equipo>
+            <Equipo>Bosnia Herzegovina</Equipo>
+            <Equipo>Iran</Equipo>
+            <Equipo>Nigeria</Equipo>                          
+        </Equipos>
+        
+        <Encuentros>
+            
+            <Partido>
+                <Fecha>25/6/14</Fecha>
+                <Hora>10:00 AM</Hora>
+                <Humedad>76%</Humedad>
+                <VelocidadViento>10 m/s</VelocidadViento>
+                <Temperatura>25ºC</Temperatura>
+                <CondicionClimatica>Nuboso</CondicionClimatica>
+                <Sede>Arena Fonte Nova</Sede>
+                <EquipoCasa>Bosnia Herzegovina</EquipoCasa>
+                <EquipoVisita>Iran</EquipoVisita>
+                
+                <GolesCasa goles="3">
+                    <Anotadores>
+                        <Anotador>
+                            <Nombre>Edin Dzeko</Nombre>
+                            <Minuto>23</Minuto>
+                        </Anotador>
+                        <Anotador>
+                            <Nombre>Miralem Pjanic</Nombre>
+                            <Minuto>59</Minuto>
+                        </Anotador>
+                        <Anotador>
+                            <Nombre>Avdija Vrsajevic</Nombre>
+                            <Minuto>83</Minuto>
+                        </Anotador>
+                    </Anotadores>
+                </GolesCasa>
+                
+                <GolesVisita goles="1">
+                    <Anotadores>
+                        <Anotador>
+                            <Nombre>Reza Haghighi</Nombre>
+                            <Minuto>82</Minuto>
+                        </Anotador>
+                    </Anotadores>
+                </GolesVisita>                
+            </Partido>
+            
+            <Partido>
+                <Fecha>21/6/14</Fecha>
+                <Hora>4:00 PM</Hora>
+                <Humedad>55%</Humedad>
+                <VelocidadViento>7 m/s</VelocidadViento>
+                <Temperatura>29ºC</Temperatura>
+                <CondicionClimatica>Soleado</CondicionClimatica>
+                <Sede>Arena Pantanal</Sede>
+                <EquipoCasa>Nigeria</EquipoCasa>
+                <EquipoVisita>Bosnia Herzegovina</EquipoVisita>
+                
+                <GolesCasa goles="1">
+                    <Anotadores>
+                        <Anotador>
+                            <Nombre>Peter Odemwingie</Nombre>
+                            <Minuto>29</Minuto>
+                        </Anotador>
+                    </Anotadores>
+                </GolesCasa>
+                
+                <GolesVisita goles="0"/>                
+            </Partido>
+            
+            <Partido>
+                <Fecha>16/6/14</Fecha>
+                <Hora>1:00 PM</Hora>
+                <Humedad>68%</Humedad>
+                <VelocidadViento>8 m/s</VelocidadViento>
+                <Temperatura>21ºC</Temperatura>
+                <CondicionClimatica>Soleado</CondicionClimatica>
+                <Sede>Arena da Baixada</Sede>
+                <EquipoCasa>Iran</EquipoCasa>
+                <EquipoVisita>Nigeria</EquipoVisita>
+                
+                <GolesCasa goles="0"/>                
+                <GolesVisita goles="0"/>                
+            </Partido>
+            
+            <Partido>
+                <Fecha>25/6/14</Fecha>
+                <Hora>10:00 AM</Hora>
+                <Humedad>87%</Humedad>
+                <VelocidadViento>6 m/s</VelocidadViento>
+                <Temperatura>20ºC</Temperatura>
+                <CondicionClimatica>Nuboso</CondicionClimatica>
+                <Sede>Estadio Beira-Rio</Sede>
+                <EquipoCasa>Nigeria</EquipoCasa>
+                <EquipoVisita>Argentina</EquipoVisita>
+                
+                <GolesCasa goles="2">
+                    <Anotadores>
+                        <Anotador>
+                            <Nombre>Ahmed Musa</Nombre>
+                            <Minuto>4</Minuto>
+                        </Anotador>
+                        <Anotador>
+                            <Nombre>Ahmed Musa</Nombre>
+                            <Minuto>47</Minuto>
+                        </Anotador>
+                    </Anotadores>
+                </GolesCasa>
+                
+                <GolesVisita goles="3">
+                    <Anotadores>
+                        <Anotador>
+                            <Nombre>Lionel Messi</Nombre>
+                            <Minuto>3</Minuto>
+                        </Anotador>
+                        <Anotador>
+                            <Nombre>Lionel Messi</Nombre>
+                            <Minuto>45+1</Minuto>
+                        </Anotador>
+                        <Anotador>
+                            <Nombre>Marcos Rojo</Nombre>
+                            <Minuto>50</Minuto>
+                        </Anotador>
+                    </Anotadores>
+                </GolesVisita>                
+            </Partido>
+            
+            <Partido>
+                <Fecha>15/6/14</Fecha>
+                <Hora>4:00 PM</Hora>
+                <Humedad>69%</Humedad>
+                <VelocidadViento>10 m/s</VelocidadViento>
+                <Temperatura>25ºC</Temperatura>
+                <CondicionClimatica>Soleado</CondicionClimatica>
+                <Sede>Estadio Maracana</Sede>
+                <EquipoCasa>Argentina</EquipoCasa>
+                <EquipoVisita>Bosnia Herzegovina</EquipoVisita>
+                
+                <GolesCasa goles="2">
+                    <Anotadores>
+                        <Anotador>
+                            <Nombre>Sead Kolasinac (OG)</Nombre>
+                            <Minuto>3</Minuto>
+                        </Anotador>
+                        <Anotador>
+                            <Nombre>Lionel Messi</Nombre>
+                            <Minuto>65</Minuto>
+                        </Anotador>
+                    </Anotadores>
+                </GolesCasa>
+                
+                <GolesVisita goles="1">
+                    <Anotadores>
+                        <Anotador>
+                            <Nombre>Vedad Ibisevic</Nombre>
+                            <Minuto>85</Minuto>
+                        </Anotador>
+                    </Anotadores>
+                </GolesVisita>                
+            </Partido>
+            
+            <Partido>
+                <Fecha>21/6/14</Fecha>
+                <Hora>10:00 AM</Hora>
+                <Humedad>51%</Humedad>
+                <VelocidadViento>8 m/s</VelocidadViento>
+                <Temperatura>23ºC</Temperatura>
+                <CondicionClimatica>Parcialmente Nuboso</CondicionClimatica>
+                <Sede>Estadio Mineirao</Sede>
+                <EquipoCasa>Argentina</EquipoCasa>
+                <EquipoVisita>Iran</EquipoVisita>
+                
+                <GolesCasa goles="1">
+                    <Anotadores>
+                        <Anotador>
+                            <Nombre>Lionel Messi</Nombre>
+                            <Minuto>90+1</Minuto>
+                        </Anotador>
+                    </Anotadores>
+                </GolesCasa>
+                
+                <GolesVisita goles="0"/>               
+            </Partido>
+        </Encuentros>        
+    </Grupo>
+    
+    <Grupo letra="G">
+        
+        <Equipos>
+            <Equipo>Alemania</Equipo>
+            <Equipo>Portugal</Equipo>
+            <Equipo>Ghana</Equipo>
+            <Equipo>Estados Unidos</Equipo>                          
+        </Equipos>
+        
+        <Encuentros>
+            <Partido>
+                <Fecha>26/6/14</Fecha>
+                <Hora>10:00 AM</Hora>
+                <Humedad>50%</Humedad>
+                <VelocidadViento>21 m/s</VelocidadViento>
+                <Temperatura>26ºC</Temperatura>
+                <CondicionClimatica>Soleado</CondicionClimatica>
+                <Sede>Estadio Nacional</Sede>
+                <EquipoCasa>Portugal</EquipoCasa>
+                <EquipoVisita>Ghana</EquipoVisita>
+                
+                <GolesCasa goles="2">
+                    <Anotadores>
+                        <Anotador>
+                            <Nombre>John Boye (OG)</Nombre>
+                            <Minuto>31</Minuto>
+                        </Anotador>
+                        <Anotador>
+                            <Nombre>Cristiano Ronaldo</Nombre>
+                            <Minuto>80</Minuto>
+                        </Anotador>
+                    </Anotadores>
+                </GolesCasa>
+                
+                <GolesVisita goles="1">
+                    <Anotadores>
+                        <Anotador>
+                            <Nombre>Asamoah Gyan</Nombre>
+                            <Minuto>57</Minuto>
+                        </Anotador>
+                    </Anotadores>
+                </GolesVisita>
+            </Partido> 
+            
+            <Partido>
+                <Fecha>22/6/14</Fecha>
+                <Hora>4:00 PM</Hora>
+                <Humedad>66%</Humedad>
+                <VelocidadViento>8 m/s</VelocidadViento>
+                <Temperatura>30ºC</Temperatura>
+                <CondicionClimatica>Soleado</CondicionClimatica>
+                <Sede>Arena Amazonia</Sede>
+                <EquipoCasa>Estados Unidos</EquipoCasa>
+                <EquipoVisita>Portugal</EquipoVisita>
+                
+                <GolesCasa goles="2">
+                    <Anotadores>
+                        <Anotador>
+                            <Nombre>Jermaine Jones</Nombre>
+                            <Minuto>64</Minuto>
+                        </Anotador>
+                        <Anotador>
+                            <Nombre>Clint Dempsey</Nombre>
+                            <Minuto>81</Minuto>
+                        </Anotador>
+                    </Anotadores>
+                </GolesCasa>
+                
+                <GolesVisita goles="2">
+                    <Anotadores>
+                        <Anotador>
+                            <Nombre>Nani</Nombre>
+                            <Minuto>5</Minuto>
+                        </Anotador>
+                        <Anotador>
+                            <Nombre>Varela</Nombre>
+                            <Minuto>90+5</Minuto>
+                        </Anotador>
+                    </Anotadores>
+                </GolesVisita>
+            </Partido>
+            
+            <Partido>
+                <Fecha>16/6/14</Fecha>
+                <Hora>4:00 PM</Hora>
+                <Humedad>67%</Humedad>
+                <VelocidadViento>6 m/s</VelocidadViento>
+                <Temperatura>28ºC</Temperatura>
+                <CondicionClimatica>Parcialmente Nuboso</CondicionClimatica>
+                <Sede>Estadio das Dunas</Sede>
+                <EquipoCasa>Ghana</EquipoCasa>
+                <EquipoVisita>Estados Unidos</EquipoVisita>
+                
+                <GolesCasa goles="1">
+                    <Anotadores>
+                        <Anotador>
+                            <Nombre>Andre Ayew</Nombre>
+                            <Minuto>82</Minuto>
+                        </Anotador>
+                    </Anotadores>
+                </GolesCasa>
+                
+                <GolesVisita goles="2">
+                    <Anotadores>
+                        <Anotador>
+                            <Nombre>Clint Dempsey</Nombre>
+                            <Minuto>1</Minuto>
+                        </Anotador>
+                        <Anotador>
+                            <Nombre>John Brooks</Nombre>
+                            <Minuto>86</Minuto>
+                        </Anotador>
+                    </Anotadores>
+                </GolesVisita>
+            </Partido>
+            
+            <Partido>
+                <Fecha>26/6/14</Fecha>
+                <Hora>10:00 AM</Hora>
+                <Humedad>79%</Humedad>
+                <VelocidadViento>12 m/s</VelocidadViento>
+                <Temperatura>27ºC</Temperatura>
+                <CondicionClimatica>Lluvioso</CondicionClimatica>
+                <Sede>Arena Pernambuco</Sede>
+                <EquipoCasa>Estados Unidos</EquipoCasa>
+                <EquipoVisita>Alemania</EquipoVisita>
+                
+                <GolesCasa goles="0"/>                
+                <GolesVisita goles="1">
+                    <Anotadores>
+                        <Anotador>
+                            <Nombre>Thomas Muller</Nombre>
+                            <Minuto>55</Minuto>
+                        </Anotador>
+                    </Anotadores>
+                </GolesVisita>
+            </Partido>
+            
+            <Partido>
+                <Fecha>16/6/14</Fecha>
+                <Hora>10:00 AM</Hora>
+                <Humedad>79%</Humedad>
+                <VelocidadViento>13 m/s</VelocidadViento>
+                <Temperatura>26ºC</Temperatura>
+                <CondicionClimatica>Parcialmente Nuboso</CondicionClimatica>
+                <Sede>Arena Fonte Nova</Sede>
+                <EquipoCasa>Alemania</EquipoCasa>
+                <EquipoVisita>Portugal</EquipoVisita>
+                
+                <GolesCasa goles="4">
+                    <Anotadores>
+                        <Anotador>
+                            <Nombre>Thomas Muller</Nombre>
+                            <Minuto>12</Minuto>
+                        </Anotador>
+                        <Anotador>
+                            <Nombre>Mats Hummels</Nombre>
+                            <Minuto>32</Minuto>
+                        </Anotador>
+                        <Anotador>
+                            <Nombre>Thomas Muller</Nombre>
+                            <Minuto>45+1</Minuto>
+                        </Anotador>
+                        <Anotador>
+                            <Nombre>Thomas Muller</Nombre>
+                            <Minuto>78</Minuto>
+                        </Anotador>
+                    </Anotadores>
+                </GolesCasa>
+                
+                <GolesVisita goles="0"/>
+            </Partido>
+            
+            <Partido>
+                <Fecha>21/6/14</Fecha>
+                <Hora>1:00 PM</Hora>
+                <Humedad>61%</Humedad>
+                <VelocidadViento>19 m/s</VelocidadViento>
+                <Temperatura>29ºC</Temperatura>
+                <CondicionClimatica>Parcialmente Nuboso</CondicionClimatica>
+                <Sede>Estadio Castelao</Sede>
+                <EquipoCasa>Alemania</EquipoCasa>
+                <EquipoVisita>Ghana</EquipoVisita>
+                
+                <GolesCasa goles="2">
+                    <Anotadores>
+                        <Anotador>
+                            <Nombre>Mario Gotze</Nombre>
+                            <Minuto>51</Minuto>
+                        </Anotador>
+                        <Anotador>
+                            <Nombre>Miroslav Klose</Nombre>
+                            <Minuto>71</Minuto>
+                        </Anotador>
+                    </Anotadores>
+                </GolesCasa>
+                
+                <GolesVisita goles="2">
+                    <Anotadores>
+                        <Anotador>
+                            <Nombre>Andre Ayew</Nombre>
+                            <Minuto>54</Minuto>
+                        </Anotador>
+                        <Anotador>
+                            <Nombre>Asamoah Gyan</Nombre>
+                            <Minuto>63</Minuto>
+                        </Anotador>
+                    </Anotadores>
+                </GolesVisita>
+            </Partido>
+        </Encuentros>        
+    </Grupo>
+    
+    <Grupo letra="H">
+        
+        <Equipos>
+            <Equipo>Belgica</Equipo>
+            <Equipo>Argelia</Equipo>
+            <Equipo>Rusia</Equipo>
+            <Equipo>Corea</Equipo>                          
+        </Equipos>
+        
+        <Encuentros>
+            <Partido>
+                <Fecha>22/6/14</Fecha>
+                <Hora>1:00 PM</Hora>
+                <Humedad>57%</Humedad>
+                <VelocidadViento>5 m/s</VelocidadViento>
+                <Temperatura>21ºC</Temperatura>
+                <CondicionClimatica>Soleado</CondicionClimatica>
+                <Sede>Estadio Beira-Rio</Sede>
+                <EquipoCasa>Corea</EquipoCasa>
+                <EquipoVisita>Argelia</EquipoVisita>
+                
+                <GolesCasa goles="2">
+                    <Anotadores>
+                        <Anotador>
+                            <Nombre>Son Heung Min</Nombre>
+                            <Minuto>50</Minuto>
+                        </Anotador>
+                        <Anotador>
+                            <Nombre>Koo Ja Cheol</Nombre>
+                            <Minuto>72</Minuto>
+                        </Anotador>
+                    </Anotadores>
+                </GolesCasa>
+                
+                <GolesVisita goles="4">
+                    <Anotadores>
+                        <Anotador>
+                            <Nombre>Slimani</Nombre>
+                            <Minuto>26</Minuto>
+                        </Anotador>
+                        <Anotador>
+                            <Nombre>Halliche</Nombre>
+                            <Minuto>28</Minuto>
+                        </Anotador>
+                        <Anotador>
+                            <Nombre>Djabou</Nombre>
+                            <Minuto>38</Minuto>
+                        </Anotador>
+                        <Anotador>
+                            <Nombre>Brahimi</Nombre>
+                            <Minuto>62</Minuto>
+                        </Anotador>
+                    </Anotadores>
+                </GolesVisita>
+            </Partido>
+            
+            <Partido>
+                <Fecha>26/6/14</Fecha>
+                <Hora>2:00 PM</Hora>
+                <Humedad>57%</Humedad>
+                <VelocidadViento>6 m/s</VelocidadViento>
+                <Temperatura>23ºC</Temperatura>
+                <CondicionClimatica>Soleado</CondicionClimatica>
+                <Sede>Arena da Baixada</Sede>
+                <EquipoCasa>Argelia</EquipoCasa>
+                <EquipoVisita>Rusia</EquipoVisita>
+                
+                <GolesCasa goles="1">
+                    <Anotadores>
+                        <Anotador>
+                            <Nombre>Slimani</Nombre>
+                            <Minuto>60</Minuto>
+                        </Anotador>
+                    </Anotadores>
+                </GolesCasa>
+                
+                <GolesVisita goles="1">
+                    <Anotadores>
+                        <Anotador>
+                            <Nombre>Alexander Kokorin</Nombre>
+                            <Minuto>6</Minuto>
+                        </Anotador>
+                    </Anotadores>
+                </GolesVisita>
+            </Partido>
+            
+            <Partido>
+                <Fecha>17/6/14</Fecha>
+                <Hora>4:00 PM</Hora>
+                <Humedad>70%</Humedad>
+                <VelocidadViento>20 m/s</VelocidadViento>
+                <Temperatura>26ºC</Temperatura>
+                <CondicionClimatica>Soleado</CondicionClimatica>
+                <Sede>Arena Pantanal</Sede>
+                <EquipoCasa>Rusia</EquipoCasa>
+                <EquipoVisita>Corea</EquipoVisita>
+                
+                <GolesCasa goles="1">
+                    <Anotadores>
+                        <Anotador>
+                            <Nombre>Aleksandr Kerzhakov</Nombre>
+                            <Minuto>74</Minuto>
+                        </Anotador>
+                    </Anotadores>
+                </GolesCasa>
+                
+                <GolesVisita goles="1">
+                    <Anotadores>
+                        <Anotador>
+                            <Nombre>Lee Keun Ho</Nombre>
+                            <Minuto>68</Minuto>
+                        </Anotador>
+                    </Anotadores>
+                </GolesVisita>
+            </Partido>
+            
+            <Partido>
+                <Fecha>22/6/14</Fecha>
+                <Hora>10:00 AM</Hora>
+                <Humedad>73%</Humedad>
+                <VelocidadViento>8 m/s</VelocidadViento>
+                <Temperatura>24ºC</Temperatura>
+                <CondicionClimatica>Parcialmente Nuboso</CondicionClimatica>
+                <Sede>Estadio Maracana</Sede>
+                <EquipoCasa>Belgica</EquipoCasa>
+                <EquipoVisita>Rusia</EquipoVisita>
+                
+                <GolesCasa goles="1">
+                    <Anotadores>
+                        <Anotador>
+                            <Nombre>Divock Origi</Nombre>
+                            <Minuto>88</Minuto>
+                        </Anotador>
+                    </Anotadores>
+                </GolesCasa>                
+                <GolesVisita goles="0"/>
+            </Partido>
+            
+            <Partido>
+                <Fecha>17/6/14</Fecha>
+                <Hora>10:00 AM</Hora>
+                <Humedad>37%</Humedad>
+                <VelocidadViento>5 m/s</VelocidadViento>
+                <Temperatura>29ºC</Temperatura>
+                <CondicionClimatica>Parcialmente Nuboso</CondicionClimatica>
+                <Sede>Estadio Mineirao</Sede>
+                <EquipoCasa>Belgica</EquipoCasa>
+                <EquipoVisita>Argelia</EquipoVisita>
+                
+                <GolesCasa goles="2">
+                    <Anotadores>
+                        <Anotador>
+                            <Nombre>Marouane Fellaini</Nombre>
+                            <Minuto>70</Minuto>
+                        </Anotador>
+                        <Anotador>
+                            <Nombre>Dries Mertens</Nombre>
+                            <Minuto>80</Minuto>
+                        </Anotador>
+                    </Anotadores>
+                </GolesCasa>
+                
+                <GolesVisita goles="1">
+                    <Anotadores>
+                        <Anotador>
+                            <Nombre>Feghouli</Nombre>
+                            <Minuto>25</Minuto>
+                        </Anotador>
+                    </Anotadores>
+                </GolesVisita>
+            </Partido>
+            
+            <Partido>
+                <Fecha>26/6/14</Fecha>
+                <Hora>2:00 PM</Hora>
+                <Humedad>46%</Humedad>
+                <VelocidadViento>11 m/s</VelocidadViento>
+                <Temperatura>24ºC</Temperatura>
+                <CondicionClimatica>Soleado</CondicionClimatica>
+                <Sede>Arena Corinthians</Sede>
+                <EquipoCasa>Corea</EquipoCasa>
+                <EquipoVisita>Belgica</EquipoVisita>
+                
+                <GolesCasa goles="0"/>                
+                <GolesVisita goles="1">
+                    <Anotadores>
+                        <Anotador>
+                            <Nombre>Jan Vertonghen</Nombre>
+                            <Minuto>78</Minuto>
+                        </Anotador>
+                    </Anotadores>
+                </GolesVisita>
+            </Partido>
+        </Encuentros>        
+    </Grupo>    
+</Grupos>

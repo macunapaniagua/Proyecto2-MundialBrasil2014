@@ -13,12 +13,35 @@ package Codigo;
 public class ListaGrupos {
     
     private NodoGrupo raizGrupos;
+    private NodoGrupo nodoAuxiliar;
     
     /**
      * Metodo constructor de la lista de grupos
      */
     public ListaGrupos(){
         raizGrupos = null;
+        nodoAuxiliar = null;
+    }
+    
+    /**
+     * @return the nodoAuxiliar
+     */
+    public NodoGrupo getNodoActual() {
+        return nodoAuxiliar;
+    }
+    
+    /**
+     * Metodo para mover el nodoAuxiliar
+     */
+    public void moverNodoActual(){
+        nodoAuxiliar = nodoAuxiliar.getSiguiente();
+    }
+    
+    /**
+     * Metodo para cambiar el valor del nodo auxiliar al inicio de la lista
+     */
+    public void inicializarNodoActal() {
+        nodoAuxiliar = raizGrupos;
     }
     
     /**
@@ -63,6 +86,12 @@ public class ListaGrupos {
         
         while(nodoActual != null){
             System.out.println(nodoActual.getLetraGrupo());
+            String[] equipos = nodoActual.getpaisesIntegrantes();
+            System.out.print("\t");
+            for (int i = 0; i < equipos.length; i++) {
+                System.out.print(" - " + equipos[i]);                
+            }
+            System.out.println("");
             nodoActual = nodoActual.getSiguiente();
         }                
     }

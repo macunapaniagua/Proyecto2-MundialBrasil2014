@@ -13,7 +13,7 @@ package Codigo;
 public class NodoGrupo {
     
     private char letraGrupo;
-    private ListaEquipos listaPaisesIntegrantes;
+    private String[] paisesIntegrantes;
     private ListaCalendario listaDeEnfrentamientos;    
     
     private NodoGrupo siguiente;
@@ -31,9 +31,9 @@ public class NodoGrupo {
      * @param pSelecciones lista de equipos en el grupo
      * @param pEncuentros lista de partidos del grupo
      */
-    public NodoGrupo(char pLetra, ListaEquipos pSelecciones, ListaCalendario pEncuentros){
+    public NodoGrupo(char pLetra, String[] pSelecciones, ListaCalendario pEncuentros){
         letraGrupo = pLetra;
-        listaPaisesIntegrantes = pSelecciones;
+        paisesIntegrantes = pSelecciones;
         listaDeEnfrentamientos = pEncuentros;
         siguiente = null;
     }
@@ -55,15 +55,15 @@ public class NodoGrupo {
     /**
      * @return the listaPaisesIntegrantes
      */
-    public ListaEquipos getListaPaisesIntegrantes() {
-        return listaPaisesIntegrantes;
+    public String[] getpaisesIntegrantes() {
+        return paisesIntegrantes;
     }
 
     /**
-     * @param listaPaisesIntegrantes the listaPaisesIntegrantes to set
+     * @param pPaisesIntegrantes the pPaisesIntegrantes to set
      */
-    public void setListaPaisesIntegrantes(ListaEquipos listaPaisesIntegrantes) {
-        this.listaPaisesIntegrantes = listaPaisesIntegrantes;
+    public void setListaPaisesIntegrantes(String[] pPaisesIntegrantes) {
+        this.paisesIntegrantes = pPaisesIntegrantes;
     }
 
     /**

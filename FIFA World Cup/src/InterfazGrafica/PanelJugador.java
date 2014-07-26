@@ -5,6 +5,9 @@
  */
 package InterfazGrafica;
 
+import java.net.URISyntaxException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.ImageIcon;
 
 /**
@@ -19,10 +22,28 @@ public class PanelJugador extends javax.swing.JPanel {
     public PanelJugador() {
         initComponents();
     }
+    
+    public void setDatosEntrenador(String pNombreEntrenador, String pSeleccion){
+        
+        String foto = "/ImagenesJugadores/" + pSeleccion + "/C-" + pNombreEntrenador + ".png";
+        // Se establecen los datos del jugador o entrenador
+        Lbl_Foto.setIcon(new ImageIcon(getClass().getResource(foto)));
+        Lbl_Nombre.setText("Nombre: " + pNombreEntrenador);
+        Lbl_Puesto.setText("Entrenador");
+    }
 
-    public void setDatos(String pFoto, String pNombre, String pPosicion, int pNumero, int pEdad, int pEstatura) {
+    public void setDatosJugador(String pSeleccion, String pNombre, String pPosicion, int pNumero, int pEdad, int pEstatura) {
 
-        Lbl_Foto.setIcon(new ImageIcon(getClass().getResource(pFoto)));
+        String foto;
+        
+        if(pPosicion.equalsIgnoreCase("Delantero")){
+            // Se genera la ruta donde se encuentra la imagen del jugador
+            foto = "/ImagenesJugadores/" + pSeleccion + "/F-" + pNombre + ".png";
+        }else{
+            foto = "/ImagenesJugadores/" + pSeleccion + "/" + pPosicion.charAt(0) + "-" + pNombre + ".png";
+        }
+        // Se establecen los datos del jugador o entrenador
+        Lbl_Foto.setIcon(new ImageIcon(getClass().getResource(foto)));
         Lbl_Nombre.setText("Nombre: " + pNombre);
         Lbl_Puesto.setText(pPosicion);
         if (!pPosicion.equals("Entrenador")) 
@@ -49,17 +70,13 @@ public class PanelJugador extends javax.swing.JPanel {
         Lbl_Edad = new javax.swing.JLabel();
         Lbl_Estatura = new javax.swing.JLabel();
 
+        setBorder(javax.swing.BorderFactory.createEtchedBorder(javax.swing.border.EtchedBorder.RAISED));
+
         Lbl_Foto.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Fondos/Fuleco.jpg"))); // NOI18N
 
         Lbl_Nombre.setText("Nombre: Vicente Del Bosque");
 
         Lbl_Puesto.setText("Entrenador");
-
-        Lbl_Numero.setText("Numero: 23");
-
-        Lbl_Edad.setText("Edad: 67 años");
-
-        Lbl_Estatura.setText("Estatura: 180 cm");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -72,7 +89,7 @@ public class PanelJugador extends javax.swing.JPanel {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(Lbl_Numero, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(Lbl_Puesto, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(Lbl_Nombre, javax.swing.GroupLayout.DEFAULT_SIZE, 148, Short.MAX_VALUE)
+                    .addComponent(Lbl_Nombre, javax.swing.GroupLayout.DEFAULT_SIZE, 144, Short.MAX_VALUE)
                     .addComponent(Lbl_Edad, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(Lbl_Estatura, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
         );
