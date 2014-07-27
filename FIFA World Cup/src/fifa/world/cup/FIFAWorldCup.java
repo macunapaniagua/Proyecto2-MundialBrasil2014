@@ -18,7 +18,10 @@ import Codigo.NodoJugador;
 import Codigo.XMLReader;
 import InterfazGrafica.PanelEstadio;
 import InterfazGrafica.PanelJugador;
+import InterfazGrafica.PanelResultadoPartido;
+import InterfazGrafica.PanelResultadosGrupo;
 import InterfazGrafica.PanelSeleccion;
+import InterfazGrafica.VentanaEncuentros;
 import InterfazGrafica.VentanaEquipos;
 import InterfazGrafica.VentanaEstadios;
 import InterfazGrafica.VentanaJugadores;
@@ -100,90 +103,109 @@ public class FIFAWorldCup {
         
         
         
-        //********************* Ventana de Estadios ****************************
-        
-        
-        // Se carga la informacion de los estadios en el XMLReader y se asigna a la lista
+//////////////        //********************* Ventana de Estadios ****************************
+//////////////        
+//////////////        
+//////////////        // Se carga la informacion de los estadios en el XMLReader y se asigna a la lista
         estadiosMundial = lector.cargarListaDeEstadios();
-                            
-        // Se le cambia la ubicacion al Estadio Castelao
-        estadiosMundial.modificarUbicacionDelEstadio("Estadio Castelao", "Ciudad Quesada");
-        
-        // se crea una ventana de estadios
-        VentanaEstadios v = new VentanaEstadios(); 
-        
-        estadiosMundial.inicializarNodoActal();        
-        while(estadiosMundial.getNodoActual() != null){
-            
-            PanelEstadio estadio = new PanelEstadio();
-            estadio.setDatos(estadiosMundial.getNodoActual().getNombreEstadio(), 
-                    estadiosMundial.getNodoActual().getCiudad(), estadiosMundial.getNodoActual().getCapacidad());
-            v.agregarEstadio(estadio);
-            estadiosMundial.moverNodoActual();
-        }               
-        
-        v.setLocationRelativeTo(null);
-        v.setVisible(true);
-        
-        //*********************** Ventana de selecciones ***********************
-        
+//////////////                            
+//////////////        // Se le cambia la ubicacion al Estadio Castelao
+//////////////        estadiosMundial.modificarUbicacionDelEstadio("Estadio Castelao", "Ciudad Quesada");
+//////////////        
+//////////////        // se crea una ventana de estadios
+//////////////        VentanaEstadios v = new VentanaEstadios(); 
+//////////////        
+//////////////        estadiosMundial.inicializarNodoActal();        
+//////////////        while(estadiosMundial.getNodoActual() != null){
+//////////////            
+//////////////            PanelEstadio estadio = new PanelEstadio();
+//////////////            estadio.setDatos(estadiosMundial.getNodoActual().getNombreEstadio(), 
+//////////////                    estadiosMundial.getNodoActual().getCiudad(), estadiosMundial.getNodoActual().getCapacidad());
+//////////////            v.agregarEstadio(estadio);
+//////////////            estadiosMundial.moverNodoActual();
+//////////////        }               
+//////////////        
+//////////////        v.setLocationRelativeTo(null);
+//////////////        v.setVisible(true);
+//////////////        
+//////////////        //*********************** Ventana de selecciones ***********************
+//////////////        
         listaEquiposMundial = lector.cargarListaEquipos();
-        
-        VentanaEquipos ve = new VentanaEquipos();
-        
-        listaEquiposMundial.inicializarNodoActual();
-        
-        while(listaEquiposMundial.getNodoActual() != null){
-            
-            //System.out.println(listaEquiposMundial.getNodoActual().getNombreEquipo().toUpperCase());
-            
-            PanelSeleccion panel = new PanelSeleccion();
-            panel.setEquipo(listaEquiposMundial.getNodoActual().getNombreEquipo());
-            ve.setSeleccion(panel);
-            listaEquiposMundial.moverNodoActual();
-        }
-        
-        ve.setLocationRelativeTo(null);
-        ve.setVisible(true);
-        
-        // *********************** Lista de Jugadores **************************
-        
-        VentanaJugadores vj = new VentanaJugadores();
-        
-        String seleccion = "Belgica";
-        
-        vj.agregarBanderaYLogo(seleccion);
-        
-        listaDeJugadores = listaEquiposMundial.getNodoEquipo(seleccion).getJugadores();
-        
-        listaDeJugadores.inicializarNodoActual();
-        
-        while(listaDeJugadores.getNodoActual() != null){
-            
-            NodoJugador jugadorActual = listaDeJugadores.getNodoActual();
-            
-            //System.out.println(jugadorActual.getNombre().toUpperCase());
-            
-            PanelJugador player = new PanelJugador();
-            
-            player.setDatosJugador(seleccion, jugadorActual.getNombre(), jugadorActual.getPosicion(), 
-                    jugadorActual.getNumeroCamiseta(), jugadorActual.getEdad(), jugadorActual.getEstatura());
-            vj.AgregarJugador(player);
-            listaDeJugadores.moverNodoActual();
-        }
-        
-        PanelJugador entrenador = new PanelJugador();
-        entrenador.setDatosEntrenador(listaEquiposMundial.getNodoEquipo(seleccion).getNombreEntrenador(), seleccion);
-        vj.AgregarJugador(entrenador);
-        
-        vj.setLocationRelativeTo(null);
-        vj.setVisible(true);
+//////////////        
+//////////////        VentanaEquipos ve = new VentanaEquipos();
+//////////////        
+//////////////        listaEquiposMundial.inicializarNodoActual();
+//////////////        
+//////////////        while(listaEquiposMundial.getNodoActual() != null){
+//////////////            
+//////////////            //System.out.println(listaEquiposMundial.getNodoActual().getNombreEquipo().toUpperCase());
+//////////////            
+//////////////            PanelSeleccion panel = new PanelSeleccion();
+//////////////            panel.setEquipo(listaEquiposMundial.getNodoActual().getNombreEquipo());
+//////////////            ve.setSeleccion(panel);
+//////////////            listaEquiposMundial.moverNodoActual();
+//////////////        }
+//////////////        
+//////////////        ve.setLocationRelativeTo(null);
+//////////////        ve.setVisible(true);
+//////////////        
+//////////////        // *********************** Lista de Jugadores **************************
+//////////////        
+//////////////        VentanaJugadores vj = new VentanaJugadores();
+//////////////        
+//////////////        String seleccion = "BELGICA";
+//////////////        
+//////////////        vj.agregarBanderaYLogo(seleccion);
+//////////////        
+//////////////        listaDeJugadores = listaEquiposMundial.getNodoEquipo(seleccion).getJugadores();
+//////////////        
+//////////////        listaDeJugadores.inicializarNodoActual();
+//////////////        
+//////////////        while(listaDeJugadores.getNodoActual() != null){
+//////////////            
+//////////////            NodoJugador jugadorActual = listaDeJugadores.getNodoActual();
+//////////////            
+//////////////            //System.out.println(jugadorActual.getNombre().toUpperCase());
+//////////////            
+//////////////            PanelJugador player = new PanelJugador();
+//////////////            
+//////////////            player.setDatosJugador(seleccion, jugadorActual.getNombre(), jugadorActual.getPosicion(), 
+//////////////                    jugadorActual.getNumeroCamiseta(), jugadorActual.getEdad(), jugadorActual.getEstatura());
+//////////////            vj.AgregarJugador(player);
+//////////////            listaDeJugadores.moverNodoActual();
+//////////////        }
+//////////////        
+//////////////        PanelJugador entrenador = new PanelJugador();
+//////////////        entrenador.setDatosEntrenador(listaEquiposMundial.getNodoEquipo(seleccion).getNombreEntrenador(), seleccion);
+//////////////        vj.AgregarJugador(entrenador);
+//////////////        
+//////////////        vj.setLocationRelativeTo(null);
+//////////////        vj.setVisible(true);
         
         //////////////////////////////////////////////////////////////////////////////////////////////////////////////
         
         listaDeGrupos = lector.cargarCalendarioYGrupos(listaEquiposMundial, estadiosMundial);
         
-        listaDeGrupos.imprimirGrupos();
+        
+        VentanaEncuentros en = new VentanaEncuentros();
+        
+        listaDeGrupos.inicializarNodoActal();              
+        
+        while(listaDeGrupos.getNodoActual() != null){            
+            PanelResultadosGrupo grupo = new PanelResultadosGrupo();
+            
+            grupo.agregarPanelResultado(new PanelResultadoPartido());
+            grupo.agregarPanelResultado(new PanelResultadoPartido());
+            
+            
+            
+            grupo.setLetraGrupo(listaDeGrupos.getNodoActual().getLetraGrupo());
+            en.agregarGrupoYResultados(grupo);
+            listaDeGrupos.moverNodoActual();
+        }
+        
+        en.setLocationRelativeTo(null);
+        en.setVisible(true);
 
 ////        System.out.println("Jugador mas joven " + jugadores.getJugadorMasJoven().getNombre());        
 ////        jugadores.imprimirListaJugadores();
