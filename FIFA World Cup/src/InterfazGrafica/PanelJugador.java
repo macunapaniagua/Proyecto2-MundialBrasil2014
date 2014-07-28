@@ -22,9 +22,14 @@ public class PanelJugador extends javax.swing.JPanel {
     public PanelJugador() {
         initComponents();
     }
-    
-    public void setDatosEntrenador(String pNombreEntrenador, String pSeleccion){
-        
+
+    /**
+     * Metodo para cargar la informacion del entrenador en el panel
+     * @param pNombreEntrenador Nombre del entrenador
+     * @param pSeleccion Seleccion donde ejerce el puesto el entrenador
+     */
+    public void setDatosEntrenador(String pNombreEntrenador, String pSeleccion) {
+
         String foto = "/ImagenesJugadores/" + pSeleccion + "/C-" + pNombreEntrenador + ".png";
         // Se establecen los datos del jugador o entrenador
         Lbl_Foto.setIcon(new ImageIcon(getClass().getResource(foto)));
@@ -32,22 +37,34 @@ public class PanelJugador extends javax.swing.JPanel {
         Lbl_Puesto.setText("Entrenador");
     }
 
+    /**
+     * Metodo para cargar la informacion del jugador y mostrarle en el panel
+     * @param pSeleccion Seleccion en la que juega dicho jugador
+     * @param pNombre Nombre del jugador
+     * @param pPosicion Posicion de juego
+     * @param pNumero Numero de camiseta
+     * @param pEdad Edad del jugador
+     * @param pEstatura Estatura en centimetros
+     */
     public void setDatosJugador(String pSeleccion, String pNombre, String pPosicion, int pNumero, int pEdad, int pEstatura) {
 
         String foto;
-        
-        if(pPosicion.equalsIgnoreCase("Delantero")){
+
+        if (pPosicion.equalsIgnoreCase("Delantero")) {
             // Se genera la ruta donde se encuentra la imagen del jugador
             foto = "/ImagenesJugadores/" + pSeleccion + "/F-" + pNombre + ".png";
-        }else{
+        } else {
             foto = "/ImagenesJugadores/" + pSeleccion + "/" + pPosicion.charAt(0) + "-" + pNombre + ".png";
         }
         // Se establecen los datos del jugador o entrenador
-        Lbl_Foto.setIcon(new ImageIcon(getClass().getResource(foto)));
+        try {
+            Lbl_Foto.setIcon(new ImageIcon(getClass().getResource(foto)));
+        } catch (Exception e) {
+            Lbl_Foto.setIcon(new ImageIcon(getClass().getResource("/Imagenes/Fuleco.jpg")));
+        }
         Lbl_Nombre.setText("Nombre: " + pNombre);
         Lbl_Puesto.setText(pPosicion);
-        if (!pPosicion.equals("Entrenador")) 
-        {
+        if (!pPosicion.equals("Entrenador")) {
             Lbl_Numero.setText("Número: " + pNumero);
             Lbl_Edad.setText("Edad: " + pEdad + " años");
             Lbl_Estatura.setText("Estatura: " + pEstatura + " cm");
@@ -72,7 +89,7 @@ public class PanelJugador extends javax.swing.JPanel {
 
         setBorder(javax.swing.BorderFactory.createEtchedBorder(javax.swing.border.EtchedBorder.RAISED));
 
-        Lbl_Foto.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Fondos/Fuleco.jpg"))); // NOI18N
+        Lbl_Foto.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Fuleco.jpg"))); // NOI18N
 
         Lbl_Nombre.setText("Nombre: Vicente Del Bosque");
 

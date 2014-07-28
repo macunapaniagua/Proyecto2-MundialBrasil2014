@@ -11,12 +11,10 @@ import java.net.URISyntaxException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.List;         // |
-import java.util.logging.Level;
-import java.util.logging.Logger;
+import java.util.List;              // |
 import org.jdom2.Document;          // |\ Librerías
-import org.jdom2.Element;    // |/ JDOM
-import org.jdom2.JDOMException; // |
+import org.jdom2.Element;           // |/ JDOM
+import org.jdom2.JDOMException;     // |
 import org.jdom2.input.SAXBuilder;
 
 /**
@@ -99,7 +97,6 @@ public class XMLReader {
                 Element equipo = (Element) listEquipos.get(i);
                 // Se obtienen los datos del equipo actual
                 String nombreEquipo = equipo.getChildText("Nombre");
-                //System.out.println(nombreEquipo.toUpperCase());
                 String nombreEntrenador = equipo.getChildText("Entrenador");
                 int partidosJugados = Integer.parseInt(equipo.getChildTextTrim("PartidosJugados"));
                 int partidosGanados = Integer.parseInt(equipo.getChildTextTrim("PartidosGanados"));
@@ -121,7 +118,6 @@ public class XMLReader {
                     Element jugador = (Element) listJugadores.get(j);
                     // Se obtienen los datos del jugador 'j'
                     String nombreJugador = jugador.getChildText("Nombre");
-                    //System.out.println('\t' + nombreJugador);
                     int numeroCamiseta = Integer.parseInt(jugador.getChildTextTrim("NumeroCamiseta"));
                     String posicion = jugador.getChildTextTrim("Posicion");
                     int edad = Integer.parseInt(jugador.getChildTextTrim("Edad"));
@@ -191,7 +187,6 @@ public class XMLReader {
                 List selecciones = grupo.getChild("Equipos").getChildren("Equipo");
                 // Se crea un arreglo que almacenara las selecciones integrantes
                 String[] equiposDelGrupo = new String[selecciones.size()];                                               
-                System.out.print("GRUPO " + letraDelGrupo + "\n\tSelecciones: ");                                               
                 // RECORRE LA LISTA DE EQUIPOS PERTENECIENTES A ESTE GRUPO
                 for (int j = 0; j < selecciones.size(); j++) {
                     Element equipo = (Element)selecciones.get(j);                    
@@ -199,9 +194,7 @@ public class XMLReader {
                     String nombreDelEquipo = equipo.getText();
                     // Inserta nombre del equipo, en el arreglo de equiposDelGrupo
                     equiposDelGrupo[j] = nombreDelEquipo;
-                    System.out.print(nombreDelEquipo + " - ");
                 }
-                System.out.println("");
                                                 
                 // SE CREA LA LISTA QUE ALMACENARA LOS ENCUENTROS DEL GRUPO                
                 ListaCalendario calendarioDelGrupo = new ListaCalendario(); 
@@ -270,10 +263,6 @@ public class XMLReader {
                             }
                         }
                     }                    
-                    System.out.println("\n\tPARTIDO: " + fechaDelPartido + " " + horaDelPartido + " " + nombreEstadioSede);
-                    System.out.println("\t\t" + nombreEquipoCasa+" vs "+nombreEquipoVisita + " --> " + golesCasa+":"+golesVisita);
-                    System.out.println("Anotadores Casa: " + anotadoresCasa);
-                    System.out.println("Anotadores Visita: " + anotadoresVisita);                    
                     // Crea un nuevo nodo Encuentro y lo inserta en la lista de Calendario
                     NodoEncuentro encuentro = new NodoEncuentro(fechaYHora, humedad, velocidadViento, 
                             temperatura, estadioSede, equipoCasa, equipoVisita, golesCasa, golesVisita, 

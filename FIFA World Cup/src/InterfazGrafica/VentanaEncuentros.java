@@ -17,8 +17,14 @@ public class VentanaEncuentros extends javax.swing.JFrame {
      */
     public VentanaEncuentros() {
         initComponents();
+        jScrollPane1.getVerticalScrollBar().setUnitIncrement(6);
     }
     
+    /**
+     * Metodo para cargar el panel con el grupo y la informacion de todos los
+     * partidos que se realizaran para dicho grupo
+     * @param pGrupo Panel del grupo con los partidos
+     */
     public void agregarGrupoYResultados(PanelResultadosGrupo pGrupo){
         Pnl_Resultados.add(pGrupo);
         Pnl_Resultados.repaint();
@@ -39,6 +45,7 @@ public class VentanaEncuentros extends javax.swing.JFrame {
         Pnl_Resultados = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Calendario");
 
         jLabel1.setFont(new java.awt.Font("Dialog", 2, 18)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);

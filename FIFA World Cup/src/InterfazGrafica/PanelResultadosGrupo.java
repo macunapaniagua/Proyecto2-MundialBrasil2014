@@ -19,12 +19,20 @@ public class PanelResultadosGrupo extends javax.swing.JPanel {
         initComponents();
     }
     
+    /**
+     * Metodo utilizado para escribir la letra correspondiente del grupo
+     * @param pLetra Letra del grupo
+     */
     public void setLetraGrupo(char pLetra){
         Lbl_LetraDelGrupo.setText("GRUPO " + pLetra);
     }
     
-    public void agregarPanelResultado(PanelResultadoPartido pResultado){
-        jPanel1.add(pResultado);
+    /**
+     * Metodo para agregar al grupo un nuevo partido
+     * @param pEncuentro Encuentro del grupo
+     */
+    public void agregarPanelResultado(PanelResultadoPartido pEncuentro){
+        jPanel1.add(pEncuentro);
         this.repaint();
         this.revalidate();
     }

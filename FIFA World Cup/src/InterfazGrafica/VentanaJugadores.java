@@ -19,14 +19,24 @@ public class VentanaJugadores extends javax.swing.JFrame {
      */
     public VentanaJugadores() {
         initComponents();
+        jScrollPane1.getVerticalScrollBar().setUnitIncrement(6);
     }
     
+    /**
+     * Metodo utilizado para agregar un nuevo jugador en la ventana
+     * @param pJugadorNuevo Panel con el nuevo jugador
+     */
     public void AgregarJugador(PanelJugador pJugadorNuevo){
         jPanel1.add(pJugadorNuevo);
         jPanel1.repaint();
         jPanel1.revalidate();
     }
     
+    /**
+     * Metodo utilizado para cargar el nombre, la bandera y el logo de la federacion
+     * del equipo que se va a mostrar en la ventana
+     * @param pSeleccion Nombre del equipo
+     */
     public void agregarBanderaYLogo(String pSeleccion){
         Lbl_TituloJugadores.setText("Selección Nacional de " + pSeleccion);
         Lbl_NombreEquipo.setText(pSeleccion);
@@ -59,6 +69,7 @@ public class VentanaJugadores extends javax.swing.JFrame {
         Lbl_TituloJugadores.setFont(new java.awt.Font("Dialog", 3, 14)); // NOI18N
         Lbl_TituloJugadores.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         Lbl_TituloJugadores.setText("Jugadores");
+        Lbl_TituloJugadores.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
 
         Lbl_Bandera.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ImagenesBanderas/Costa Rica.png"))); // NOI18N
 
@@ -79,34 +90,30 @@ public class VentanaJugadores extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(Lbl_TituloJugadores, javax.swing.GroupLayout.PREFERRED_SIZE, 792, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(46, 46, 46)
-                                .addComponent(Lbl_Bandera)
-                                .addGap(6, 6, 6)
-                                .addComponent(Lbl_NombreEquipo)
-                                .addGap(499, 499, 499)
-                                .addComponent(Lbl_LogoFederacion)))
-                        .addGap(0, 101, Short.MAX_VALUE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jScrollPane1)))
+                .addContainerGap()
+                .addComponent(jScrollPane1)
                 .addContainerGap())
+            .addGroup(layout.createSequentialGroup()
+                .addGap(50, 50, 50)
+                .addComponent(Lbl_Bandera)
+                .addGap(18, 18, 18)
+                .addComponent(Lbl_NombreEquipo)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 673, Short.MAX_VALUE)
+                .addComponent(Lbl_LogoFederacion)
+                .addGap(50, 50, 50))
+            .addComponent(Lbl_TituloJugadores, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(Lbl_TituloJugadores, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(11, 11, 11)
+                .addComponent(Lbl_TituloJugadores, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(Lbl_Bandera, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(Lbl_NombreEquipo, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(Lbl_LogoFederacion))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 452, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 445, Short.MAX_VALUE)
                 .addGap(12, 12, 12))
         );
 

@@ -22,9 +22,42 @@ public class PanelResultadoPartido extends javax.swing.JPanel {
      */
     public PanelResultadoPartido() {
         initComponents();
-        marcador = "5:1";
         Lbl_Expandir.setIcon(expandir);
         Pnl_Informacion.setVisible(false);
+    }
+    
+    /**
+     * Metodo para agregar toda la informacion correspondiente al encuentro realizado
+     * @param pFecha Fecha y hora del encuentro realizado
+     * @param pCasa Equipo local
+     * @param pVisita Equipo visita
+     * @param pMarcador marcador del partido. Ejemplo 2:0
+     * @param pAnotadoresCasa Lista con los anotadores del equipo local
+     * @param pAnotadoresVisita Lista con los anotadores del equipo visite
+     * @param pHumedad Humedad del partido
+     * @param pTemperatura Temperatura del partido
+     * @param pVelocidadViento Velocidad del viento en el encuentro
+     * @param pEstadio Estadio donde se lleva acabo el partido
+     * @param pCondicionClimatica Condicion climatica. Ejemplo: Soleado, Lluvioso, etc
+     */
+    public void agregarEncuentro(String pFecha, String pCasa, String pVisita, String pMarcador,
+            String pAnotadoresCasa, String pAnotadoresVisita, String pHumedad, String pTemperatura,
+            String pVelocidadViento, String pEstadio, String pCondicionClimatica){
+        
+        marcador = pMarcador;        
+        Lbl_FechaYHora.setText(pFecha);
+        Lbl_EquipoCasa.setText(pCasa);
+        Lbl_EquipoVisita.setText(pVisita);
+        Txt_AnotadoresCasa.setText(pAnotadoresCasa);
+        Txt_AnotadoresVisita.setText(pAnotadoresVisita);
+        Lbl_Humedad.setText(pHumedad);
+        Lbl_Temperatura.setText(pTemperatura);
+        Lbl_VelocidadViento.setText(pVelocidadViento);
+        Lbl_Estadio.setText(pEstadio);
+        
+        Lbl_CondicionClimatica.setIcon(new ImageIcon(getClass().getResource("/Imagenes/"+pCondicionClimatica+".png")));
+        Lbl_BanderaCasa.setIcon(new ImageIcon(getClass().getResource("/ImagenesBanderas/"+pCasa+".png")));
+        Lbl_BanderaVisita.setIcon(new ImageIcon(getClass().getResource("/ImagenesBanderas/"+pVisita+".png")));
     }
 
     /**
@@ -45,6 +78,18 @@ public class PanelResultadoPartido extends javax.swing.JPanel {
         Lbl_VS = new javax.swing.JLabel();
         Lbl_Expandir = new javax.swing.JLabel();
         Pnl_Informacion = new javax.swing.JPanel();
+        Lbl_CondicionClimatica = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        Txt_AnotadoresCasa = new javax.swing.JTextArea();
+        jScrollPane3 = new javax.swing.JScrollPane();
+        Txt_AnotadoresVisita = new javax.swing.JTextArea();
+        jLabel1 = new javax.swing.JLabel();
+        Lbl_Temperatura = new javax.swing.JLabel();
+        Lbl_Humedad = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        Lbl_Estadio = new javax.swing.JLabel();
+        Lbl_VelocidadViento = new javax.swing.JLabel();
 
         setBorder(javax.swing.BorderFactory.createEtchedBorder(javax.swing.border.EtchedBorder.RAISED));
         setLayout(new javax.swing.BoxLayout(this, javax.swing.BoxLayout.PAGE_AXIS));
@@ -71,6 +116,7 @@ public class PanelResultadoPartido extends javax.swing.JPanel {
         Lbl_VS.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         Lbl_VS.setText("vs");
 
+        Lbl_Expandir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/expandir.png"))); // NOI18N
         Lbl_Expandir.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 Lbl_ExpandirMouseClicked(evt);
@@ -82,37 +128,44 @@ public class PanelResultadoPartido extends javax.swing.JPanel {
         Pnl_VersusLayout.setHorizontalGroup(
             Pnl_VersusLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(Pnl_VersusLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(Lbl_EquipoCasa, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(Lbl_EquipoVisita, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
-            .addGroup(Pnl_VersusLayout.createSequentialGroup()
                 .addGap(47, 47, 47)
                 .addComponent(Lbl_BanderaCasa)
-                .addGap(27, 27, 27)
-                .addComponent(Lbl_VS, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(27, 27, 27)
+                .addGap(10, 10, 10)
+                .addComponent(Lbl_VS, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(10, 10, 10)
                 .addComponent(Lbl_BanderaVisita)
                 .addGap(47, 47, 47))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, Pnl_VersusLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(Lbl_Expandir)
-                .addContainerGap())
             .addGroup(Pnl_VersusLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(Lbl_FechaYHora, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(Pnl_VersusLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(Pnl_VersusLayout.createSequentialGroup()
+                        .addComponent(Lbl_EquipoCasa, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(Lbl_EquipoVisita, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(Pnl_VersusLayout.createSequentialGroup()
+                        .addGap(272, 272, 272)
+                        .addComponent(Lbl_Expandir)
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addComponent(Lbl_FechaYHora, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
+
+        Pnl_VersusLayout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {Lbl_EquipoCasa, Lbl_EquipoVisita});
+
         Pnl_VersusLayout.setVerticalGroup(
             Pnl_VersusLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(Pnl_VersusLayout.createSequentialGroup()
                 .addComponent(Lbl_FechaYHora, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(8, 8, 8)
-                .addGroup(Pnl_VersusLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(Lbl_BanderaCasa)
-                    .addComponent(Lbl_BanderaVisita)
-                    .addComponent(Lbl_VS, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(Pnl_VersusLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(Pnl_VersusLayout.createSequentialGroup()
+                        .addGap(8, 8, 8)
+                        .addGroup(Pnl_VersusLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(Lbl_BanderaCasa)
+                            .addComponent(Lbl_BanderaVisita)))
+                    .addGroup(Pnl_VersusLayout.createSequentialGroup()
+                        .addGap(18, 18, 18)
+                        .addComponent(Lbl_VS)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(Pnl_VersusLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(Lbl_EquipoVisita, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -126,15 +179,104 @@ public class PanelResultadoPartido extends javax.swing.JPanel {
 
         Pnl_Informacion.setBackground(new java.awt.Color(153, 153, 153));
 
+        Lbl_CondicionClimatica.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Lluvioso.png"))); // NOI18N
+        Lbl_CondicionClimatica.setText("jLabel1");
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Viento32.png"))); // NOI18N
+
+        jScrollPane1.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+        jScrollPane1.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
+
+        Txt_AnotadoresCasa.setEditable(false);
+        Txt_AnotadoresCasa.setRows(5);
+        Txt_AnotadoresCasa.setFocusable(false);
+        jScrollPane1.setViewportView(Txt_AnotadoresCasa);
+
+        jScrollPane3.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+        jScrollPane3.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
+
+        Txt_AnotadoresVisita.setEditable(false);
+        Txt_AnotadoresVisita.setRows(5);
+        Txt_AnotadoresVisita.setFocusable(false);
+        jScrollPane3.setViewportView(Txt_AnotadoresVisita);
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Humedad.png"))); // NOI18N
+
+        Lbl_Temperatura.setText("15 m/s");
+
+        Lbl_Humedad.setText("28%");
+
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Temperatura.png"))); // NOI18N
+
+        Lbl_Estadio.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
+        Lbl_Estadio.setText("Arena Pernambuco");
+
+        Lbl_VelocidadViento.setText("28 m/s");
+
         javax.swing.GroupLayout Pnl_InformacionLayout = new javax.swing.GroupLayout(Pnl_Informacion);
         Pnl_Informacion.setLayout(Pnl_InformacionLayout);
         Pnl_InformacionLayout.setHorizontalGroup(
             Pnl_InformacionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 311, Short.MAX_VALUE)
+            .addGroup(Pnl_InformacionLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jScrollPane3)
+                .addContainerGap())
+            .addGroup(Pnl_InformacionLayout.createSequentialGroup()
+                .addGap(43, 43, 43)
+                .addGroup(Pnl_InformacionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel5)
+                    .addComponent(jLabel1)
+                    .addComponent(jLabel2))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(Pnl_InformacionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(Lbl_Humedad)
+                    .addComponent(Lbl_Temperatura)
+                    .addComponent(Lbl_VelocidadViento))
+                .addGroup(Pnl_InformacionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(Pnl_InformacionLayout.createSequentialGroup()
+                        .addGap(33, 33, 33)
+                        .addComponent(Lbl_Estadio, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(29, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, Pnl_InformacionLayout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(Lbl_CondicionClimatica, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(46, 46, 46))))
         );
         Pnl_InformacionLayout.setVerticalGroup(
             Pnl_InformacionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 252, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, Pnl_InformacionLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(Pnl_InformacionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jScrollPane3)
+                    .addComponent(jScrollPane1))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(Pnl_InformacionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(Pnl_InformacionLayout.createSequentialGroup()
+                        .addGap(12, 12, 12)
+                        .addComponent(Lbl_CondicionClimatica, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(Lbl_Estadio, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(Pnl_InformacionLayout.createSequentialGroup()
+                        .addGroup(Pnl_InformacionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel5)
+                            .addGroup(Pnl_InformacionLayout.createSequentialGroup()
+                                .addGap(8, 8, 8)
+                                .addComponent(Lbl_Temperatura)))
+                        .addGroup(Pnl_InformacionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addGroup(Pnl_InformacionLayout.createSequentialGroup()
+                                .addGap(11, 11, 11)
+                                .addComponent(jLabel1))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, Pnl_InformacionLayout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(Lbl_Humedad)
+                                .addGap(11, 11, 11)))
+                        .addGap(11, 11, 11)
+                        .addGroup(Pnl_InformacionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel2)
+                            .addComponent(Lbl_VelocidadViento))))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         add(Pnl_Informacion);
@@ -155,12 +297,24 @@ public class PanelResultadoPartido extends javax.swing.JPanel {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel Lbl_BanderaCasa;
     private javax.swing.JLabel Lbl_BanderaVisita;
+    private javax.swing.JLabel Lbl_CondicionClimatica;
     private javax.swing.JLabel Lbl_EquipoCasa;
     private javax.swing.JLabel Lbl_EquipoVisita;
+    private javax.swing.JLabel Lbl_Estadio;
     private javax.swing.JLabel Lbl_Expandir;
     private javax.swing.JLabel Lbl_FechaYHora;
+    private javax.swing.JLabel Lbl_Humedad;
+    private javax.swing.JLabel Lbl_Temperatura;
     private javax.swing.JLabel Lbl_VS;
+    private javax.swing.JLabel Lbl_VelocidadViento;
     private javax.swing.JPanel Pnl_Informacion;
     private javax.swing.JPanel Pnl_Versus;
+    private javax.swing.JTextArea Txt_AnotadoresCasa;
+    private javax.swing.JTextArea Txt_AnotadoresVisita;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane3;
     // End of variables declaration//GEN-END:variables
 }

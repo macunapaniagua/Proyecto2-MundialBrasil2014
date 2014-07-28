@@ -287,7 +287,6 @@ public class ListaJugadores {
             if (nodoActual.getNombre().equalsIgnoreCase(pNombre)) {
                 // Encontro el jugador. Cambia la estatura y retorna true
                 nodoActual.setEstatura(pEstaturaNueva);
-                System.out.println(pEstaturaNueva);
                 return true;
             } else {
                 // No encontro el jugador. Retorna false

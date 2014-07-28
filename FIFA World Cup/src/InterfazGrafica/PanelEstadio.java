@@ -32,7 +32,11 @@ public class PanelEstadio extends javax.swing.JPanel {
         // Se crea la ruta de la imagen del estadio
         String rutaImagen = "/ImagenesEstadios/"+pNombreEstadio+".jpg";
         // Se establece la imagen, el nombre, la ciudad y la capacidad del estadio.
-        Lbl_Imagen.setIcon(new ImageIcon(getClass().getResource(rutaImagen)));
+        try{
+            Lbl_Imagen.setIcon(new ImageIcon(getClass().getResource(rutaImagen)));
+        }catch(Exception e){
+            Lbl_Imagen.setIcon(new ImageIcon(getClass().getResource("/Imagenes/EstadioDefault.png")));
+        }
         Lbl_NombreEstadio.setText("Estadio:  " + pNombreEstadio);
         Lbl_CiudadEstadio.setText("Ciudad:  " + pCiudad);
         Lbl_CapacidadEstadio.setText(pCapacidad + " Personas");
