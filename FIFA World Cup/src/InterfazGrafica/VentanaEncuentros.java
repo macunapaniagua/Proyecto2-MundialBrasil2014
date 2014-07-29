@@ -44,7 +44,7 @@ public class VentanaEncuentros extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         Pnl_Resultados = new javax.swing.JPanel();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Calendario");
 
         jLabel1.setFont(new java.awt.Font("Dialog", 2, 18)); // NOI18N

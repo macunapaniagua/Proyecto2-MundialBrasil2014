@@ -86,10 +86,10 @@ public class ListaGrupos {
         
         while(nodoActual != null){
             System.out.println(nodoActual.getLetraGrupo());
-            String[] equipos = nodoActual.getpaisesIntegrantes();
+            NodoEquipo[] equipos = nodoActual.getpaisesIntegrantes();
             System.out.print("\t");
             for (int i = 0; i < equipos.length; i++) {
-                System.out.print(" - " + equipos[i]);                
+                System.out.print(" - " + equipos[i].getNombreEquipo());                
             }
             System.out.println("");
             nodoActual = nodoActual.getSiguiente();

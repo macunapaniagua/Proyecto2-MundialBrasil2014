@@ -186,12 +186,12 @@ public class XMLReader {
                 // Se obtine la lista de los equipos que conforma el grupo
                 List selecciones = grupo.getChild("Equipos").getChildren("Equipo");
                 // Se crea un arreglo que almacenara las selecciones integrantes
-                String[] equiposDelGrupo = new String[selecciones.size()];                                               
+                NodoEquipo[] equiposDelGrupo = new NodoEquipo[selecciones.size()];                                               
                 // RECORRE LA LISTA DE EQUIPOS PERTENECIENTES A ESTE GRUPO
                 for (int j = 0; j < selecciones.size(); j++) {
                     Element equipo = (Element)selecciones.get(j);                    
                     // Obtiene el nombre del equipo 'j'
-                    String nombreDelEquipo = equipo.getText();
+                    NodoEquipo nombreDelEquipo = pEquipos.getNodoEquipo(equipo.getText());
                     // Inserta nombre del equipo, en el arreglo de equiposDelGrupo
                     equiposDelGrupo[j] = nombreDelEquipo;
                 }
