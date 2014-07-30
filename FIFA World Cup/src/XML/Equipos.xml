@@ -1052,7 +1052,7 @@ and open the template in the editor.
                 <Posicion> Mediocampista </Posicion>
                 <Edad> 29 </Edad>
                 <Estatura> 179 </Estatura>
-                <Goles>1</Goles>                
+                <Goles>0</Goles>                
             </Jugador>
             <Jugador>
                 <Nombre>Marcelo</Nombre>

@@ -17,6 +17,7 @@ import Codigo.NodoGrupo;
 import Codigo.NodoJugador;
 import Codigo.XMLReader;
 import InterfazGrafica.PanelEstadio;
+import InterfazGrafica.PanelGoleador;
 import InterfazGrafica.PanelJugador;
 import InterfazGrafica.PanelPosiciones;
 import InterfazGrafica.PanelResultadoPartido;
@@ -25,11 +26,15 @@ import InterfazGrafica.PanelSeleccion;
 import InterfazGrafica.VentanaEncuentros;
 import InterfazGrafica.VentanaEquipos;
 import InterfazGrafica.VentanaEstadios;
+import InterfazGrafica.VentanaGoleadores;
 import InterfazGrafica.VentanaJugadores;
 import InterfazGrafica.VentanaPosiciones;
 import java.text.ParsePosition;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
+import java.util.Vector;
 import javax.swing.JFrame;
 
 /**
@@ -107,18 +112,17 @@ public class FIFAWorldCup {
 
         VentanaJugadores vj = new VentanaJugadores();
 
-        String seleccion = "portugal";
+        String seleccion = "Costa Rica";
 
         listaDeJugadores = listaEquiposMundial.getNodoEquipo(seleccion).getJugadores();
         // ESTO ES PARA QUE EL NOMBRE DEL EQUIPO LO MUESTRE COMO ESTA EN EL XML, NO EN MINUSCULA
         vj.agregarBanderaYLogo(listaEquiposMundial.getNodoEquipo(seleccion).getNombreEquipo());
 
-        listaDeJugadores.cambiarNombreJugador("Nani", "Mario");
-        listaDeJugadores.cambiarNumero("Mario", 24);
-        listaDeJugadores.cambiarEstaturaJugador("Mario", 178);
-        listaDeJugadores.cambiarPosicionJugador("Mario", "Delantero");
-        listaDeJugadores.cambiarEdadJugador("Mario", 23);
-
+//////////        listaDeJugadores.cambiarNombreJugador("Nani", "Mario");
+//////////        listaDeJugadores.cambiarNumero("Mario", 24);
+//////////        listaDeJugadores.cambiarEstaturaJugador("Mario", 178);
+//////////        listaDeJugadores.cambiarPosicionJugador("Mario", "Delantero");
+//////////        listaDeJugadores.cambiarEdadJugador("Mario", 23);
         listaDeJugadores.inicializarNodoActual();
 
         while (listaDeJugadores.getNodoActual() != null) {
@@ -142,7 +146,7 @@ public class FIFAWorldCup {
         vj.setVisible(true);
 
         // *********************** JUGADOR MAS JOVEN DE UN EQUIPO **************
-        String EquipoDeJugadorAConsultar = "Alemania";
+        String EquipoDeJugadorAConsultar = "Costa Rica";
 
         NodoJugador jugadorMasJoven = listaEquiposMundial.getNodoEquipo(EquipoDeJugadorAConsultar).getJugadores().getJugadorMasJoven();
         NodoJugador jugadorMasViejo = listaEquiposMundial.getNodoEquipo(EquipoDeJugadorAConsultar).getJugadores().getJugadorMasViejo();
@@ -249,15 +253,74 @@ public class FIFAWorldCup {
 
             PanelPosiciones pos = new PanelPosiciones();
             pos.setEquipos(listaDeGrupos.getNodoActual().getLetraGrupo(), selecciones);
-            
+
             tabla.agregarTablaDeGrupo(pos);
-            
+
             listaDeGrupos.moverNodoActual();
 
         }
 
         tabla.setLocationRelativeTo(null);
         tabla.setVisible(true);
-    }
 
+        // *********************** Metodo Goleadores *******************************
+        VentanaGoleadores goleo = new VentanaGoleadores();
+
+        NodoJugador[] listaGoleadores = {null, null, null, null, null};
+        String[] listaSelecciones = {"", "", "", "", ""};
+
+        listaEquiposMundial.inicializarNodoActual();
+        
+        while(listaEquiposMundial.getNodoActual() != null){
+            
+            String seleccionActual = listaEquiposMundial.getNodoActual().getNombreEquipo();
+            
+            ListaJugadores jugadores = listaEquiposMundial.getNodoActual().getJugadores();
+            
+            jugadores.inicializarNodoActual();
+            
+            while(jugadores.getNodoActual() != null){
+                
+                NodoJugador jugadorAnalizado = jugadores.getNodoActual();
+                
+                String seleccionDelJugador = seleccionActual;
+                
+                for (int i = 0; i < listaGoleadores.length; i++) {
+                    
+                    if(listaGoleadores[i] == null){
+                        listaGoleadores[i] = jugadorAnalizado;
+                        listaSelecciones[i] = seleccionDelJugador;
+                        break;
+                    }
+                    else if(listaGoleadores[i].getCantidadGolesAnotados() < jugadorAnalizado.getCantidadGolesAnotados())
+                    {
+                        NodoJugador jugadorAux = listaGoleadores[i];
+                        listaGoleadores[i] = jugadorAnalizado;
+                        jugadorAnalizado = jugadorAux;
+                        
+                        String seleccionAux = listaSelecciones[i];
+                        listaSelecciones[i] = seleccionDelJugador;
+                        seleccionDelJugador = seleccionAux;                        
+                    }                    
+                }                               
+                jugadores.moverNodoActual();
+            }                        
+            listaEquiposMundial.moverNodoActual();                                                                        
+        } 
+        
+        for (int i = 0; i < listaGoleadores.length; i++) {
+            
+            String seleccionDelGoleador = listaSelecciones[i];
+            String nombreGoleador = listaGoleadores[i].getNombre();
+            int cantidadGoles = listaGoleadores[i].getCantidadGolesAnotados();
+            
+            PanelGoleador goleadoresTorneo = new PanelGoleador();
+            goleadoresTorneo.setGoleadores(seleccionDelGoleador, nombreGoleador, cantidadGoles);
+            
+            goleo.agregarGoleador(goleadoresTorneo);
+        }
+        
+        goleo.setLocationRelativeTo(null);
+        goleo.setVisible(true);
+    }
 }
