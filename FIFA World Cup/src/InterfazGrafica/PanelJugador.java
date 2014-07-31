@@ -57,7 +57,7 @@ public class PanelJugador extends javax.swing.JPanel {
         try {
             Lbl_Foto.setIcon(new ImageIcon(getClass().getResource(foto)));
         } catch (Exception e) {
-            Lbl_Foto.setIcon(new ImageIcon(getClass().getResource("/Imagenes/Fuleco.jpg")));
+            Lbl_Foto.setIcon(new ImageIcon(getClass().getResource("/Imagenes/Fuleco.png")));
         }
         Lbl_Nombre.setText("Nombre: " + pNombre);
         Lbl_Puesto.setText(pPosicion);
@@ -85,8 +85,6 @@ public class PanelJugador extends javax.swing.JPanel {
         Lbl_Estatura = new javax.swing.JLabel();
 
         setBorder(javax.swing.BorderFactory.createEtchedBorder(javax.swing.border.EtchedBorder.RAISED));
-
-        Lbl_Foto.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Fuleco.jpg"))); // NOI18N
 
         Lbl_Nombre.setText("Nombre: Vicente Del Bosque");
 

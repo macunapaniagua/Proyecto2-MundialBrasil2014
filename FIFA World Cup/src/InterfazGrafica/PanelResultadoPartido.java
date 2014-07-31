@@ -138,16 +138,17 @@ public class PanelResultadoPartido extends javax.swing.JPanel {
             .addGroup(Pnl_VersusLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(Pnl_VersusLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(Lbl_FechaYHora, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(Pnl_VersusLayout.createSequentialGroup()
-                        .addComponent(Lbl_EquipoCasa, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(Lbl_EquipoVisita, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE))
-                    .addGroup(Pnl_VersusLayout.createSequentialGroup()
-                        .addGap(272, 272, 272)
-                        .addComponent(Lbl_Expandir)
-                        .addGap(0, 0, Short.MAX_VALUE))
-                    .addComponent(Lbl_FechaYHora, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGroup(Pnl_VersusLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(Pnl_VersusLayout.createSequentialGroup()
+                                .addComponent(Lbl_EquipoCasa, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(Lbl_EquipoVisita, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(Pnl_VersusLayout.createSequentialGroup()
+                                .addGap(272, 272, 272)
+                                .addComponent(Lbl_Expandir)))
+                        .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
 
@@ -188,6 +189,7 @@ public class PanelResultadoPartido extends javax.swing.JPanel {
         jScrollPane1.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
 
         Txt_AnotadoresCasa.setEditable(false);
+        Txt_AnotadoresCasa.setFont(new java.awt.Font("Microsoft Tai Le", 0, 12)); // NOI18N
         Txt_AnotadoresCasa.setRows(5);
         Txt_AnotadoresCasa.setFocusable(false);
         jScrollPane1.setViewportView(Txt_AnotadoresCasa);
@@ -196,6 +198,7 @@ public class PanelResultadoPartido extends javax.swing.JPanel {
         jScrollPane3.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
 
         Txt_AnotadoresVisita.setEditable(false);
+        Txt_AnotadoresVisita.setFont(new java.awt.Font("Microsoft Tai Le", 0, 12)); // NOI18N
         Txt_AnotadoresVisita.setRows(5);
         Txt_AnotadoresVisita.setFocusable(false);
         jScrollPane3.setViewportView(Txt_AnotadoresVisita);

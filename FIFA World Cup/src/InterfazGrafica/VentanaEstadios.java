@@ -16,7 +16,8 @@ public class VentanaEstadios extends javax.swing.JFrame {
      * Creates new form VentanaEstadios
      */
     public VentanaEstadios() {
-        initComponents();        
+        initComponents(); 
+        setLocationRelativeTo(null);
     }
 
     /**

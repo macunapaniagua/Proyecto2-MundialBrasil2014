@@ -42,8 +42,9 @@ public class VentanaGoleadores extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         Pnl_Goleadores = new javax.swing.JPanel();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Goleadores Brasil 2014");
+        setResizable(false);
 
         jLabel1.setFont(new java.awt.Font("Tempus Sans ITC", 3, 14)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);

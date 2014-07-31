@@ -17,6 +17,7 @@ public class VentanaEncuentros extends javax.swing.JFrame {
      */
     public VentanaEncuentros() {
         initComponents();
+        setLocationRelativeTo(null);
         jScrollPane1.getVerticalScrollBar().setUnitIncrement(6);
     }
     
@@ -46,6 +47,7 @@ public class VentanaEncuentros extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Calendario");
+        setResizable(false);
 
         jLabel1.setFont(new java.awt.Font("Dialog", 2, 18)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);

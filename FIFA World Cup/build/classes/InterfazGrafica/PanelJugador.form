@@ -63,11 +63,6 @@
   </Layout>
   <SubComponents>
     <Component class="javax.swing.JLabel" name="Lbl_Foto">
-      <Properties>
-        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/Imagenes/Fuleco.jpg"/>
-        </Property>
-      </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="Lbl_Nombre">
       <Properties>

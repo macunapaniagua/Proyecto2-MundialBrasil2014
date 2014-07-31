@@ -19,6 +19,8 @@ public class VentanaEquipos extends javax.swing.JFrame {
      */
     public VentanaEquipos() {
         initComponents();
+        setLocationRelativeTo(null);
+        jScrollPane1.getVerticalScrollBar().setUnitIncrement(6);
         this.getContentPane().setBackground(new Color(19,150,202));
     }
 

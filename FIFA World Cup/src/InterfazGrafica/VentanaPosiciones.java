@@ -17,6 +17,8 @@ public class VentanaPosiciones extends javax.swing.JFrame {
      */
     public VentanaPosiciones() {
         initComponents();
+        setLocationRelativeTo(null);
+        jScrollPane1.getVerticalScrollBar().setUnitIncrement(6);
     }
     
     /**
@@ -47,7 +49,6 @@ public class VentanaPosiciones extends javax.swing.JFrame {
 
         jScrollPane1.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
 
-        Pnl_Clasificacion.setBackground(new java.awt.Color(153, 153, 255));
         Pnl_Clasificacion.setLayout(new javax.swing.BoxLayout(Pnl_Clasificacion, javax.swing.BoxLayout.PAGE_AXIS));
         jScrollPane1.setViewportView(Pnl_Clasificacion);
 
@@ -55,9 +56,7 @@ public class VentanaPosiciones extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 502, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 456, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

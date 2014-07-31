@@ -19,6 +19,7 @@ public class VentanaJugadores extends javax.swing.JFrame {
      */
     public VentanaJugadores() {
         initComponents();
+        setLocationRelativeTo(null);
         jScrollPane1.getVerticalScrollBar().setUnitIncrement(6);
     }
     

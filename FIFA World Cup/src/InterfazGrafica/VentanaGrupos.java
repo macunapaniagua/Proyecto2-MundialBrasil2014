@@ -72,7 +72,7 @@ public class VentanaGrupos extends javax.swing.JFrame {
         Pnl_Grupos.setLayout(new java.awt.GridLayout(2, 4));
         jLayeredPane1.add(Pnl_Grupos, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, -1, -1));
 
-        Lbl_Imagen.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Fondos/Aqua.jpg"))); // NOI18N
+        Lbl_Imagen.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Aqua.jpg"))); // NOI18N
         jLayeredPane1.add(Lbl_Imagen, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
