@@ -171,25 +171,24 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         jPanel3.setLayout(jPanel3Layout);
         jPanel3Layout.setHorizontalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addContainerGap(39, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+                .addGap(5, 5, 5)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(Cmb_EquiposJugadorMasJoven, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(21, 21, 21))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(Rbtn_MasViejo)
-                            .addComponent(Rbnt_MasJoven)
-                            .addComponent(Btn_VerMasJoven))
-                        .addGap(51, 51, 51))))
+                    .addComponent(Btn_VerMasJoven)
+                    .addComponent(Rbtn_MasViejo)
+                    .addComponent(Rbnt_MasJoven)
+                    .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+                            .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGap(21, 21, 21))
+                        .addGroup(jPanel3Layout.createSequentialGroup()
+                            .addComponent(Cmb_EquiposJugadorMasJoven, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addContainerGap()))))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
-                .addGap(22, 22, 22)
+                .addGap(0, 0, 0)
                 .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(Cmb_EquiposJugadorMasJoven, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -199,10 +198,10 @@ public class VentanaPrincipal extends javax.swing.JFrame {
                 .addComponent(Rbtn_MasViejo)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(Btn_VerMasJoven)
-                .addContainerGap(46, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 100, 230, 210));
+        jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 80, 180, 150));
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Mascota.png"))); // NOI18N
         jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 330, -1, -1));
@@ -251,10 +250,12 @@ public class VentanaPrincipal extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Cmb_Estadios, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Cmb_VarEstadios, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Txt_VarEstadio, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Btn_ModificarEstadio))
+                    .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                        .addComponent(Btn_ModificarEstadio)
+                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addComponent(Txt_VarEstadio, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(Cmb_VarEstadios, javax.swing.GroupLayout.Alignment.LEADING, 0, 147, Short.MAX_VALUE)
+                            .addComponent(Cmb_Estadios, javax.swing.GroupLayout.Alignment.LEADING, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                 .addContainerGap())
         );
         jPanel5Layout.setVerticalGroup(
@@ -268,33 +269,36 @@ public class VentanaPrincipal extends javax.swing.JFrame {
                 .addComponent(Cmb_VarEstadios, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(10, 10, 10)
                 .addComponent(Txt_VarEstadio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(10, 10, 10)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 15, Short.MAX_VALUE)
                 .addComponent(Btn_ModificarEstadio)
-                .addContainerGap(16, Short.MAX_VALUE))
+                .addContainerGap())
         );
 
-        jPanel2.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 120, 180, 180));
+        jPanel2.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 70, 180, 180));
 
         jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         Btn_ModificarJugador.setText("Modificar");
         Btn_ModificarJugador.setFocusable(false);
+        Btn_ModificarJugador.setNextFocusableComponent(Cmb_ModSelecciones);
         Btn_ModificarJugador.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Btn_ModificarJugadorActionPerformed(evt);
             }
         });
-        jPanel4.add(Btn_ModificarJugador, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 170, -1, -1));
+        jPanel4.add(Btn_ModificarJugador, new org.netbeans.lib.awtextra.AbsoluteConstraints(102, 180, -1, -1));
 
+        Txt_DatoModJugador.setNextFocusableComponent(Btn_ModificarJugador);
         Txt_DatoModJugador.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 Txt_DatoModJugadorKeyTyped(evt);
             }
         });
-        jPanel4.add(Txt_DatoModJugador, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 140, 110, -1));
+        jPanel4.add(Txt_DatoModJugador, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 140, 167, -1));
 
         Cmb_VarJugador.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Modificar nombre", "Modificar edad", "Modificar estatura (cm)", "Modificar goles anotados", "Modificar número de camiseta", "Modificar posición", "Eliminar jugador" }));
         Cmb_VarJugador.setFocusable(false);
+        Cmb_VarJugador.setNextFocusableComponent(Txt_DatoModJugador);
         Cmb_VarJugador.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Cmb_VarJugadorActionPerformed(evt);
@@ -303,20 +307,22 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         jPanel4.add(Cmb_VarJugador, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 110, -1, -1));
 
         Cmb_Jugadores.setFocusable(false);
-        jPanel4.add(Cmb_Jugadores, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 80, -1, -1));
+        Cmb_Jugadores.setNextFocusableComponent(Cmb_VarJugador);
+        jPanel4.add(Cmb_Jugadores, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 80, 167, -1));
 
         Cmb_ModSelecciones.setFocusable(false);
+        Cmb_ModSelecciones.setNextFocusableComponent(Cmb_Jugadores);
         Cmb_ModSelecciones.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Cmb_ModSeleccionesActionPerformed(evt);
             }
         });
-        jPanel4.add(Cmb_ModSelecciones, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 50, -1, -1));
+        jPanel4.add(Cmb_ModSelecciones, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 50, 167, -1));
 
         jLabel9.setText("Modificar Contenido de Jugador");
         jPanel4.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 180, 30));
 
-        jPanel2.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 100, 200, 210));
+        jPanel2.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 70, 200, 210));
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Mascota.png"))); // NOI18N
         jPanel2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 330, -1, -1));
@@ -773,7 +779,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         // Obtiene el parametro que se desea modificar al jugador del ComboBox
         String selected = Cmb_VarJugador.getSelectedItem().toString();
         // Verifica que solo ingrese numeros a los campos que asi lo requieren
-        if (!selected.equals("Nombre") && !selected.equals("Posición") && !Character.isDigit(evt.getKeyChar())) {
+        if (!selected.equals("Modificar nombre") && !selected.equals("Modificar posición") && !Character.isDigit(evt.getKeyChar())) {
             evt.consume();
             JOptionPane.showMessageDialog(this, "Solo se pueden insertar números en el parámetro " + selected);
         }
@@ -806,7 +812,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         // Obtiene el parametro que se desea modificar al jugador del ComboBox
         String selected = Cmb_VarEstadios.getSelectedItem().toString();
         // Verifica que solo ingrese numeros a los campos que asi lo requieren
-        if (selected.equals("Capacidad") && !Character.isDigit(evt.getKeyChar())) {
+        if (selected.equals("Modificar capacidad") && !Character.isDigit(evt.getKeyChar())) {
             evt.consume();
             JOptionPane.showMessageDialog(this, "Solo se pueden insertar números en el parámetro " + selected);
         }

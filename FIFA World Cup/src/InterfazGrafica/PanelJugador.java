@@ -27,7 +27,7 @@ public class PanelJugador extends javax.swing.JPanel {
      */
     public void setDatosEntrenador(String pNombreEntrenador, String pSeleccion) {
 
-        String foto = "/ImagenesJugadores/" + pSeleccion + "/C-" + pNombreEntrenador + ".png";
+        String foto = "/ImagenesJugadores/" + pSeleccion + "/" + pNombreEntrenador + ".png";
         // Se establecen los datos del jugador o entrenador
         Lbl_Foto.setIcon(new ImageIcon(getClass().getResource(foto)));
         Lbl_Nombre.setText("Nombre: " + pNombreEntrenador);
@@ -44,15 +44,8 @@ public class PanelJugador extends javax.swing.JPanel {
      * @param pEstatura Estatura en centimetros
      */
     public void setDatosJugador(String pSeleccion, String pNombre, String pPosicion, int pNumero, int pEdad, int pEstatura) {
-
-        String foto;
-
-        if (pPosicion.equalsIgnoreCase("Delantero")) {
-            // Se genera la ruta donde se encuentra la imagen del jugador
-            foto = "/ImagenesJugadores/" + pSeleccion + "/F-" + pNombre + ".png";
-        } else {
-            foto = "/ImagenesJugadores/" + pSeleccion + "/" + pPosicion.charAt(0) + "-" + pNombre + ".png";
-        }
+        // Se genera la ruta donde se encuentra la imagen del jugador
+        String foto = "/ImagenesJugadores/" + pSeleccion + "/" + pNombre + ".png";
         // Se establecen los datos del jugador o entrenador
         try {
             Lbl_Foto.setIcon(new ImageIcon(getClass().getResource(foto)));
