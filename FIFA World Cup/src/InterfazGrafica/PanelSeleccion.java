@@ -6,6 +6,9 @@
 
 package InterfazGrafica;
 
+import Codigo.ListaJugadores;
+import Codigo.NodoJugador;
+import java.awt.Color;
 import javax.swing.ImageIcon;
 
 /**
@@ -14,11 +17,14 @@ import javax.swing.ImageIcon;
  */
 public class PanelSeleccion extends javax.swing.JPanel {
 
+    ListaJugadores jugadores;
+    String entrenador;
+    
     /**
-     * Creates new form PanelEquipos
+     * Creates new form PanelEquipos 
      */
     public PanelSeleccion() {
-        initComponents();
+        initComponents(); 
     }
 
     /**
@@ -30,39 +36,110 @@ public class PanelSeleccion extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        Lbl_CaptureClick = new javax.swing.JLabel();
         Lbl_NombreEquipo = new javax.swing.JLabel();
         Lbl_Bandera = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
+        Lbl_Fondo = new javax.swing.JLabel();
 
         setPreferredSize(new java.awt.Dimension(330, 54));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        Lbl_CaptureClick.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Lbl_CaptureClickMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                Lbl_CaptureClickMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                Lbl_CaptureClickMouseExited(evt);
+            }
+        });
+        add(Lbl_CaptureClick, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 329, 54));
+
         Lbl_NombreEquipo.setFont(new java.awt.Font("Californian FB", 0, 18)); // NOI18N
         Lbl_NombreEquipo.setForeground(new java.awt.Color(207, 209, 208));
         add(Lbl_NombreEquipo, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 12, 180, 30));
+
+        Lbl_Bandera.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         add(Lbl_Bandera, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 4, 70, 46));
 
-        jLabel1.setBackground(new java.awt.Color(38, 40, 52));
-        jLabel1.setOpaque(true);
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 330, 54));
+        Lbl_Fondo.setBackground(new java.awt.Color(38, 40, 42));
+        Lbl_Fondo.setOpaque(true);
+        add(Lbl_Fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 330, 54));
     }// </editor-fold>//GEN-END:initComponents
+
+    private void Lbl_CaptureClickMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Lbl_CaptureClickMouseClicked
+        
+        // Crea una nueva ventana para mostrar los jugadores del equipo seleccionado
+        VentanaJugadores ventanaJugadores = new VentanaJugadores();
+        // Agrega el logo y la bandera a la ventana
+        ventanaJugadores.agregarBanderaYLogo(Lbl_NombreEquipo.getText());
+        // Inicializa el nodo que va a recorrer la lista de jugadores
+        jugadores.inicializarNodoActual();
+        // Se recorre la lista de jugadores
+        while (jugadores.getNodoActual() != null) {
+            // Obtengo el jugador analizado
+            NodoJugador jugadorActual = jugadores.getNodoActual();
+            // Se crea un nuevo panel para insertar al jugador
+            PanelJugador player = new PanelJugador();
+            // Se establece la informacion del jugador al panel
+            player.setDatosJugador(Lbl_NombreEquipo.getText(), jugadorActual.getNombre(), jugadorActual.getPosicion(),
+                    jugadorActual.getNumeroCamiseta(), jugadorActual.getEdad(), jugadorActual.getEstatura());
+            // Se agrega el panel a la ventana
+            ventanaJugadores.AgregarJugador(player);
+            // Mueve el nodo recorredor al siguiente nodo
+            jugadores.moverNodoActual();
+        }
+        // Se crea un nuevo panel para insertar al entrenador del equipo
+        PanelJugador coach = new PanelJugador();
+        // Se establecen los datos del entrenador al panel
+        coach.setDatosEntrenador(entrenador, Lbl_NombreEquipo.getText());
+        // Se agrega el panel del entrenador a la ventana
+        ventanaJugadores.AgregarJugador(coach);
+        // Se hace la ventana visible
+        ventanaJugadores.setVisible(true);        
+    }//GEN-LAST:event_Lbl_CaptureClickMouseClicked
+
+    /**
+     * Metodo para resaltar el panel cuando recibe el mas dentro de el
+     * @param evt 
+     */
+    private void Lbl_CaptureClickMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Lbl_CaptureClickMouseEntered
+        Lbl_Fondo.setBackground(new Color(58, 60, 62));
+        this.repaint();
+    }//GEN-LAST:event_Lbl_CaptureClickMouseEntered
+
+    /**
+     * Metodo para volver al color normal del panel cuando el mouse sale de el
+     * @param evt 
+     */
+    private void Lbl_CaptureClickMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Lbl_CaptureClickMouseExited
+        Lbl_Fondo.setBackground(new Color(38, 40, 42));
+        this.repaint();
+    }//GEN-LAST:event_Lbl_CaptureClickMouseExited
 
     /**
      * Metodo utilizado para establecer al panel de la seleccion, el nombre y la 
      * bandera del equipo
      * @param pPais pais a insertar en el panel
+     * @param pJugadores Lista de jugadores
      */
-    public void setEquipo(String pPais){
+    public void setEquipo(String pPais, ListaJugadores pJugadores, String pEntrenador){
         // Se establece la ruta de la bandera del pais ingresado
         String rutaBandera = "/ImagenesBanderas/"+pPais+".png";
         // Se establece la imagen de la bandera y el nombre del pais
         Lbl_Bandera.setIcon(new ImageIcon(getClass().getResource(rutaBandera)));
         Lbl_NombreEquipo.setText(pPais);
+        // Inicializa la Lista de jugadores y el nombre del entrenador
+        jugadores = pJugadores;
+        entrenador = pEntrenador;
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel Lbl_Bandera;
+    private javax.swing.JLabel Lbl_CaptureClick;
+    private javax.swing.JLabel Lbl_Fondo;
     private javax.swing.JLabel Lbl_NombreEquipo;
-    private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 }

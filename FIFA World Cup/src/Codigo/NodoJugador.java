@@ -5,8 +5,6 @@
  */
 package Codigo;
 
-import javax.swing.JLabel;
-
 /**
  *
  * @author Mario A

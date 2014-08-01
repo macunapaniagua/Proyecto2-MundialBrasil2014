@@ -97,12 +97,12 @@ public class PanelResultadoPartido extends javax.swing.JPanel {
         Pnl_Versus.setBackground(new java.awt.Color(245, 224, 200));
 
         Lbl_BanderaVisita.setBackground(new java.awt.Color(204, 0, 204));
+        Lbl_BanderaVisita.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         Lbl_BanderaVisita.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ImagenesBanderas/Inglaterra.png"))); // NOI18N
-        Lbl_BanderaVisita.setOpaque(true);
 
         Lbl_BanderaCasa.setBackground(new java.awt.Color(204, 0, 204));
+        Lbl_BanderaCasa.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         Lbl_BanderaCasa.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ImagenesBanderas/Costa Rica.png"))); // NOI18N
-        Lbl_BanderaCasa.setOpaque(true);
 
         Lbl_EquipoCasa.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         Lbl_EquipoCasa.setText("Iran");
@@ -129,11 +129,11 @@ public class PanelResultadoPartido extends javax.swing.JPanel {
             Pnl_VersusLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(Pnl_VersusLayout.createSequentialGroup()
                 .addGap(47, 47, 47)
-                .addComponent(Lbl_BanderaCasa)
+                .addComponent(Lbl_BanderaCasa, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(10, 10, 10)
                 .addComponent(Lbl_VS, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(10, 10, 10)
-                .addComponent(Lbl_BanderaVisita)
+                .addComponent(Lbl_BanderaVisita, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(47, 47, 47))
             .addGroup(Pnl_VersusLayout.createSequentialGroup()
                 .addContainerGap()
@@ -162,8 +162,8 @@ public class PanelResultadoPartido extends javax.swing.JPanel {
                     .addGroup(Pnl_VersusLayout.createSequentialGroup()
                         .addGap(8, 8, 8)
                         .addGroup(Pnl_VersusLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(Lbl_BanderaCasa)
-                            .addComponent(Lbl_BanderaVisita)))
+                            .addComponent(Lbl_BanderaCasa, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(Lbl_BanderaVisita, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(Pnl_VersusLayout.createSequentialGroup()
                         .addGap(18, 18, 18)
                         .addComponent(Lbl_VS)))

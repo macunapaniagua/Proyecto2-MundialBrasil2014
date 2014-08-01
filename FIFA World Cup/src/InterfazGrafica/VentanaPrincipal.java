@@ -15,6 +15,8 @@ import Codigo.NodoEquipo;
 import Codigo.NodoJugador;
 import Codigo.XMLReader;
 import java.text.SimpleDateFormat;
+import javax.swing.JFrame;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -43,6 +45,8 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         estadiosMundial = lector.cargarListaDeEstadios();
         listaEquiposMundial = lector.cargarListaEquipos();
         listaDeGrupos = lector.cargarCalendarioYGrupos(listaEquiposMundial, estadiosMundial);
+        cargarEquiposEnDropDownList();
+        cargarEstadiosEnDropDownList();
     }
 
     /**
@@ -54,6 +58,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        buttonGroup1 = new javax.swing.ButtonGroup();
         jTabbedPane1 = new javax.swing.JTabbedPane();
         jPanel1 = new javax.swing.JPanel();
         Btn_Estadios = new javax.swing.JButton();
@@ -61,9 +66,32 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         Btn_Goleadores = new javax.swing.JButton();
         Btn_TablaPosiciones = new javax.swing.JButton();
         Btn_Calendario = new javax.swing.JButton();
+        jPanel3 = new javax.swing.JPanel();
+        jLabel7 = new javax.swing.JLabel();
+        Cmb_EquiposJugadorMasJoven = new javax.swing.JComboBox();
+        Rbnt_MasJoven = new javax.swing.JRadioButton();
+        Rbtn_MasViejo = new javax.swing.JRadioButton();
+        Btn_VerMasJoven = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
+        jPanel2 = new javax.swing.JPanel();
+        jPanel5 = new javax.swing.JPanel();
+        jLabel8 = new javax.swing.JLabel();
+        Cmb_Estadios = new javax.swing.JComboBox();
+        Cmb_VarEstadios = new javax.swing.JComboBox();
+        Txt_VarEstadio = new javax.swing.JTextField();
+        Btn_ModificarEstadio = new javax.swing.JButton();
+        jPanel4 = new javax.swing.JPanel();
+        Btn_ModificarJugador = new javax.swing.JButton();
+        Txt_DatoModJugador = new javax.swing.JTextField();
+        Cmb_VarJugador = new javax.swing.JComboBox();
+        Cmb_Jugadores = new javax.swing.JComboBox();
+        Cmb_ModSelecciones = new javax.swing.JComboBox();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("FIFA World Cup Brazil 2014");
@@ -118,6 +146,64 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         });
         jPanel1.add(Btn_Calendario, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 280, 150, 30));
 
+        jLabel7.setText("Visualizar jugador más joven/viejo");
+
+        Cmb_EquiposJugadorMasJoven.setFocusable(false);
+
+        buttonGroup1.add(Rbnt_MasJoven);
+        Rbnt_MasJoven.setSelected(true);
+        Rbnt_MasJoven.setText("Jugador más joven");
+        Rbnt_MasJoven.setFocusable(false);
+
+        buttonGroup1.add(Rbtn_MasViejo);
+        Rbtn_MasViejo.setText("Jugador más viejo");
+        Rbtn_MasViejo.setFocusable(false);
+
+        Btn_VerMasJoven.setText("Visualizar");
+        Btn_VerMasJoven.setFocusable(false);
+        Btn_VerMasJoven.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Btn_VerMasJovenActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
+        jPanel3.setLayout(jPanel3Layout);
+        jPanel3Layout.setHorizontalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addContainerGap(39, Short.MAX_VALUE)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(Cmb_EquiposJugadorMasJoven, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(21, 21, 21))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(Rbtn_MasViejo)
+                            .addComponent(Rbnt_MasJoven)
+                            .addComponent(Btn_VerMasJoven))
+                        .addGap(51, 51, 51))))
+        );
+        jPanel3Layout.setVerticalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addGap(22, 22, 22)
+                .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(Cmb_EquiposJugadorMasJoven, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(Rbnt_MasJoven)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(Rbtn_MasViejo)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(Btn_VerMasJoven)
+                .addContainerGap(46, Short.MAX_VALUE))
+        );
+
+        jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 100, 230, 210));
+
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Mascota.png"))); // NOI18N
         jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 330, -1, -1));
 
@@ -128,6 +214,120 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         jTabbedPane1.addTab("Principal", jPanel1);
+
+        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel8.setText("Modificar Contenido de Estadio");
+
+        Cmb_Estadios.setFocusable(false);
+
+        Cmb_VarEstadios.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Modificar nombre", "Modificar ciudad", "Modificar capacidad" }));
+        Cmb_VarEstadios.setFocusable(false);
+        Cmb_VarEstadios.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Cmb_VarEstadiosActionPerformed(evt);
+            }
+        });
+
+        Txt_VarEstadio.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                Txt_VarEstadioKeyTyped(evt);
+            }
+        });
+
+        Btn_ModificarEstadio.setText("Modificar");
+        Btn_ModificarEstadio.setFocusable(false);
+        Btn_ModificarEstadio.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Btn_ModificarEstadioActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
+        jPanel5.setLayout(jPanel5Layout);
+        jPanel5Layout.setHorizontalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Cmb_Estadios, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Cmb_VarEstadios, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Txt_VarEstadio, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Btn_ModificarEstadio))
+                .addContainerGap())
+        );
+        jPanel5Layout.setVerticalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel5Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(10, 10, 10)
+                .addComponent(Cmb_Estadios, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(10, 10, 10)
+                .addComponent(Cmb_VarEstadios, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(10, 10, 10)
+                .addComponent(Txt_VarEstadio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(10, 10, 10)
+                .addComponent(Btn_ModificarEstadio)
+                .addContainerGap(16, Short.MAX_VALUE))
+        );
+
+        jPanel2.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 120, 180, 180));
+
+        jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        Btn_ModificarJugador.setText("Modificar");
+        Btn_ModificarJugador.setFocusable(false);
+        Btn_ModificarJugador.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Btn_ModificarJugadorActionPerformed(evt);
+            }
+        });
+        jPanel4.add(Btn_ModificarJugador, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 170, -1, -1));
+
+        Txt_DatoModJugador.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                Txt_DatoModJugadorKeyTyped(evt);
+            }
+        });
+        jPanel4.add(Txt_DatoModJugador, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 140, 110, -1));
+
+        Cmb_VarJugador.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Modificar nombre", "Modificar edad", "Modificar estatura (cm)", "Modificar goles anotados", "Modificar número de camiseta", "Modificar posición", "Eliminar jugador" }));
+        Cmb_VarJugador.setFocusable(false);
+        Cmb_VarJugador.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Cmb_VarJugadorActionPerformed(evt);
+            }
+        });
+        jPanel4.add(Cmb_VarJugador, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 110, -1, -1));
+
+        Cmb_Jugadores.setFocusable(false);
+        jPanel4.add(Cmb_Jugadores, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 80, -1, -1));
+
+        Cmb_ModSelecciones.setFocusable(false);
+        Cmb_ModSelecciones.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Cmb_ModSeleccionesActionPerformed(evt);
+            }
+        });
+        jPanel4.add(Cmb_ModSelecciones, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 50, -1, -1));
+
+        jLabel9.setText("Modificar Contenido de Jugador");
+        jPanel4.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 180, 30));
+
+        jPanel2.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 100, 200, 210));
+
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Mascota.png"))); // NOI18N
+        jPanel2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 330, -1, -1));
+
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Barra Inferior.png"))); // NOI18N
+        jPanel2.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 357, -1, -1));
+
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/FIFA World Cup Fondo.jpg"))); // NOI18N
+        jPanel2.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+
+        jTabbedPane1.addTab("Modificar Contenido", jPanel2);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -147,8 +347,62 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    /**
+     * Metodo para cargar la lista de estadios en el ComboBox para modificar
+     * estadio
+     */
+    public void cargarEstadiosEnDropDownList() {
+        Cmb_Estadios.removeAllItems();
+        estadiosMundial.inicializarNodoActal();
+        while (estadiosMundial.getNodoActual() != null) {
+            Cmb_Estadios.addItem(estadiosMundial.getNodoActual().getNombreEstadio());
+            estadiosMundial.moverNodoActual();
+        }
+    }
+
+    /**
+     * Metodo utilizado para cargar la lista de los paises en el ComboBox de
+     * editar y el de mostrar el jugador mas joven/viejo
+     */
+    public void cargarEquiposEnDropDownList() {
+
+        listaEquiposMundial.inicializarNodoActual();
+        while (listaEquiposMundial.getNodoActual() != null) {
+
+            String nombreEquipo = listaEquiposMundial.getNodoActual().getNombreEquipo();
+            Cmb_ModSelecciones.addItem(nombreEquipo);
+            Cmb_EquiposJugadorMasJoven.addItem(nombreEquipo);
+
+            listaEquiposMundial.moverNodoActual();
+        }
+        cargarJugadoresEnDropDownList();
+    }
+
+    /**
+     * Metodo Utilizado para cargar los jugadores en el ComboBox de editar
+     */
+    private void cargarJugadoresEnDropDownList() {
+
+        Cmb_Jugadores.removeAllItems();
+
+        NodoEquipo equipoSeleccionado = listaEquiposMundial.getNodoEquipo(Cmb_ModSelecciones.getSelectedItem().toString());
+        ListaJugadores jugadoresSeleccion = equipoSeleccionado.getJugadores();
+
+        jugadoresSeleccion.inicializarNodoActual();
+        while (jugadoresSeleccion.getNodoActual() != null) {
+            Cmb_Jugadores.addItem(jugadoresSeleccion.getNodoActual().getNombre());
+            jugadoresSeleccion.moverNodoActual();
+        }
+    }
+
+    /**
+     * Metodo utilizado para cargar la lista de goleadores y mostrar la ventana
+     * al presionar el boton
+     *
+     * @param evt
+     */
     private void Btn_GoleadoresActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn_GoleadoresActionPerformed
-        
+
         // Se crea la ventana que contiene los Goleadores del torneo
         VentanaGoleadores ventana = new VentanaGoleadores();
         // Se crean dos arreglos y se inicializan vacios. Estos arreglos son los
@@ -159,7 +413,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         // Se mueve el nodo recorredor de la lista de equipos, a la raiz de esta.
         listaEquiposMundial.inicializarNodoActual();
         // Se recorre toda la lista de equipos
-        while(listaEquiposMundial.getNodoActual() != null){            
+        while (listaEquiposMundial.getNodoActual() != null) {
             // Se obtiene el nombre de la seleccion actual
             String seleccionActual = listaEquiposMundial.getNodoActual().getNombreEquipo();
             // Se obtiene la lista de jugadores de el equipo actual
@@ -167,26 +421,22 @@ public class VentanaPrincipal extends javax.swing.JFrame {
             // Se mueve a la raiz, el nodo que recorrera la lista de jugadores
             jugadores.inicializarNodoActual();
             // Se recorre la lista de jugadores de la seleccion analizada actualmente
-            while(jugadores.getNodoActual() != null)
-            {
+            while (jugadores.getNodoActual() != null) {
                 // Se obtiene el jugador analizado en la iteracion
                 NodoJugador jugadorAnalizado = jugadores.getNodoActual();
                 // Se le asigna al jugador actual, la seleccion a la que pertenece
                 String seleccionDelJugador = seleccionActual;
                 // Se comparan los goles del jugador con los goleadores de la lista
-                for (int i = 0; i < goleadores.length; i++) 
-                {
+                for (int i = 0; i < goleadores.length; i++) {
                     // Se inserta el jugador en la posicion i, si no hay jugador
-                    if(goleadores[i] == null){
+                    if (goleadores[i] == null) {
                         goleadores[i] = jugadorAnalizado;
                         equipos[i] = seleccionDelJugador;
                         break;
-                    }
-                    // Si el jugador analizado, tiene mas goles que uno ubicado en el
+                    } // Si el jugador analizado, tiene mas goles que uno ubicado en el
                     // arreglo, se inserta este en el arreglo y el que estaba ahora va
                     // a buscar la posicion que le corresponde del arreglo
-                    else if(goleadores[i].getCantidadGolesAnotados() < jugadorAnalizado.getCantidadGolesAnotados())
-                    {
+                    else if (goleadores[i].getCantidadGolesAnotados() < jugadorAnalizado.getCantidadGolesAnotados()) {
                         // Realiza el intercambio de jugadores en el arreglo
                         NodoJugador jugadorAux = goleadores[i];
                         goleadores[i] = jugadorAnalizado;
@@ -194,23 +444,23 @@ public class VentanaPrincipal extends javax.swing.JFrame {
                         // Realiza el intercambio de equipo al que pertenece el jugador
                         String seleccionAux = equipos[i];
                         equipos[i] = seleccionDelJugador;
-                        seleccionDelJugador = seleccionAux;                        
-                    }                    
-                }  
+                        seleccionDelJugador = seleccionAux;
+                    }
+                }
                 // Mueve el nodo recorredor de la lista de jugadores
                 jugadores.moverNodoActual();
-            }  
+            }
             // Mueve el nodo recorredor de la lista de equipos participantes
-            listaEquiposMundial.moverNodoActual();                                                                        
-        } 
-        
+            listaEquiposMundial.moverNodoActual();
+        }
+
         // Se recorre la lista final de goleadores para agregarlos a la ventana
         for (int i = 0; i < goleadores.length; i++) {
             // Se obtienen el nombre del goleador, la seleccion y los goles anotados
             String seleccionDelGoleador = equipos[i];
             String nombreGoleador = goleadores[i].getNombre();
             int cantidadGoles = goleadores[i].getCantidadGolesAnotados();
-            
+
             // Se crea un Panel que contentiene al goleador
             PanelGoleador goleadoresTorneo = new PanelGoleador();
             // Establece los datos de goleo del jugador, al Panel
@@ -222,6 +472,12 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         ventana.setVisible(true);
     }//GEN-LAST:event_Btn_GoleadoresActionPerformed
 
+    /**
+     * Metodo utilizado para cargar la lista de estadios y mostrar la ventana al
+     * presionar el boton
+     *
+     * @param evt
+     */
     private void Btn_EstadiosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn_EstadiosActionPerformed
 
         // Se crea una VentanaEstadios, donde se mostraran todos los estadios del mundial
@@ -244,6 +500,12 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         ventana.setVisible(true);
     }//GEN-LAST:event_Btn_EstadiosActionPerformed
 
+    /**
+     * Metodo utilizado para cargar la lista de selecciones y mostrar la ventana
+     * al presionar el boton
+     *
+     * @param evt
+     */
     private void Btn_SeleccionesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn_SeleccionesActionPerformed
 
         // Ventana que contendra todos los equipos participantes en el mundial
@@ -254,8 +516,11 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         while (listaEquiposMundial.getNodoActual() != null) {
             // Se crea un nuevo PanelSeleccion
             PanelSeleccion panel = new PanelSeleccion();
-            // Se le establece establecen los valores del equipo al Panel (Nombre y Bandera)
-            panel.setEquipo(listaEquiposMundial.getNodoActual().getNombreEquipo());
+            // Se le establece establecen los valores del equipo al Panel (Nombre y Bandera), 
+            // Lista de Jugadores y Nombre del Entrenador
+            panel.setEquipo(listaEquiposMundial.getNodoActual().getNombreEquipo(),
+                    listaEquiposMundial.getNodoActual().getJugadores(),
+                    listaEquiposMundial.getNodoActual().getNombreEntrenador());
             // Se agrega el Panel con el equipo a la ventana
             ventana.setSeleccion(panel);
             // Se mueve el Nodo recorredor al siguiente equipo de la lista
@@ -265,6 +530,12 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         ventana.setVisible(true);
     }//GEN-LAST:event_Btn_SeleccionesActionPerformed
 
+    /**
+     * Metodo utilizado para cargar la tabla de posiciones y mostrar la ventana
+     * al presionar el boton
+     *
+     * @param evt
+     */
     private void Btn_TablaPosicionesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn_TablaPosicionesActionPerformed
 
         // Se crea la ventana que contiene la Tabla de clasificación de los gurpos
@@ -277,7 +548,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
             NodoEquipo[] selecciones = listaDeGrupos.getNodoActual().getpaisesIntegrantes();
             // Se manda a ordenar el arreglo de los equipos del grupo.
             selecciones = insertionSort(selecciones);
-            
+
             // Se crea un nuevo panel con la informacion de la tabla de posiciones del grupo
             PanelPosiciones tablaDePosicion = new PanelPosiciones();
             // Envia la letra del grupo y los equipos para armar la tabla de posiciones
@@ -291,8 +562,14 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         ventana.setVisible(true);
     }//GEN-LAST:event_Btn_TablaPosicionesActionPerformed
 
+    /**
+     * Metodo utilizado para cargar la lista de encuentros y mostrar la ventana
+     * al presionar el boton
+     *
+     * @param evt
+     */
     private void Btn_CalendarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn_CalendarioActionPerformed
-        
+
         // Se crea la ventana que contendra los encuentros del mundial
         VentanaEncuentros ventana = new VentanaEncuentros();
         // Se coloca en la raiz de la lista de grupos, el nodo recorredor de dicha lista
@@ -312,7 +589,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
             while (calendarioDelGrupo.getNodoActual() != null) {
                 // Se crea un Panel, el cual va a contener la informacion del partido
                 PanelResultadoPartido partido = new PanelResultadoPartido();
-                
+
                 // Se obtienen el partido analizado en esta iteracion
                 NodoEncuentro encuentro = calendarioDelGrupo.getNodoActual();
                 // Se obtienen los datos del partido
@@ -346,6 +623,258 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     }//GEN-LAST:event_Btn_CalendarioActionPerformed
 
     /**
+     * Se carga la lista de los jugadores, cuando se cambia de seleccion
+     *
+     * @param evt
+     */
+    private void Cmb_ModSeleccionesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Cmb_ModSeleccionesActionPerformed
+        cargarJugadoresEnDropDownList();
+    }//GEN-LAST:event_Cmb_ModSeleccionesActionPerformed
+
+    /**
+     * Metodo utilizado para modificar algun atributo del jugador seleccionado
+     * al presionar click sobre el boton
+     *
+     * @param evt
+     */
+    private void Btn_ModificarJugadorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn_ModificarJugadorActionPerformed
+        // Obtiene el parametro que se desea modificar del jugador
+        String selected = Cmb_VarJugador.getSelectedItem().toString();
+        // Se obtiene el nodo del equipo seleccionado
+        NodoEquipo team = listaEquiposMundial.getNodoEquipo(Cmb_ModSelecciones.getSelectedItem().toString());
+        if ((!Txt_DatoModJugador.getText().equals("") && 
+                !Cmb_VarJugador.getSelectedItem().toString().equals("Eliminar jugador")) ||
+                Cmb_VarJugador.getSelectedItem().toString().equals("Eliminar jugador")) {
+            // Variable que indica si la modificacion se cumplira exitosamente o no
+            boolean exito;
+            // Nombre del jugador
+            String nombreJugador = Cmb_Jugadores.getSelectedItem().toString();
+            switch (selected) {
+                case "Modificar nombre":
+                    exito = team.getJugadores().cambiarNombreJugador(nombreJugador, Txt_DatoModJugador.getText());
+                    // Se refresca la lista de jugadores
+                    cargarJugadoresEnDropDownList();
+                    // Se verifica el resultado de la operacion y se muestra un mensaje respectivo
+                    if (exito) {
+                        JOptionPane.showMessageDialog(this, "El nombre del jugador ha sido modificado con éxito");
+                    } else {
+                        JOptionPane.showMessageDialog(this, "El jugador que se desea modificar no existe");
+                    }
+                    break;
+                case "Modificar edad":
+                    int edad = Integer.parseInt(Txt_DatoModJugador.getText());
+                    exito = team.getJugadores().cambiarEdadJugador(nombreJugador, edad);
+                    // Se verifica el resultado de la operacion y se muestra un mensaje respectivo
+                    if (exito) {
+                        JOptionPane.showMessageDialog(this, "La edad del jugador ha sido modificado con éxito");
+                    } else {
+                        JOptionPane.showMessageDialog(this, "El jugador que se desea modificar no existe");
+                    }
+                    break;
+                case "Modificar estatura (cm)":
+                    int estatura = Integer.parseInt(Txt_DatoModJugador.getText());
+                    exito = team.getJugadores().cambiarEstaturaJugador(nombreJugador, estatura);
+                    // Se verifica el resultado de la operacion y se muestra un mensaje respectivo
+                    if (exito) {
+                        JOptionPane.showMessageDialog(this, "La estatura del jugador ha sido modificado con éxito");
+                    } else {
+                        JOptionPane.showMessageDialog(this, "El jugador que se desea modificar no existe");
+                    }
+                    break;
+                case "Modificar goles anotados":
+                    int goles = Integer.parseInt(Txt_DatoModJugador.getText());
+                    exito = team.getJugadores().cambiarGolesJugador(nombreJugador, goles);
+                    // Se verifica el resultado de la operacion y se muestra un mensaje respectivo
+                    if (exito) {
+                        JOptionPane.showMessageDialog(this, "Los goles anotados por el jugador han sido modificado con éxito");
+                    } else {
+                        JOptionPane.showMessageDialog(this, "El jugador que se desea modificar no existe");
+                    }
+                    break;
+                case "Modificar número de camiseta":
+                    int numero = Integer.parseInt(Txt_DatoModJugador.getText());
+                    exito = team.getJugadores().cambiarNumero(nombreJugador, numero);
+                    // Se verifica el resultado de la operacion y se muestra un mensaje respectivo
+                    if (exito) {
+                        JOptionPane.showMessageDialog(this, "El número de camiseta del jugador ha sido modificado con éxito");
+                    } else {
+                        JOptionPane.showMessageDialog(this, "El número seleccionado pertenece a otro jugador de la lista");
+                    }
+                    break;
+                case "Modificar posición":
+                    exito = team.getJugadores().cambiarPosicionJugador(nombreJugador, Txt_DatoModJugador.getText());
+                    // Se verifica el resultado de la operacion y se muestra un mensaje respectivo
+                    if (exito) {
+                        JOptionPane.showMessageDialog(this, "La posición del jugador ha sido modificado con éxito");
+                    } else {
+                        JOptionPane.showMessageDialog(this, "El jugador que se desea modificar no existe");
+                    }
+                    break;
+                case "Eliminar jugador":
+                    exito = team.getJugadores().eliminarJugador(nombreJugador);
+                    // Se refresca la lista de jugadores
+                    cargarJugadoresEnDropDownList();
+                    // Se verifica el resultado de la operacion y se muestra un mensaje respectivo
+                    if (exito) {
+                        JOptionPane.showMessageDialog(this, "El jugador ha sido eliminado con éxito");
+                    } else {
+                        JOptionPane.showMessageDialog(this, "El jugador que se desea eliminar no existe");
+                    }
+                    break;
+            }
+            Txt_DatoModJugador.setText("");
+        } else {
+            JOptionPane.showMessageDialog(this, "No se ha ingresado un nuevo dato");
+        }
+    }//GEN-LAST:event_Btn_ModificarJugadorActionPerformed
+
+    /**
+     * Metodo utilizado para mostrar al usuario el jugador mas joven/viejo del
+     * equipo seleccionado
+     *
+     * @param evt
+     */
+    private void Btn_VerMasJovenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn_VerMasJovenActionPerformed
+        // Se obtiene el nodo del Equipo seleccionado
+        NodoEquipo team = listaEquiposMundial.getNodoEquipo(Cmb_EquiposJugadorMasJoven.getSelectedItem().toString());
+        JFrame ventana;
+        NodoJugador jugador;
+        // Se verifica si se consultó por el jugador mas viejo o mas joven
+        if (Rbnt_MasJoven.isSelected()) {
+            // Se crea una ventana y se obtiene el jugador mas joven de la lista
+            ventana = new JFrame("Jugador más Joven");
+            jugador = team.getJugadores().getJugadorMasJoven();
+        } else {
+            // Se crea una ventana y se obtiene el jugador mas viejo de la lista
+            ventana = new JFrame("Jugador más Viejo");
+            jugador = team.getJugadores().getJugadorMasViejo();
+        }
+        // Se crea un panel para crear el jugador mas joven o viejo del equipo            
+        PanelJugador panelPlayer = new PanelJugador();
+        // Se establecen los valores del jugador en el panel
+        panelPlayer.setDatosJugador(team.getNombreEquipo(), jugador.getNombre(), jugador.getPosicion(),
+                jugador.getNumeroCamiseta(), jugador.getEdad(), jugador.getEstatura());
+        // Se agrega el panell del jugador y se muestra la ventana.
+
+        ventana.add(panelPlayer);
+        ventana.setResizable(false);
+        ventana.pack();
+        ventana.setLocationRelativeTo(this);
+        ventana.setVisible(true);
+    }//GEN-LAST:event_Btn_VerMasJovenActionPerformed
+
+    /**
+     * Metodo utilizado para filtrar que los caracteres ingresados para nombre,
+     * edad, estatura y numero sean solo numeros enteros
+     *
+     * @param evt
+     */
+    private void Txt_DatoModJugadorKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_Txt_DatoModJugadorKeyTyped
+        // Obtiene el parametro que se desea modificar al jugador del ComboBox
+        String selected = Cmb_VarJugador.getSelectedItem().toString();
+        // Verifica que solo ingrese numeros a los campos que asi lo requieren
+        if (!selected.equals("Nombre") && !selected.equals("Posición") && !Character.isDigit(evt.getKeyChar())) {
+            evt.consume();
+            JOptionPane.showMessageDialog(this, "Solo se pueden insertar números en el parámetro " + selected);
+        }
+    }//GEN-LAST:event_Txt_DatoModJugadorKeyTyped
+
+    /**
+     * Limpia el cuadro de texto cuando se cambia entre elementos del combobox,
+     * con los parametros del jugador
+     *
+     * @param evt
+     */
+    private void Cmb_VarJugadorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Cmb_VarJugadorActionPerformed
+        Txt_DatoModJugador.setText("");
+        if(Cmb_VarJugador.getSelectedItem().toString().equals("Eliminar jugador")){
+            Txt_DatoModJugador.setVisible(false);
+            Btn_ModificarJugador.setLocation(Btn_ModificarJugador.getX(), 140);
+        }else{
+            Txt_DatoModJugador.setVisible(true);
+            Btn_ModificarJugador.setLocation(Btn_ModificarJugador.getX(), 170);
+        }        
+    }//GEN-LAST:event_Cmb_VarJugadorActionPerformed
+
+    /**
+     * Metodo utilizado para filtrar que los caracteres ingresados para la
+     * capacidad de aficionados, sean solo numeros enteros
+     *
+     * @param evt
+     */
+    private void Txt_VarEstadioKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_Txt_VarEstadioKeyTyped
+        // Obtiene el parametro que se desea modificar al jugador del ComboBox
+        String selected = Cmb_VarEstadios.getSelectedItem().toString();
+        // Verifica que solo ingrese numeros a los campos que asi lo requieren
+        if (selected.equals("Capacidad") && !Character.isDigit(evt.getKeyChar())) {
+            evt.consume();
+            JOptionPane.showMessageDialog(this, "Solo se pueden insertar números en el parámetro " + selected);
+        }
+    }//GEN-LAST:event_Txt_VarEstadioKeyTyped
+
+    /**
+     * Limpia el cuadro de texto cuando se cambia entre elementos del combobox
+     * con los parametros del estadio
+     *
+     * @param evt
+     */
+    private void Cmb_VarEstadiosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Cmb_VarEstadiosActionPerformed
+        Txt_VarEstadio.setText("");
+    }//GEN-LAST:event_Cmb_VarEstadiosActionPerformed
+
+    /**
+     * Metodo utilizado para cambiar la informacion de el estadio seleccionado,
+     * al presionar click sobre el boton modificar
+     *
+     * @param evt
+     */
+    private void Btn_ModificarEstadioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn_ModificarEstadioActionPerformed
+        // Obtiene el parametro que se desea modificar del estadio
+        String selected = Cmb_VarEstadios.getSelectedItem().toString();
+        if (!Txt_VarEstadio.getText().equals("")) {
+            // Variable que indica si la modificacion se cumplira exitosamente o no
+            boolean exito;
+            // Nombre del jugador
+            String nombreEstadio = Cmb_Estadios.getSelectedItem().toString();
+            switch (selected) {
+                case "Modificar nombre":
+                    exito = estadiosMundial.modificarNombreDeEstadio(nombreEstadio, Txt_VarEstadio.getText());
+                    // Se refresca la lista de estadios
+                    cargarEstadiosEnDropDownList();
+                    // Se verifica el resultado de la operacion y se muestra un mensaje respectivo
+                    if (exito) {
+                        JOptionPane.showMessageDialog(this, "El nombre del estadio ha sido modificado con éxito");
+                    } else {
+                        JOptionPane.showMessageDialog(this, "El estadio que se desea modificar no existe");
+                    }
+                    break;
+                case "Modificar ciudad":
+                    exito = estadiosMundial.modificarUbicacionDelEstadio(nombreEstadio, Txt_VarEstadio.getText());
+                    // Se verifica el resultado de la operacion y se muestra un mensaje respectivo
+                    if (exito) {
+                        JOptionPane.showMessageDialog(this, "La ciudad donde se ubica el estadio ha sido modificada con éxito");
+                    } else {
+                        JOptionPane.showMessageDialog(this, "El estadio que se desea modificar no existe");
+                    }
+                    break;
+                case "Modificar capacidad":
+                    int capacidad = Integer.parseInt(Txt_VarEstadio.getText());
+                    exito = estadiosMundial.modificarCapacidadEstadio(nombreEstadio, capacidad);
+                    // Se verifica el resultado de la operacion y se muestra un mensaje respectivo
+                    if (exito) {
+                        JOptionPane.showMessageDialog(this, "La capacidad del estadio ha sido modificada con éxito");
+                    } else {
+                        JOptionPane.showMessageDialog(this, "El estadio que se desea modificar no existe");
+                    }
+                    break;
+            }
+            Txt_VarEstadio.setText("");
+        } else {
+            JOptionPane.showMessageDialog(this, "No se ha ingresado un nuevo dato");
+        }
+    }//GEN-LAST:event_Btn_ModificarEstadioActionPerformed
+
+    /**
      * Metodo utilizado para ordenar los equipos de mayor a menor, de acuerdo a
      * la cantidad de puntos obtenidos, y en caso de tener los mismos puntos, se
      * toma como criterio el gol diferencia
@@ -353,9 +882,9 @@ public class VentanaPrincipal extends javax.swing.JFrame {
      * @param pEquipos arreglo con los NodoEquipos desordenados
      * @return arreglo con los NodoEquipos ordenados
      */
-    public NodoEquipo[] insertionSort(NodoEquipo[] pEquipos) {        
+    public NodoEquipo[] insertionSort(NodoEquipo[] pEquipos) {
         // ************ Ordenamiento por Medio de Insertion Sort ***************
-        
+
         // Se recorre todo el arreglo
         for (int i = 0; i < pEquipos.length - 1; i++) {
             // Se establece el elemento en la posicion i como mayor.
@@ -366,9 +895,9 @@ public class VentanaPrincipal extends javax.swing.JFrame {
                 // en la posicion j, o tienen la misma cantidad de puntos, pero el
                 // de la posicion j tiene mayor gol deferencia, cambia de valor la 
                 // variable mayor.
-                if (pEquipos[j].getPuntos() > pEquipos[mayor].getPuntos() || 
-                        (pEquipos[j].getPuntos() == pEquipos[mayor].getPuntos() && 
-                        pEquipos[j].getGolDiferencia() > pEquipos[mayor].getGolDiferencia())) {
+                if (pEquipos[j].getPuntos() > pEquipos[mayor].getPuntos()
+                        || (pEquipos[j].getPuntos() == pEquipos[mayor].getPuntos()
+                        && pEquipos[j].getGolDiferencia() > pEquipos[mayor].getGolDiferencia())) {
                     // El elemento j va mas arriba en la tabla de posiciones
                     mayor = j;
                 }
@@ -424,12 +953,36 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     private javax.swing.JButton Btn_Calendario;
     private javax.swing.JButton Btn_Estadios;
     private javax.swing.JButton Btn_Goleadores;
+    private javax.swing.JButton Btn_ModificarEstadio;
+    private javax.swing.JButton Btn_ModificarJugador;
     private javax.swing.JButton Btn_Selecciones;
     private javax.swing.JButton Btn_TablaPosiciones;
+    private javax.swing.JButton Btn_VerMasJoven;
+    private javax.swing.JComboBox Cmb_EquiposJugadorMasJoven;
+    private javax.swing.JComboBox Cmb_Estadios;
+    private javax.swing.JComboBox Cmb_Jugadores;
+    private javax.swing.JComboBox Cmb_ModSelecciones;
+    private javax.swing.JComboBox Cmb_VarEstadios;
+    private javax.swing.JComboBox Cmb_VarJugador;
+    private javax.swing.JRadioButton Rbnt_MasJoven;
+    private javax.swing.JRadioButton Rbtn_MasViejo;
+    private javax.swing.JTextField Txt_DatoModJugador;
+    private javax.swing.JTextField Txt_VarEstadio;
+    private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel4;
+    private javax.swing.JPanel jPanel5;
     private javax.swing.JTabbedPane jTabbedPane1;
     // End of variables declaration//GEN-END:variables
 }

@@ -89,6 +89,29 @@ public class ListaJugadores {
             nodoActual.setSiguiente(pNuevoNodo);
         }
     }
+    
+    /**
+     * Metodo utilizado para obtener el jugador buscado
+     * @param pNombre
+     * @return 
+     */
+    public NodoJugador getJugador(String pNombre){
+        // La lista esta vacia, retorna null
+        if (getListaJugadores() == null) {
+            return null;
+        } else {
+            // Se recorre la lista en busca del jugador que se desea
+            NodoJugador nodoActual = getListaJugadores();
+            while (nodoActual.getSiguiente() != null && !nodoActual.getNombre().equalsIgnoreCase(pNombre)) {
+                nodoActual = nodoActual.getSiguiente();
+            }
+            if (nodoActual.getNombre().equalsIgnoreCase(pNombre)) {
+                return nodoActual;
+            } else {
+                return null;
+            }
+        }        
+    }
 
     /**
      * Metodo que elimina un jugador de la lista mediante el nombre de este
@@ -210,7 +233,7 @@ public class ListaJugadores {
      *
      * @param pNombre Nombre del jugador
      * @param pNuevoNombre Nuevo nombre del jugador
-     * @return
+     * @return true si cambia el nombre al jugador o false en caso que no exista dicho jugador
      */
     public boolean cambiarNombreJugador(String pNombre, String pNuevoNombre) {
         // No existen nodos en la lista para cambiar el nombre
@@ -315,8 +338,38 @@ public class ListaJugadores {
             }
             // verifica si encontro el jugador o no
             if (nodoActual.getNombre().equalsIgnoreCase(pNombre)) {
-                // Encontro el jugador. Cambia la estatura y retorna true
+                // Encontro el jugador. Cambia la posicion y retorna true
                 nodoActual.setPosicion(pPosicion);
+                return true;
+            } else {
+                // No encontro el jugador. Retorna false
+                return false;
+            }
+        }
+    }
+    
+    /**
+     * Metodo para modificar los goles anotados de jugador determinado
+     *
+     * @param pNombre nombre del jugador
+     * @param pGoles nueva cantidad de goles anotados
+     * @return true si cambio los goles al jugador o false en caso que no
+     * exista
+     */
+    public boolean cambiarGolesJugador(String pNombre, int pGoles) {
+        // Verifica si existen o no elementos en la lista
+        if (getListaJugadores() == null) {
+            return false;
+        } else {
+            // Recorre la lista en busca del jugador buscado
+            NodoJugador nodoActual = getListaJugadores();
+            while (nodoActual.getSiguiente() != null && !nodoActual.getNombre().equalsIgnoreCase(pNombre)) {
+                nodoActual = nodoActual.getSiguiente();
+            }
+            // verifica si encontro el jugador o no
+            if (nodoActual.getNombre().equalsIgnoreCase(pNombre)) {
+                // Encontro el jugador. Cambia los goles y retorna true
+                nodoActual.setCantidadGolesAnotados(pGoles);
                 return true;
             } else {
                 // No encontro el jugador. Retorna false

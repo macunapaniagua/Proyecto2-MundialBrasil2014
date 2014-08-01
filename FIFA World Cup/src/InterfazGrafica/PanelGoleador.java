@@ -53,6 +53,7 @@ public class PanelGoleador extends javax.swing.JPanel {
         setBorder(javax.swing.BorderFactory.createEtchedBorder(javax.swing.border.EtchedBorder.RAISED));
 
         Lbl_Bandera.setBackground(new java.awt.Color(255, 204, 51));
+        Lbl_Bandera.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
         Lbl_NombreEquipo.setFont(new java.awt.Font("Dialog", 2, 11)); // NOI18N
         Lbl_NombreEquipo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);

@@ -67,10 +67,10 @@ public class FIFAWorldCup {
 
         //********************* Ventana de Estadios ****************************                        
         // Se le cambia la ubicacion al Estadio Castelao
-        estadiosMundial.modificarUbicacionDelEstadio("Estadio Castelao", "Ciudad Quesada");
-        // Se cambia el nombre del Estadio Castelao
-        estadiosMundial.modificarNombreDeEstadio("Estadio Castelao", "Nazareth");
-        estadiosMundial.modificarCapacidadEstadio("Nazareth", 2);
+//////        estadiosMundial.modificarUbicacionDelEstadio("Estadio Castelao", "Ciudad Quesada");
+//////        // Se cambia el nombre del Estadio Castelao
+//////        estadiosMundial.modificarNombreDeEstadio("Estadio Castelao", "Nazareth");
+//////        estadiosMundial.modificarCapacidadEstadio("Nazareth", 2);
 
 //////        // se crea una ventana de estadios
 //////        VentanaEstadios v = new VentanaEstadios();
@@ -102,76 +102,76 @@ public class FIFAWorldCup {
 //////////////        
         // *********************** Lista de Jugadores **************************
 
-        // Lista de jugadores de una seleccion
-        ListaJugadores listaDeJugadores;
-        
-        VentanaJugadores vj = new VentanaJugadores();
-
-        String seleccion = "portugal";
-
-        listaDeJugadores = listaEquiposMundial.getNodoEquipo(seleccion).getJugadores();
-        // ESTO ES PARA QUE EL NOMBRE DEL EQUIPO LO MUESTRE COMO ESTA EN EL XML, NO EN MINUSCULA
-        vj.agregarBanderaYLogo(listaEquiposMundial.getNodoEquipo(seleccion).getNombreEquipo());
-
-        listaDeJugadores.cambiarNombreJugador("Nani", "Mario");
-        listaDeJugadores.cambiarNumero("Mario", 24);
-        listaDeJugadores.cambiarEstaturaJugador("Mario", 178);
-        listaDeJugadores.cambiarPosicionJugador("Mario", "Delantero");
-        listaDeJugadores.cambiarEdadJugador("Mario", 23);
-        listaDeJugadores.inicializarNodoActual();
-
-        while (listaDeJugadores.getNodoActual() != null) {
-
-            NodoJugador jugadorActual = listaDeJugadores.getNodoActual();
-
-            //System.out.println(jugadorActual.getNombre().toUpperCase());
-            PanelJugador player = new PanelJugador();
-
-            player.setDatosJugador(seleccion, jugadorActual.getNombre(), jugadorActual.getPosicion(),
-                    jugadorActual.getNumeroCamiseta(), jugadorActual.getEdad(), jugadorActual.getEstatura());
-            vj.AgregarJugador(player);
-            listaDeJugadores.moverNodoActual();
-        }
-
-        PanelJugador entrenador = new PanelJugador();
-        entrenador.setDatosEntrenador(listaEquiposMundial.getNodoEquipo(seleccion).getNombreEntrenador(), seleccion);
-        vj.AgregarJugador(entrenador);
-
-        vj.setLocationRelativeTo(null);
-        vj.setVisible(true);
+////////        // Lista de jugadores de una seleccion
+////////        ListaJugadores listaDeJugadores;
+////////        
+////////        VentanaJugadores vj = new VentanaJugadores();
+////////
+////////        String seleccion = "portugal";
+////////
+////////        listaDeJugadores = listaEquiposMundial.getNodoEquipo(seleccion).getJugadores();
+////////        // ESTO ES PARA QUE EL NOMBRE DEL EQUIPO LO MUESTRE COMO ESTA EN EL XML, NO EN MINUSCULA
+////////        vj.agregarBanderaYLogo(listaEquiposMundial.getNodoEquipo(seleccion).getNombreEquipo());
+////////
+//        listaDeJugadores.cambiarNombreJugador("Nani", "Mario");
+//        listaDeJugadores.cambiarNumero("Mario", 24);
+//        listaDeJugadores.cambiarEstaturaJugador("Mario", 178);
+//        listaDeJugadores.cambiarPosicionJugador("Mario", "Delantero");
+//        listaDeJugadores.cambiarEdadJugador("Mario", 23);
+//        listaDeJugadores.inicializarNodoActual();
+////////
+////////        while (listaDeJugadores.getNodoActual() != null) {
+////////
+////////            NodoJugador jugadorActual = listaDeJugadores.getNodoActual();
+////////
+////////            //System.out.println(jugadorActual.getNombre().toUpperCase());
+////////            PanelJugador player = new PanelJugador();
+////////
+////////            player.setDatosJugador(seleccion, jugadorActual.getNombre(), jugadorActual.getPosicion(),
+////////                    jugadorActual.getNumeroCamiseta(), jugadorActual.getEdad(), jugadorActual.getEstatura());
+////////            vj.AgregarJugador(player);
+////////            listaDeJugadores.moverNodoActual();
+////////        }
+////////
+////////        PanelJugador entrenador = new PanelJugador();
+////////        entrenador.setDatosEntrenador(listaEquiposMundial.getNodoEquipo(seleccion).getNombreEntrenador(), seleccion);
+////////        vj.AgregarJugador(entrenador);
+////////
+////////        vj.setLocationRelativeTo(null);
+////////        vj.setVisible(true);
 
         
 
 // *********************** JUGADOR MAS JOVEN DE UN EQUIPO **************
         String EquipoDeJugadorAConsultar = "Costa Rica";
 
-        NodoJugador jugadorMasJoven = listaEquiposMundial.getNodoEquipo(EquipoDeJugadorAConsultar).getJugadores().getJugadorMasJoven();
-        NodoJugador jugadorMasViejo = listaEquiposMundial.getNodoEquipo(EquipoDeJugadorAConsultar).getJugadores().getJugadorMasViejo();
-
-        JFrame joven = new JFrame("Jugador más Joven");
-        JFrame viejo = new JFrame("Jugador más Viejo");
-
-        PanelJugador jugaJoven = new PanelJugador();
-        jugaJoven.setDatosJugador(EquipoDeJugadorAConsultar, jugadorMasJoven.getNombre(),
-                jugadorMasJoven.getPosicion(), jugadorMasJoven.getNumeroCamiseta(), jugadorMasJoven.getEdad(),
-                jugadorMasJoven.getEstatura());
-        joven.add(jugaJoven);
-        joven.setResizable(false);
-        joven.pack();
-        joven.repaint();
-        joven.revalidate();
-        joven.setLocationRelativeTo(null);
-        joven.setVisible(true);
-
-        PanelJugador jugaViejo = new PanelJugador();
-        jugaViejo.setDatosJugador(EquipoDeJugadorAConsultar, jugadorMasViejo.getNombre(),
-                jugadorMasViejo.getPosicion(), jugadorMasViejo.getNumeroCamiseta(), jugadorMasViejo.getEdad(),
-                jugadorMasViejo.getEstatura());
-        viejo.add(jugaViejo);
-        viejo.setResizable(false);
-        viejo.pack();
-        viejo.setLocationRelativeTo(null);
-        viejo.setVisible(true);
+//////////        NodoJugador jugadorMasJoven = listaEquiposMundial.getNodoEquipo(EquipoDeJugadorAConsultar).getJugadores().getJugadorMasJoven();
+//////////        NodoJugador jugadorMasViejo = listaEquiposMundial.getNodoEquipo(EquipoDeJugadorAConsultar).getJugadores().getJugadorMasViejo();
+//////////
+//////////        JFrame joven = new JFrame("Jugador más Joven");
+//////////        JFrame viejo = new JFrame("Jugador más Viejo");
+//////////
+//////////        PanelJugador jugaJoven = new PanelJugador();
+//////////        jugaJoven.setDatosJugador(EquipoDeJugadorAConsultar, jugadorMasJoven.getNombre(),
+//////////                jugadorMasJoven.getPosicion(), jugadorMasJoven.getNumeroCamiseta(), jugadorMasJoven.getEdad(),
+//////////                jugadorMasJoven.getEstatura());
+//////////        joven.add(jugaJoven);
+//////////        joven.setResizable(false);
+//////////        joven.pack();
+//////////        joven.repaint();
+//////////        joven.revalidate();
+//////////        joven.setLocationRelativeTo(null);
+//////////        joven.setVisible(true);
+//////////
+//////////        PanelJugador jugaViejo = new PanelJugador();
+//////////        jugaViejo.setDatosJugador(EquipoDeJugadorAConsultar, jugadorMasViejo.getNombre(),
+//////////                jugadorMasViejo.getPosicion(), jugadorMasViejo.getNumeroCamiseta(), jugadorMasViejo.getEdad(),
+//////////                jugadorMasViejo.getEstatura());
+//////////        viejo.add(jugaViejo);
+//////////        viejo.setResizable(false);
+//////////        viejo.pack();
+//////////        viejo.setLocationRelativeTo(null);
+//////////        viejo.setVisible(true);
 
         //////////////// LISTA DE GRUPOS Y ENCUENTROS ENTRE SELECCIONES  /////////////////////               
 //////        VentanaEncuentros en = new VentanaEncuentros();

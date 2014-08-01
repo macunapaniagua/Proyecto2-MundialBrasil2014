@@ -6,8 +6,6 @@
 
 package Codigo;
 
-import javax.swing.JLabel;
-
 /**
  *
  * @author Noelia Urpi
@@ -31,7 +29,6 @@ public class NodoEstadio {
      * @param pNombre nombre del estadio
      * @param pCiudad ciudad donde se ubica el estadio
      * @param pCapacidad capacidad de personas del estadio
-     * @param pImagen imagen del estadio
      */
     public NodoEstadio(String pNombre, String pCiudad, int pCapacidad){
         nombreEstadio = pNombre;

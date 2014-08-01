@@ -72,6 +72,7 @@ public class VentanaJugadores extends javax.swing.JFrame {
         Lbl_TituloJugadores.setText("Jugadores");
         Lbl_TituloJugadores.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
 
+        Lbl_Bandera.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         Lbl_Bandera.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ImagenesBanderas/Costa Rica.png"))); // NOI18N
 
         Lbl_NombreEquipo.setFont(new java.awt.Font("Dialog", 2, 14)); // NOI18N
