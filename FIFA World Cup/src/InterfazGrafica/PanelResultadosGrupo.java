@@ -51,8 +51,9 @@ public class PanelResultadosGrupo extends javax.swing.JPanel {
 
         setBorder(javax.swing.BorderFactory.createEtchedBorder(javax.swing.border.EtchedBorder.RAISED));
 
-        Lbl_LetraDelGrupo.setBackground(new java.awt.Color(153, 153, 0));
+        Lbl_LetraDelGrupo.setBackground(new java.awt.Color(125, 164, 0));
         Lbl_LetraDelGrupo.setFont(new java.awt.Font("Dotum", 3, 20)); // NOI18N
+        Lbl_LetraDelGrupo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         Lbl_LetraDelGrupo.setText("GRUPO A");
         Lbl_LetraDelGrupo.setOpaque(true);
 

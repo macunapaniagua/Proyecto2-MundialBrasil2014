@@ -144,342 +144,225 @@ public class PanelPosiciones extends javax.swing.JPanel {
         jLabel69 = new javax.swing.JLabel();
         Lbl_LetraDelGrupo = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(204, 204, 204));
         setBorder(javax.swing.BorderFactory.createEtchedBorder(javax.swing.border.EtchedBorder.RAISED));
+        setPreferredSize(new java.awt.Dimension(531, 267));
+        setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jLabel1.setFont(new java.awt.Font("Tahoma", 3, 11)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("Equipo");
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 60, 150, 20));
 
+        jLabel2.setFont(new java.awt.Font("Tahoma", 3, 11)); // NOI18N
+        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setText("PJ");
+        jLabel2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jLabel2.setPreferredSize(new java.awt.Dimension(18, 14));
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 60, 28, 20));
 
+        jLabel3.setFont(new java.awt.Font("Tahoma", 3, 11)); // NOI18N
+        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel3.setText("PG");
+        jLabel3.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 60, 26, 20));
 
+        jLabel4.setFont(new java.awt.Font("Tahoma", 3, 11)); // NOI18N
+        jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel4.setText("PE");
+        jLabel4.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 60, 25, 20));
 
+        jLabel5.setFont(new java.awt.Font("Tahoma", 3, 11)); // NOI18N
+        jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel5.setText("PP");
+        jLabel5.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 60, 25, 20));
 
+        jLabel6.setFont(new java.awt.Font("Tahoma", 3, 11)); // NOI18N
+        jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel6.setText("GF");
+        jLabel6.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 60, 26, 20));
 
+        jLabel7.setFont(new java.awt.Font("Tahoma", 3, 11)); // NOI18N
+        jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel7.setText("GC");
+        jLabel7.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 60, 27, 20));
 
+        jLabel8.setFont(new java.awt.Font("Tahoma", 3, 11)); // NOI18N
+        jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel8.setText("Dif");
+        jLabel8.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 60, 26, 20));
 
+        Lbl_Pts.setFont(new java.awt.Font("Tahoma", 3, 11)); // NOI18N
+        Lbl_Pts.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         Lbl_Pts.setText("PTS");
+        Lbl_Pts.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        add(Lbl_Pts, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 60, 31, 20));
 
         jLabel79.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel79.setPreferredSize(new java.awt.Dimension(46, 29));
+        add(jLabel79, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 90, -1, -1));
 
         jLabel81.setText("Bosnia Herzegovina");
+        add(jLabel81, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 90, 100, 29));
 
         jLabel80.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         jLabel80.setText("PJ");
+        add(jLabel80, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 90, 26, 29));
 
         jLabel82.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         jLabel82.setText("PG");
+        add(jLabel82, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 90, 22, 29));
 
         jLabel83.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         jLabel83.setText("PE");
+        add(jLabel83, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 90, 21, 29));
 
         jLabel84.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         jLabel84.setText("PP");
+        add(jLabel84, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 90, 21, 29));
 
         jLabel85.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         jLabel85.setText("GF");
+        add(jLabel85, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 90, 22, 29));
 
         jLabel49.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         jLabel49.setText("GC");
+        add(jLabel49, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 90, 23, 29));
 
         jLabel77.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         jLabel77.setText("G.Dif");
+        add(jLabel77, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 90, 33, 29));
 
         Lbl_Pts1.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         Lbl_Pts1.setText("PTS");
+        add(Lbl_Pts1, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 90, 27, 29));
 
         jLabel50.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel50.setPreferredSize(new java.awt.Dimension(46, 29));
+        add(jLabel50, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 130, -1, -1));
 
         jLabel52.setText("Bosnia Herzegovina");
+        add(jLabel52, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 130, 100, 29));
 
         jLabel51.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         jLabel51.setText("PJ");
+        add(jLabel51, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 130, 27, 29));
 
         jLabel53.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         jLabel53.setText("PG");
+        add(jLabel53, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 130, 22, 29));
 
         jLabel54.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         jLabel54.setText("PE");
+        add(jLabel54, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 130, 21, 29));
 
         jLabel55.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         jLabel55.setText("PP");
+        add(jLabel55, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 130, 21, 29));
 
         jLabel56.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         jLabel56.setText("GF");
+        add(jLabel56, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 130, 22, 29));
 
         jLabel46.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         jLabel46.setText("GC");
+        add(jLabel46, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 130, 23, 29));
 
         jLabel47.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         jLabel47.setText("G.Dif");
+        add(jLabel47, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 130, 33, 29));
 
         Lbl_Pts2.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         Lbl_Pts2.setText("PTS");
+        add(Lbl_Pts2, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 130, 27, 29));
 
         jLabel60.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel60.setPreferredSize(new java.awt.Dimension(46, 29));
+        add(jLabel60, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 170, -1, -1));
 
         jLabel62.setText("Iran");
+        add(jLabel62, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 170, 100, 29));
 
         jLabel61.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         jLabel61.setText("PJ");
+        add(jLabel61, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 170, 27, 29));
 
         jLabel63.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         jLabel63.setText("PG");
+        add(jLabel63, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 170, 22, 29));
 
         jLabel64.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         jLabel64.setText("PE");
+        add(jLabel64, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 170, 21, 29));
 
         jLabel65.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         jLabel65.setText("PP");
+        add(jLabel65, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 170, 21, 29));
 
         jLabel66.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         jLabel66.setText("GF");
+        add(jLabel66, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 170, 22, 29));
 
         jLabel57.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         jLabel57.setText("GC");
+        add(jLabel57, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 170, 23, 29));
 
         jLabel58.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         jLabel58.setText("G.Dif");
+        add(jLabel58, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 170, 33, 29));
 
         Lbl_Pts3.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         Lbl_Pts3.setText("PTS");
+        add(Lbl_Pts3, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 170, 27, 29));
 
         jLabel70.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel70.setPreferredSize(new java.awt.Dimension(46, 29));
+        add(jLabel70, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 210, -1, -1));
 
         jLabel72.setText("Bosnia Herzegovina");
+        add(jLabel72, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 210, 100, 29));
 
         jLabel71.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         jLabel71.setText("PJ");
+        add(jLabel71, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 210, 27, 29));
 
         jLabel73.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         jLabel73.setText("PG");
+        add(jLabel73, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 210, 22, 29));
 
         jLabel74.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         jLabel74.setText("PE");
+        add(jLabel74, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 210, 21, 29));
 
         jLabel75.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         jLabel75.setText("PP");
+        add(jLabel75, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 210, 21, 29));
 
         jLabel76.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         jLabel76.setText("GF");
+        add(jLabel76, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 210, 22, 29));
 
         jLabel67.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         jLabel67.setText("GC");
+        add(jLabel67, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 210, 23, 29));
 
         jLabel68.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         jLabel68.setText("G.Dif");
+        add(jLabel68, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 210, 33, 29));
 
         jLabel69.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         jLabel69.setText("PTS");
+        add(jLabel69, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 210, 27, 29));
 
-        Lbl_LetraDelGrupo.setFont(new java.awt.Font("Lucida Bright", 3, 18)); // NOI18N
+        Lbl_LetraDelGrupo.setFont(new java.awt.Font("Lucida Bright", 2, 18)); // NOI18N
+        Lbl_LetraDelGrupo.setForeground(new java.awt.Color(51, 51, 51));
         Lbl_LetraDelGrupo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         Lbl_LetraDelGrupo.setText("Grupo D");
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 144, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(58, 58, 58)
-                        .addComponent(jLabel2)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel3)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel4)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel5)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel6)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel7)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel8)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(Lbl_Pts))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(22, 22, 22)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addGroup(layout.createSequentialGroup()
-                                    .addComponent(jLabel79, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(jLabel81, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGap(0, 0, 0)
-                                    .addComponent(jLabel80)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(jLabel82)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(jLabel83)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(jLabel84)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(jLabel85)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(jLabel49)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(jLabel77)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(Lbl_Pts1))
-                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                    .addComponent(jLabel50, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(jLabel52, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGap(0, 0, 0)
-                                    .addComponent(jLabel51)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(jLabel53)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(jLabel54)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(jLabel55)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(jLabel56)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(jLabel46)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(jLabel47)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(Lbl_Pts2)))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel60, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jLabel62, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(0, 0, 0)
-                                .addComponent(jLabel61)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabel63)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabel64)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabel65)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabel66)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabel57)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabel58)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(Lbl_Pts3))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel70, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jLabel72, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(0, 0, 0)
-                                .addComponent(jLabel71)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabel73)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabel74)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabel75)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabel76)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabel67)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabel68)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabel69)))))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addComponent(Lbl_LetraDelGrupo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
-
-        layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {Lbl_Pts, Lbl_Pts1, Lbl_Pts2, Lbl_Pts3, jLabel2, jLabel3, jLabel4, jLabel46, jLabel47, jLabel49, jLabel5, jLabel51, jLabel53, jLabel54, jLabel55, jLabel56, jLabel57, jLabel58, jLabel6, jLabel61, jLabel63, jLabel64, jLabel65, jLabel66, jLabel67, jLabel68, jLabel69, jLabel7, jLabel71, jLabel73, jLabel74, jLabel75, jLabel76, jLabel77, jLabel8, jLabel80, jLabel82, jLabel83, jLabel84, jLabel85});
-
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(6, 6, 6)
-                .addComponent(Lbl_LetraDelGrupo, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
-                    .addComponent(jLabel7)
-                    .addComponent(jLabel8)
-                    .addComponent(Lbl_Pts)
-                    .addComponent(jLabel1)
-                    .addComponent(jLabel2)
-                    .addComponent(jLabel3)
-                    .addComponent(jLabel4)
-                    .addComponent(jLabel5)
-                    .addComponent(jLabel6))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(7, 7, 7)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
-                            .addComponent(jLabel49)
-                            .addComponent(jLabel77)
-                            .addComponent(Lbl_Pts1)
-                            .addComponent(jLabel80)
-                            .addComponent(jLabel82)
-                            .addComponent(jLabel83)
-                            .addComponent(jLabel84)
-                            .addComponent(jLabel85)))
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jLabel81, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jLabel79, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(7, 7, 7)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
-                            .addComponent(jLabel46)
-                            .addComponent(jLabel47)
-                            .addComponent(Lbl_Pts2)
-                            .addComponent(jLabel51)
-                            .addComponent(jLabel53)
-                            .addComponent(jLabel54)
-                            .addComponent(jLabel55)
-                            .addComponent(jLabel56)))
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jLabel52, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jLabel50, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(7, 7, 7)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
-                            .addComponent(jLabel57)
-                            .addComponent(jLabel58)
-                            .addComponent(Lbl_Pts3)
-                            .addComponent(jLabel61)
-                            .addComponent(jLabel63)
-                            .addComponent(jLabel64)
-                            .addComponent(jLabel65)
-                            .addComponent(jLabel66)))
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jLabel62, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jLabel60, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel72, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(7, 7, 7)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
-                                    .addComponent(jLabel67)
-                                    .addComponent(jLabel68)
-                                    .addComponent(jLabel69)
-                                    .addComponent(jLabel71)
-                                    .addComponent(jLabel73)
-                                    .addComponent(jLabel74)
-                                    .addComponent(jLabel75)
-                                    .addComponent(jLabel76)))
-                            .addComponent(jLabel70, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(0, 0, Short.MAX_VALUE)))
-                .addContainerGap())
-        );
+        add(Lbl_LetraDelGrupo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 480, 44));
     }// </editor-fold>//GEN-END:initComponents
 
 

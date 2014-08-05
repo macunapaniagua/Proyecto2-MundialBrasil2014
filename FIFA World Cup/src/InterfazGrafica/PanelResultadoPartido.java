@@ -94,7 +94,7 @@ public class PanelResultadoPartido extends javax.swing.JPanel {
         setBorder(javax.swing.BorderFactory.createEtchedBorder(javax.swing.border.EtchedBorder.RAISED));
         setLayout(new javax.swing.BoxLayout(this, javax.swing.BoxLayout.PAGE_AXIS));
 
-        Pnl_Versus.setBackground(new java.awt.Color(245, 224, 200));
+        Pnl_Versus.setBackground(new java.awt.Color(217, 217, 217));
 
         Lbl_BanderaVisita.setBackground(new java.awt.Color(204, 0, 204));
         Lbl_BanderaVisita.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -178,7 +178,7 @@ public class PanelResultadoPartido extends javax.swing.JPanel {
 
         add(Pnl_Versus);
 
-        Pnl_Informacion.setBackground(new java.awt.Color(153, 153, 153));
+        Pnl_Informacion.setBackground(new java.awt.Color(150, 150, 150));
 
         Lbl_CondicionClimatica.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Lluvioso.png"))); // NOI18N
         Lbl_CondicionClimatica.setText("jLabel1");
@@ -211,7 +211,7 @@ public class PanelResultadoPartido extends javax.swing.JPanel {
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Temperatura.png"))); // NOI18N
 
-        Lbl_Estadio.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
+        Lbl_Estadio.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         Lbl_Estadio.setText("Arena Pernambuco");
 
         Lbl_VelocidadViento.setText("28 m/s");
@@ -237,15 +237,14 @@ public class PanelResultadoPartido extends javax.swing.JPanel {
                     .addComponent(Lbl_Humedad)
                     .addComponent(Lbl_Temperatura)
                     .addComponent(Lbl_VelocidadViento))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 52, Short.MAX_VALUE)
                 .addGroup(Pnl_InformacionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(Pnl_InformacionLayout.createSequentialGroup()
-                        .addGap(33, 33, 33)
-                        .addComponent(Lbl_Estadio, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(29, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, Pnl_InformacionLayout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(Lbl_CondicionClimatica, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(46, 46, 46))))
+                        .addGap(46, 46, 46))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, Pnl_InformacionLayout.createSequentialGroup()
+                        .addComponent(Lbl_Estadio, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap())))
         );
         Pnl_InformacionLayout.setVerticalGroup(
             Pnl_InformacionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -258,9 +257,7 @@ public class PanelResultadoPartido extends javax.swing.JPanel {
                 .addGroup(Pnl_InformacionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(Pnl_InformacionLayout.createSequentialGroup()
                         .addGap(12, 12, 12)
-                        .addComponent(Lbl_CondicionClimatica, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(Lbl_Estadio, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(Lbl_CondicionClimatica, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(Pnl_InformacionLayout.createSequentialGroup()
                         .addGroup(Pnl_InformacionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel5)
@@ -275,10 +272,12 @@ public class PanelResultadoPartido extends javax.swing.JPanel {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(Lbl_Humedad)
                                 .addGap(11, 11, 11)))
-                        .addGap(11, 11, 11)
+                        .addGap(6, 6, 6)
                         .addGroup(Pnl_InformacionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel2)
-                            .addComponent(Lbl_VelocidadViento))))
+                            .addGroup(Pnl_InformacionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addComponent(Lbl_VelocidadViento)
+                                .addComponent(Lbl_Estadio, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 

@@ -146,18 +146,28 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         });
         jPanel1.add(Btn_Calendario, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 280, 150, 30));
 
-        jLabel7.setText("Visualizar jugador más joven/viejo");
+        jPanel3.setOpaque(false);
+
+        jLabel7.setFont(new java.awt.Font("Dialog", 3, 12)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel7.setText("Selección");
 
         Cmb_EquiposJugadorMasJoven.setFocusable(false);
 
         buttonGroup1.add(Rbnt_MasJoven);
+        Rbnt_MasJoven.setFont(new java.awt.Font("Dialog", 3, 12)); // NOI18N
+        Rbnt_MasJoven.setForeground(new java.awt.Color(255, 255, 255));
         Rbnt_MasJoven.setSelected(true);
         Rbnt_MasJoven.setText("Jugador más joven");
         Rbnt_MasJoven.setFocusable(false);
+        Rbnt_MasJoven.setOpaque(false);
 
         buttonGroup1.add(Rbtn_MasViejo);
+        Rbtn_MasViejo.setFont(new java.awt.Font("Dialog", 3, 12)); // NOI18N
+        Rbtn_MasViejo.setForeground(new java.awt.Color(255, 255, 255));
         Rbtn_MasViejo.setText("Jugador más viejo");
         Rbtn_MasViejo.setFocusable(false);
+        Rbtn_MasViejo.setOpaque(false);
 
         Btn_VerMasJoven.setText("Visualizar");
         Btn_VerMasJoven.setFocusable(false);
@@ -171,37 +181,32 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         jPanel3.setLayout(jPanel3Layout);
         jPanel3Layout.setHorizontalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                .addGap(5, 5, 5)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addGap(15, 15, 15)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(Btn_VerMasJoven)
-                    .addComponent(Rbtn_MasViejo)
-                    .addComponent(Rbnt_MasJoven)
-                    .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                            .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(21, 21, 21))
-                        .addGroup(jPanel3Layout.createSequentialGroup()
-                            .addComponent(Cmb_EquiposJugadorMasJoven, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addContainerGap()))))
+                    .addComponent(Btn_VerMasJoven, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(Rbtn_MasViejo)
+                        .addComponent(Rbnt_MasJoven)
+                        .addComponent(Cmb_EquiposJugadorMasJoven, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jLabel7)))
+                .addContainerGap())
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addGap(0, 0, 0)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
                 .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(Cmb_EquiposJugadorMasJoven, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(Rbnt_MasJoven)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(Rbtn_MasViejo)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(Btn_VerMasJoven)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(21, 21, 21)
+                .addComponent(Btn_VerMasJoven))
         );
 
-        jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 80, 180, 150));
+        jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 110, 190, 160));
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Mascota.png"))); // NOI18N
         jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 330, -1, -1));
@@ -216,6 +221,10 @@ public class VentanaPrincipal extends javax.swing.JFrame {
 
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jPanel5.setOpaque(false);
+
+        jLabel8.setFont(new java.awt.Font("Dialog", 3, 12)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
         jLabel8.setText("Modificar Contenido de Estadio");
 
         Cmb_Estadios.setFocusable(false);
@@ -246,17 +255,18 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         jPanel5.setLayout(jPanel5Layout);
         jPanel5Layout.setHorizontalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
+            .addGroup(jPanel5Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                        .addComponent(Btn_ModificarEstadio)
-                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addComponent(Txt_VarEstadio, javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(Cmb_VarEstadios, javax.swing.GroupLayout.Alignment.LEADING, 0, 147, Short.MAX_VALUE)
-                            .addComponent(Cmb_Estadios, javax.swing.GroupLayout.Alignment.LEADING, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-                .addContainerGap())
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(Btn_ModificarEstadio)
+                    .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                        .addComponent(Txt_VarEstadio, javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(Cmb_VarEstadios, javax.swing.GroupLayout.Alignment.LEADING, 0, 147, Short.MAX_VALUE)
+                        .addComponent(Cmb_Estadios, javax.swing.GroupLayout.Alignment.LEADING, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                .addGap(33, 33, 33))
+            .addGroup(jPanel5Layout.createSequentialGroup()
+                .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0))
         );
         jPanel5Layout.setVerticalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -274,8 +284,9 @@ public class VentanaPrincipal extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        jPanel2.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 70, 180, 180));
+        jPanel2.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 30, 180, 180));
 
+        jPanel4.setOpaque(false);
         jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         Btn_ModificarJugador.setText("Modificar");
@@ -319,10 +330,12 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         });
         jPanel4.add(Cmb_ModSelecciones, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 50, 167, -1));
 
+        jLabel9.setFont(new java.awt.Font("Dialog", 3, 12)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(255, 255, 255));
         jLabel9.setText("Modificar Contenido de Jugador");
-        jPanel4.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 180, 30));
+        jPanel4.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 190, 30));
 
-        jPanel2.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 70, 200, 210));
+        jPanel2.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 30, 200, 210));
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Mascota.png"))); // NOI18N
         jPanel2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 330, -1, -1));
