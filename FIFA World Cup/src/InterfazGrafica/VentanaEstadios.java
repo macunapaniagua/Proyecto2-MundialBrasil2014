@@ -39,7 +39,7 @@ public class VentanaEstadios extends javax.swing.JFrame {
         Pnl_ContenedorEstadios.setPreferredSize(new java.awt.Dimension(715, 560));
         Pnl_ContenedorEstadios.setLayout(new java.awt.GridLayout(3, 4, 2, 2));
 
-        jLabel1.setFont(new java.awt.Font("Copperplate Gothic Bold", 2, 18)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Dialog", 3, 14)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("Estadios");
 

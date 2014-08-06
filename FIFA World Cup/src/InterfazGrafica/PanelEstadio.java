@@ -58,13 +58,13 @@ public class PanelEstadio extends javax.swing.JPanel {
 
         setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
-        Lbl_CiudadEstadio.setFont(new java.awt.Font("Nirmala UI", 1, 12)); // NOI18N
+        Lbl_CiudadEstadio.setFont(new java.awt.Font("Nirmala UI", 0, 12)); // NOI18N
         Lbl_CiudadEstadio.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
-        Lbl_NombreEstadio.setFont(new java.awt.Font("Nirmala UI", 1, 12)); // NOI18N
+        Lbl_NombreEstadio.setFont(new java.awt.Font("Nirmala UI", 0, 12)); // NOI18N
         Lbl_NombreEstadio.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
-        Lbl_CapacidadEstadio.setFont(new java.awt.Font("Nirmala UI", 1, 12)); // NOI18N
+        Lbl_CapacidadEstadio.setFont(new java.awt.Font("Nirmala UI", 0, 12)); // NOI18N
         Lbl_CapacidadEstadio.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);

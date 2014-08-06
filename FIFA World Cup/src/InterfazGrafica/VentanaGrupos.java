@@ -5,9 +5,6 @@
  */
 package InterfazGrafica;
 
-import javax.swing.JLabel;
-import javax.swing.JPanel;
-
 /**
  *
  * @author Mario A
@@ -19,32 +16,7 @@ public class VentanaGrupos extends javax.swing.JFrame {
      */
     public VentanaGrupos() {
         initComponents();
-        this.setLocationRelativeTo(null);
-
-        for (int i = 0; i < 8; i++) {
-            Pnl_Grupos.add(new PanelGrupo());
-        }
-
-        
-        // Elemento 0 = Titulo del grupo
-        // Elemento 1 = Bandera 1
-        // Elemento 2 = Nombre Equipo 1
-        // Elemento 3 = Bandera 2
-        // Elemento 4 = Nombre Equipo 2
-        // Elemento 5 = Bandera 3
-        // Elemento 6 = Nombre Equipo 3
-        // Elemento 7 = Bandera 4
-        // Elemento 8 = Nombre Equipo 4
-        
-        
-        for (int i = 0; i < 7; i++) {
-            if (i % 2 == 0) {
-                ((JLabel)((JPanel)Pnl_Grupos.getComponent(2)).getComponent(1)).setText("Grupo Par");    
-                ((JLabel)((JPanel)Pnl_Grupos.getComponent(2)).getComponent(1)).setIcon(null);    
-            } else {
-                ((JLabel)((JPanel)Pnl_Grupos.getComponent(i)).getComponent(0)).setText("Grupo ImPar"); 
-            }
-        }
+        this.setLocationRelativeTo(null);        
     }
 
     /**
@@ -56,44 +28,25 @@ public class VentanaGrupos extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLayeredPane1 = new javax.swing.JLayeredPane();
         Pnl_Grupos = new javax.swing.JPanel();
-        Lbl_Imagen = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Grupos Brasil 2014");
         setResizable(false);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLayeredPane1.setPreferredSize(new java.awt.Dimension(990, 619));
-        jLayeredPane1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        Pnl_Grupos.setOpaque(false);
-        Pnl_Grupos.setPreferredSize(new java.awt.Dimension(980, 590));
         Pnl_Grupos.setLayout(new java.awt.GridLayout(2, 4));
-        jLayeredPane1.add(Pnl_Grupos, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, -1, -1));
-
-        Lbl_Imagen.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Aqua.jpg"))); // NOI18N
-        jLayeredPane1.add(Lbl_Imagen, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(jLayeredPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(0, 0, 0)
-                .addComponent(jLayeredPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, 0))
-        );
+        getContentPane().add(Pnl_Grupos, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 780, 458));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    public void agregarPanel(PanelGrupo pGrupo){
+        Pnl_Grupos.add(pGrupo);
+        Pnl_Grupos.repaint();
+        Pnl_Grupos.revalidate();
+    }
+    
     /**
      * @param args the command line arguments
      */
@@ -130,8 +83,6 @@ public class VentanaGrupos extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel Lbl_Imagen;
     private javax.swing.JPanel Pnl_Grupos;
-    private javax.swing.JLayeredPane jLayeredPane1;
     // End of variables declaration//GEN-END:variables
 }

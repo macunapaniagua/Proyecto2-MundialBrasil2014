@@ -66,6 +66,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         Btn_Goleadores = new javax.swing.JButton();
         Btn_TablaPosiciones = new javax.swing.JButton();
         Btn_Calendario = new javax.swing.JButton();
+        Btn_Calendario1 = new javax.swing.JButton();
         jPanel3 = new javax.swing.JPanel();
         jLabel7 = new javax.swing.JLabel();
         Cmb_EquiposJugadorMasJoven = new javax.swing.JComboBox();
@@ -108,7 +109,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
                 Btn_EstadiosActionPerformed(evt);
             }
         });
-        jPanel1.add(Btn_Estadios, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 80, 150, 30));
+        jPanel1.add(Btn_Estadios, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 60, 150, 30));
 
         Btn_Selecciones.setText("Selecciones");
         Btn_Selecciones.setFocusable(false);
@@ -117,7 +118,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
                 Btn_SeleccionesActionPerformed(evt);
             }
         });
-        jPanel1.add(Btn_Selecciones, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 130, 150, 30));
+        jPanel1.add(Btn_Selecciones, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 110, 150, 30));
 
         Btn_Goleadores.setText("Goleadores");
         Btn_Goleadores.setFocusable(false);
@@ -126,7 +127,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
                 Btn_GoleadoresActionPerformed(evt);
             }
         });
-        jPanel1.add(Btn_Goleadores, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 180, 150, 30));
+        jPanel1.add(Btn_Goleadores, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 160, 150, 30));
 
         Btn_TablaPosiciones.setText("Tabla de Posiciones");
         Btn_TablaPosiciones.setFocusable(false);
@@ -135,7 +136,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
                 Btn_TablaPosicionesActionPerformed(evt);
             }
         });
-        jPanel1.add(Btn_TablaPosiciones, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 230, 150, 30));
+        jPanel1.add(Btn_TablaPosiciones, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 210, 150, 30));
 
         Btn_Calendario.setText("Calendario");
         Btn_Calendario.setFocusable(false);
@@ -144,7 +145,16 @@ public class VentanaPrincipal extends javax.swing.JFrame {
                 Btn_CalendarioActionPerformed(evt);
             }
         });
-        jPanel1.add(Btn_Calendario, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 280, 150, 30));
+        jPanel1.add(Btn_Calendario, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 310, 150, 30));
+
+        Btn_Calendario1.setText("Grupos");
+        Btn_Calendario1.setFocusable(false);
+        Btn_Calendario1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Btn_Calendario1ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(Btn_Calendario1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 260, 150, 30));
 
         jPanel3.setOpaque(false);
 
@@ -264,9 +274,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
                         .addComponent(Cmb_VarEstadios, javax.swing.GroupLayout.Alignment.LEADING, 0, 147, Short.MAX_VALUE)
                         .addComponent(Cmb_Estadios, javax.swing.GroupLayout.Alignment.LEADING, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addGap(33, 33, 33))
-            .addGroup(jPanel5Layout.createSequentialGroup()
-                .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, 0))
+            .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         jPanel5Layout.setVerticalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -893,6 +901,23 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_Btn_ModificarEstadioActionPerformed
 
+    private void Btn_Calendario1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn_Calendario1ActionPerformed
+        
+        listaDeGrupos.inicializarNodoActal();
+        VentanaGrupos ventana = new VentanaGrupos();
+        
+        while(listaDeGrupos.getNodoActual() != null){
+            
+            PanelGrupo grupo = new PanelGrupo();
+            grupo.setDatosEquipos(listaDeGrupos.getNodoActual().getLetraGrupo(), listaDeGrupos.getNodoActual().getpaisesIntegrantes());
+            ventana.agregarPanel(grupo);
+            
+            listaDeGrupos.moverNodoActual();
+        }          
+        
+        ventana.setVisible(true);
+    }//GEN-LAST:event_Btn_Calendario1ActionPerformed
+
     /**
      * Metodo utilizado para ordenar los equipos de mayor a menor, de acuerdo a
      * la cantidad de puntos obtenidos, y en caso de tener los mismos puntos, se
@@ -970,6 +995,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton Btn_Calendario;
+    private javax.swing.JButton Btn_Calendario1;
     private javax.swing.JButton Btn_Estadios;
     private javax.swing.JButton Btn_Goleadores;
     private javax.swing.JButton Btn_ModificarEstadio;
